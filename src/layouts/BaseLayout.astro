@@ -1,0 +1,83 @@
+---
+import "../styles.css";
+import ThemeToggle from "@/components/ThemeToggle.vue";
+import { siteConfig } from "@/lib/site";
+import { withBase } from "@/lib/utils";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const title = Astro.props.title ? `${Astro.props.title} · ${siteConfig.shortName}` : siteConfig.name;
+const description = Astro.props.description ?? "ZZZOD Plugin Registry";
+const navItems = [
+  { href: "/", label: "插件" },
+  { href: "/submission/", label: "提交" },
+  { href: "/policy/", label: "规则" },
+  { href: "/api-docs/", label: "API" }
+];
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script is:inline>
+      const theme = localStorage.getItem("theme") || "light";
+      if (theme === "dark") {
+        document.documentElement.classList.add("dark");
+      } else if (theme === "zzz") {
+        document.documentElement.classList.add("zzz");
+        document.documentElement.classList.add("dark");
+      }
+      document.body?.setAttribute("arco-theme", theme === "light" ? "light" : "dark");
+    </script>
+    <title>{title}</title>
+  </head>
+  <body>
+    <!-- 极光背景发光球 -->
+    <div class="glow-backdrop">
+      <div class="glow-sphere glow-sphere-1"></div>
+      <div class="glow-sphere glow-sphere-2"></div>
+    </div>
+    <div class="shell">
+      <header class="site-header">
+        <div class="site-inner flex h-14 items-center justify-between gap-4">
+          <a href={withBase("/")} class="flex items-center gap-2">
+            <span class="flex h-8 w-8 items-center justify-center rounded bg-[#14c9c9] text-sm font-bold text-white">OD</span>
+            <span class="text-sm font-semibold">{siteConfig.shortName}</span>
+          </a>
+          <nav class="hidden items-center gap-1 md:flex">
+            {navItems.map((item) => (
+              <a class="rounded px-3 py-1.5 text-sm text-[var(--registry-muted)] hover:bg-[var(--color-fill-2)] hover:text-[var(--registry-text)]" href={withBase(item.href)}>
+                {item.label}
+              </a>
+            ))}
+          </nav>
+          <div class="flex items-center gap-2">
+            <a class="rounded bg-[#14c9c9] px-3 py-1.5 text-sm font-medium text-white hover:opacity-90" href={withBase("/submission/")}>提交插件</a>
+            <ThemeToggle client:load />
+          </div>
+        </div>
+      </header>
+      <main class="site-main">
+        <slot />
+      </main>
+      <footer class="site-footer">
+        <div class="site-inner flex flex-wrap items-center justify-between gap-3 py-6 text-sm">
+          <span>{siteConfig.shortName}</span>
+          <div class="flex gap-4">
+            <a href={withBase("/api-docs/")}>API</a>
+            <a href={`https://github.com/${siteConfig.repoOwner}/${siteConfig.repoName}`} target="_blank">GitHub</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

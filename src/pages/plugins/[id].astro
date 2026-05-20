@@ -1,0 +1,35 @@
+---
+import PluginDetail from "@/components/PluginDetail.vue";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getPlugin, getPlugins } from "@/lib/data";
+import { withBase } from "@/lib/utils";
+
+export async function getStaticPaths() {
+  const plugins = await getPlugins();
+  return plugins.map((plugin) => ({
+    params: { id: plugin.id },
+    props: { plugin }
+  }));
+}
+
+const plugin = Astro.props.plugin ?? (await getPlugin(Astro.params.id ?? ""));
+
+if (!plugin) {
+  return Astro.redirect(withBase("/"));
+}
+---
+
+<BaseLayout title={plugin.name} description={plugin.summary}>
+  <div class="mb-6">
+    <a class="back-link inline-flex items-center gap-2 text-sm font-bold text-[var(--registry-muted)] hover:text-[var(--registry-accent)] transition-all" href={withBase("/")}>
+      <span class="back-arrow transition-transform inline-block">←</span> 返回插件中心
+    </a>
+  </div>
+  <PluginDetail client:load plugin={plugin} />
+</BaseLayout>
+
+<style>
+  .back-link:hover .back-arrow {
+    transform: translateX(-4px);
+  }
+</style>

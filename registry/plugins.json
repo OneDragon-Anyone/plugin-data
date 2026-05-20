@@ -1,0 +1,201 @@
+{
+  "music_game_26": {
+    "id": "music_game_26",
+    "name": "音游（2.6）",
+    "summary": "识别 2.6 音游按键轨道并自动按下 F/J。",
+    "repo": "https://github.com/A-nony-mous/rhythm_game_v2.6_zzzod_plugin",
+    "author": {
+      "name": "A-nony-mous",
+      "url": "https://github.com/A-nony-mous",
+      "socialLink": "https://github.com/A-nony-mous"
+    },
+    "tags": ["music-game", "automation", "keyboard"],
+    "risk": ["automation", "process"],
+    "status": "listed",
+    "pinned": true,
+    "stars": 0,
+    "readmeHtml": "<h2>音游（2.6）插件</h2><p>用于 2.6 音游界面的轨道识别和自动按键。</p><ul><li>识别蓝、粉、绿三种音符颜色</li><li>支持三组监测点和两组监测点模式</li><li>默认按键映射：蓝色 F，粉色 J，绿色 F+J</li><li>插件内置 ROI 配置，无需修改主程序 assets</li></ul>",
+    "latest": {
+      "version": "0.1.0",
+      "versionCode": 1,
+      "tag": "v0.1.0",
+      "commit": "c9a4f809d14a69dd68bb06f8d3850fa210e1b999",
+      "publishedAt": "2026-05-20T18:09:08Z",
+      "changelogHtml": "<p>首个插件化版本，迁入 2.6 音游识别、自动按键、ROI 注册和设置入口。</p>",
+      "downloadUrl": "https://api.github.com/repos/A-nony-mous/rhythm_game_v2.6_zzzod_plugin/zipball/v0.1.0",
+      "sha256": "d67a8d51b66a4afec8cf9e510c8000e5e85027fb9cc111ec640f0880e1949a2d"
+    },
+    "releases": [
+      {
+        "version": "0.1.0",
+        "versionCode": 1,
+        "tag": "v0.1.0",
+        "commit": "c9a4f809d14a69dd68bb06f8d3850fa210e1b999",
+        "publishedAt": "2026-05-20T18:09:08Z",
+        "changelogHtml": "<p>首个插件化版本，迁入 2.6 音游识别、自动按键、ROI 注册和设置入口。</p>",
+        "downloadUrl": "https://api.github.com/repos/A-nony-mous/rhythm_game_v2.6_zzzod_plugin/zipball/v0.1.0",
+        "sha256": "d67a8d51b66a4afec8cf9e510c8000e5e85027fb9cc111ec640f0880e1949a2d"
+      }
+    ],
+    "compatibility": {
+      "minAppVersion": "0.0.0",
+      "minCoreApiVersion": 1,
+      "python": ">=3.11"
+    },
+    "capabilities": {
+      "hasAppSetting": true,
+      "defaultGroup": true,
+      "needNotify": false
+    }
+  },
+  "coffee_route_plus": {
+    "mock": true,
+    "id": "coffee_route_plus",
+    "name": "咖啡日程增强",
+    "summary": "扩展咖啡领取后的体力规划，按预设优先级安排副本与材料刷取。",
+    "repo": "https://github.com/example/coffee-route-plus",
+    "author": {
+      "name": "Example Author",
+      "url": "https://github.com/example",
+      "socialLink": "https://space.bilibili.com/100000"
+    },
+    "tags": ["daily", "coffee", "charge-plan"],
+    "risk": ["automation", "filesystem"],
+    "status": "listed",
+    "pinned": false,
+    "stars": 128,
+    "readmeHtml": "<h2>咖啡日程增强</h2><p>为日常一条龙提供更细的体力消耗计划，适合固定刷材料和驱动盘的玩家。</p><ul><li>支持按副本类型排序</li><li>支持保留体力阈值</li><li>支持运行前检查配置</li></ul>",
+    "latest": {
+      "version": "1.2.0",
+      "versionCode": 12,
+      "tag": "v1.2.0",
+      "commit": "a1b2c3d4e5f6",
+      "publishedAt": "2026-05-20T00:00:00Z",
+      "changelogHtml": "<p>新增体力阈值和驱动盘刷取优先级。</p>",
+      "downloadUrl": "https://api.github.com/repos/example/coffee-route-plus/zipball/v1.2.0",
+      "sha256": "b7f7d9f91a64a1f4e5a02db2a7ec092f12d40f5a95cd6a7b1a2e6d8c5f91a433"
+    },
+    "releases": [
+      {
+        "version": "1.2.0",
+        "versionCode": 12,
+        "tag": "v1.2.0",
+        "commit": "a1b2c3d4e5f6",
+        "publishedAt": "2026-05-20T00:00:00Z",
+        "changelogHtml": "<p>新增体力阈值和驱动盘刷取优先级。</p>",
+        "downloadUrl": "https://api.github.com/repos/example/coffee-route-plus/zipball/v1.2.0",
+        "sha256": "b7f7d9f91a64a1f4e5a02db2a7ec092f12d40f5a95cd6a7b1a2e6d8c5f91a433"
+      }
+    ],
+    "compatibility": {
+      "minAppVersion": "0.0.0",
+      "minCoreApiVersion": 1,
+      "python": ">=3.11"
+    },
+    "capabilities": {
+      "hasAppSetting": true,
+      "defaultGroup": true,
+      "needNotify": true
+    }
+  },
+  "combat_assist_lab": {
+    "mock": true,
+    "id": "combat_assist_lab",
+    "name": "战斗助手实验室",
+    "summary": "提供自动战斗策略调试、闪避参数预设和运行日志回放。",
+    "repo": "https://github.com/example/combat-assist-lab",
+    "author": {
+      "name": "Combat Lab",
+      "url": "https://github.com/combat-lab",
+      "socialLink": "https://github.com/combat-lab"
+    },
+    "tags": ["battle", "debug", "automation"],
+    "risk": ["automation", "yolo", "process"],
+    "status": "listed",
+    "pinned": false,
+    "stars": 86,
+    "readmeHtml": "<h2>战斗助手实验室</h2><p>面向高级用户的战斗策略调试插件，提供可视化参数与日志记录。</p><ul><li>支持策略切换</li><li>支持识别结果追踪</li><li>支持导出运行日志</li></ul>",
+    "latest": {
+      "version": "0.8.3",
+      "versionCode": 83,
+      "tag": "v0.8.3",
+      "commit": "bb82c912fe41",
+      "publishedAt": "2026-05-16T10:30:00Z",
+      "changelogHtml": "<p>优化闪避识别参数并改进日志摘要。</p>",
+      "downloadUrl": "https://api.github.com/repos/example/combat-assist-lab/zipball/v0.8.3",
+      "sha256": "9f34d2ca21b7c56a6573f1c18bb3a3dbe9f0a12782cc9835d7a077f0e1c234ab"
+    },
+    "releases": [
+      {
+        "version": "0.8.3",
+        "versionCode": 83,
+        "tag": "v0.8.3",
+        "commit": "bb82c912fe41",
+        "publishedAt": "2026-05-16T10:30:00Z",
+        "changelogHtml": "<p>优化闪避识别参数并改进日志摘要。</p>",
+        "downloadUrl": "https://api.github.com/repos/example/combat-assist-lab/zipball/v0.8.3",
+        "sha256": "9f34d2ca21b7c56a6573f1c18bb3a3dbe9f0a12782cc9835d7a077f0e1c234ab"
+      }
+    ],
+    "compatibility": {
+      "minAppVersion": "0.0.0",
+      "minCoreApiVersion": 1,
+      "python": ">=3.11"
+    },
+    "capabilities": {
+      "hasAppSetting": true,
+      "defaultGroup": false,
+      "needNotify": false
+    }
+  },
+  "disc_export_bridge": {
+    "mock": true,
+    "id": "disc_export_bridge",
+    "name": "驱动盘导出桥",
+    "summary": "将驱动盘数据导出为通用 JSON，便于外部配装工具读取。",
+    "repo": "https://github.com/example/disc-export-bridge",
+    "author": {
+      "name": "Disc Tools",
+      "url": "https://github.com/disc-tools",
+      "socialLink": "https://github.com/disc-tools"
+    },
+    "tags": ["drive-disc", "export", "utility"],
+    "risk": ["filesystem", "clipboard", "ocr"],
+    "status": "deprecated",
+    "pinned": false,
+    "stars": 42,
+    "readmeHtml": "<h2>驱动盘导出桥</h2><p>将本地识别到的驱动盘数据整理为通用 JSON 格式。</p><p>当前版本处于维护模式，推荐等待新版导出协议。</p>",
+    "latest": {
+      "version": "0.3.1",
+      "versionCode": 31,
+      "tag": "v0.3.1",
+      "commit": "c0ffee81f00d",
+      "publishedAt": "2026-04-28T08:00:00Z",
+      "changelogHtml": "<p>修复部分副词条导出字段。</p>",
+      "downloadUrl": "https://api.github.com/repos/example/disc-export-bridge/zipball/v0.3.1",
+      "sha256": "f8d48e02ef8eaa9f1acdeef67a4415d88bbf44108f14a3f72cc7d2b947d5d671"
+    },
+    "releases": [
+      {
+        "version": "0.3.1",
+        "versionCode": 31,
+        "tag": "v0.3.1",
+        "commit": "c0ffee81f00d",
+        "publishedAt": "2026-04-28T08:00:00Z",
+        "changelogHtml": "<p>修复部分副词条导出字段。</p>",
+        "downloadUrl": "https://api.github.com/repos/example/disc-export-bridge/zipball/v0.3.1",
+        "sha256": "f8d48e02ef8eaa9f1acdeef67a4415d88bbf44108f14a3f72cc7d2b947d5d671"
+      }
+    ],
+    "compatibility": {
+      "minAppVersion": "0.0.0",
+      "minCoreApiVersion": 1,
+      "python": ">=3.11"
+    },
+    "capabilities": {
+      "hasAppSetting": false,
+      "defaultGroup": false,
+      "needNotify": false
+    }
+  }
+}
