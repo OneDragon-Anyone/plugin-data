@@ -1,0 +1,15 @@
+{
+  "id": "demo_plugin",
+  "repo": "A-nony-mous/zzzod-demo-plugin",
+  "repoId": 1431540916,
+  "tags": [
+    "demo"
+  ],
+  "extraRisk": [],
+  "status": "listed",
+  "pinned": false,
+  "review": {
+    "issue": 4,
+    "submittedBy": "A-nony-mous"
+  }
+}
