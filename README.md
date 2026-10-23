@@ -1,14 +1,29 @@
-# Plugin Data
+# ZZZOD Plugin Data (数据仓)
 
-ZZZOD 插件仓库的**数据仓**：只存放人工审核数据与策略，CI 产物（站点与 `/api/v1`）从这里部署。
+ZZZOD 官方插件应用中心的数据仓库，用于存储所有已收录插件的配置、审核决策与在线索引。
 
-- `registry/plugins/{id}.json` —— 每个插件一个审核条目（机器人通过 `[submission]` Issue 自动生成，或维护者手工添加）
-- `registry/policy.json` —— 保留 ID、封禁名单、大小限制、频控
-- `lock` 分支 —— 每个已接受版本的 sha256 与 versionCode 高水位（仅构建写入）
-- Issue —— 插件提交、转移、举报、申诉入口（机器人自动处理）
+- 🌐 **在线插件市场**：[https://onedragon-anyone.github.io/plugin-data/](https://onedragon-anyone.github.io/plugin-data/)
+- 📖 **开发者发版指南**：[docs/runbook.md](docs/runbook.md)
+- 🛠️ **仓库维护手册**：[docs/maintainer.md](docs/maintainer.md)
+- 💻 **核心代码仓**：[OneDragon-Anyone/plugin-registry](https://github.com/OneDragon-Anyone/plugin-registry)（前端界面与自动化机器人）
 
-代码（构建脚本、机器人、WebUI、可复用工作流）在 [plugin-registry](https://github.com/OneDragon-Anyone/plugin-registry)，由本仓的薄工作流以 `@v1` 标签调用；机器人与构建只持有本仓的临时令牌，写不了代码仓。
+---
 
-站点与 API：https://onedragon-anyone.github.io/plugin-data/
+## 目录结构
 
-作者指南见 [docs/runbook.md](docs/runbook.md)，维护指南见 [docs/maintainer.md](docs/maintainer.md)。
+```text
+├── registry/
+│   ├── plugins/{id}.json    # 各插件配置与审核信息（提交 Issue 后由机器人自动生成）
+│   └── policy.json          # 插件收录规则（命名限制、保留 ID 等）
+├── docs/                    # 开发者发布手册与维护说明
+└── .github/workflows/       # 自动化流水线（定时构建、提交自动审核）
+```
+
+---
+
+## 插件收录与更新流程
+
+1. **作者提交**：插件开发者在自己的 GitHub 仓库发版后，在本仓库发起 `[submission]` Issue 申请收录。
+2. **自动校验**：审核机器人会自动检查插件包规范，并自动创建收录 PR。
+3. **审核上线**：维护人员核对后合并 PR，定时构建任务会自动抓取最新版本并同步到插件商店中。
+4. **后续更新**：插件收录后，作者后续在自己仓库发布新版本均会全自动同步，无需重复提交。
