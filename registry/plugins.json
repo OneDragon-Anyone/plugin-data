@@ -47,5 +47,103 @@
       "defaultGroup": true,
       "needNotify": false
     }
+  },
+  "zode_switcher": {
+    "id": "zode_switcher",
+    "name": "ZODE 切换器",
+    "summary": "一键切换代码源到 idk500 增强源（CNB，ZODE 分支），配置后重启生效。",
+    "repo": "https://github.com/idk500/zzzod-plugin-zode-switcher",
+    "author": {
+      "name": "idk500",
+      "url": "https://github.com/idk500",
+      "socialLink": "https://github.com/idk500"
+    },
+    "tags": ["zode", "source-switch", "cnb"],
+    "risk": ["filesystem"],
+    "status": "listed",
+    "pinned": false,
+    "stars": 0,
+    "readmeHtml": "<h2>ZODE 切换器</h2><p>一键将代码源切换到 idk500 增强源（CNB，ZODE 分支），无需手动编辑配置文件。</p><ul><li>运行工具即写入代码源声明与用户选择，提示重启生效</li><li>已是增强源时运行会提示无需重复切换</li><li>仅修改 repository.yml 与 env_config.yml，不进行游戏画面操作</li></ul>",
+    "latest": {
+      "version": "1.0.0",
+      "versionCode": 1,
+      "tag": "v1.0.0",
+      "commit": "1904ac273ba6f039c9a3f222b55649e21038cea4",
+      "publishedAt": "2026-10-23T04:59:40Z",
+      "changelogHtml": "<p>首个版本：一键切换代码源到 idk500 增强源（CNB，ZODE 分支）。</p>",
+      "downloadUrl": "https://api.github.com/repos/idk500/zzzod-plugin-zode-switcher/zipball/v1.0.0",
+      "sha256": "05eb9390872cd4375c83ff0b459a78f2f467b67e13a43bdbc60ed08898b2b614"
+    },
+    "releases": [
+      {
+        "version": "1.0.0",
+        "versionCode": 1,
+        "tag": "v1.0.0",
+        "commit": "1904ac273ba6f039c9a3f222b55649e21038cea4",
+        "publishedAt": "2026-10-23T04:59:40Z",
+        "changelogHtml": "<p>首个版本：一键切换代码源到 idk500 增强源（CNB，ZODE 分支）。</p>",
+        "downloadUrl": "https://api.github.com/repos/idk500/zzzod-plugin-zode-switcher/zipball/v1.0.0",
+        "sha256": "05eb9390872cd4375c83ff0b459a78f2f467b67e13a43bdbc60ed08898b2b614"
+      }
+    ],
+    "compatibility": {
+      "minAppVersion": "0.0.0",
+      "minCoreApiVersion": 1,
+      "python": ">=3.11"
+    },
+    "capabilities": {
+      "hasAppSetting": false,
+      "defaultGroup": false,
+      "needNotify": false
+    }
+  },
+  "life_on_line": {
+    "id": "life_on_line",
+    "name": "真·拿命验收",
+    "summary": "一直刷拿命验收用于换取微量丁尼；编队需 1 号位妮可、2 号位比利。",
+    "repo": "https://github.com/idk500/zzzod-plugin-life-on-line",
+    "author": {
+      "name": "DoctorReid（原作）/ idk500（插件化）",
+      "url": "https://github.com/idk500",
+      "socialLink": "https://github.com/idk500"
+    },
+    "tags": ["dennies", "commission", "auto-battle"],
+    "risk": ["automation"],
+    "status": "listed",
+    "pinned": false,
+    "stars": 0,
+    "readmeHtml": "<h2>真·拿命验收</h2><p>自动重复挑战第二章间章委托「真·拿命验收」换取微量丁尼。原为主程序内置应用（原作 DoctorReid），本插件为其插件化迁移版本。</p><ul><li>可设置每日次数与预备编队</li><li>编队需 1 号位妮可、2 号位比利（按键脚本按此配队录制）</li></ul>",
+    "latest": {
+      "version": "1.0.0",
+      "versionCode": 1,
+      "tag": "v1.0.0",
+      "commit": "210369a2efae9040633af567750e6b3ad4ea691d",
+      "publishedAt": "2026-10-23T05:01:16Z",
+      "changelogHtml": "<p>首个版本：主程序内置应用「真·拿命验收」的插件化迁移，代码逐字提取自官方 main。</p>",
+      "downloadUrl": "https://api.github.com/repos/idk500/zzzod-plugin-life-on-line/zipball/v1.0.0",
+      "sha256": "a7988c9f7afd6f61429efcf7b2ff47327e5887776807e4c0f4e774ef76cc1635"
+    },
+    "releases": [
+      {
+        "version": "1.0.0",
+        "versionCode": 1,
+        "tag": "v1.0.0",
+        "commit": "210369a2efae9040633af567750e6b3ad4ea691d",
+        "publishedAt": "2026-10-23T05:01:16Z",
+        "changelogHtml": "<p>首个版本：主程序内置应用「真·拿命验收」的插件化迁移，代码逐字提取自官方 main。</p>",
+        "downloadUrl": "https://api.github.com/repos/idk500/zzzod-plugin-life-on-line/zipball/v1.0.0",
+        "sha256": "a7988c9f7afd6f61429efcf7b2ff47327e5887776807e4c0f4e774ef76cc1635"
+      }
+    ],
+    "compatibility": {
+      "minAppVersion": "0.0.0",
+      "minCoreApiVersion": 1,
+      "python": ">=3.11"
+    },
+    "capabilities": {
+      "hasAppSetting": true,
+      "defaultGroup": true,
+      "needNotify": true
+    }
   }
 }
