@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: 网站提交插件（推荐）
-    url: https://onedragon-anyone.github.io/plugin-registry/submission/
+    url: https://onedragon-anyone.github.io/plugin-data/submission/
     about: 粘贴仓库地址，预览无误后一键打开预填好的提交 Issue。
   - name: 插件模板与发布教程
     url: https://github.com/OneDragon-Anyone/plugin-template

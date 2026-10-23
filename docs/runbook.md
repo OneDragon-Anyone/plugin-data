@@ -112,7 +112,7 @@ GitHub Actions 会自动执行结构校验、生成 `<id>.zip` 并发布到 GitH
 当您的仓库有了第一个带有 `<id>.zip` 附件的 Release 后，即可申请收录：
 
 1. **提交申请**：
-   - 打开 [plugin-registry](https://github.com/OneDragon-Anyone/plugin-registry/issues/new/choose) 提一个 Issue。
+   - 打开 [plugin-registry](https://github.com/OneDragon-Anyone/plugin-data/issues/new/choose) 提一个 Issue。
    - 标题填写：`[submission] 你的插件名`
    - 正文填入您的 GitHub 仓库完整链接，例如：`https://github.com/your-username/your-plugin-repo`。
 2. **机器人自动处理**：

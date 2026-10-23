@@ -5,7 +5,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -18,89 +18,6 @@ concurrency:
   group: build-registry
   cancel-in-progress: false
 
-env:
-  SITE_URL: ${{ vars.SITE_URL || format('https://{0}.github.io', github.repository_owner) }}
-
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Checkout lock branch
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git ls-remote --exit-code --heads origin lock >/dev/null; then
-            git fetch --depth=1 origin lock:lock
-            git worktree add .lock lock
-          else
-            git worktree add --orphan -b lock .lock
-          fi
-
-      - name: Checkout template tools
-        uses: actions/checkout@v6
-        with:
-          repository: ${{ vars.TEMPLATE_REPOSITORY || 'OneDragon-Anyone/plugin-template' }}
-          ref: ${{ vars.TEMPLATE_REF || 'v1' }}
-          path: .plugin-template
-          persist-credentials: false
-
-      - uses: actions/setup-python@v6
-        with:
-          python-version: "3.11"
-
-      - uses: actions/setup-node@v6
-        with:
-          node-version: 24
-
-      - name: Setup pnpm
-        run: |
-          corepack enable
-          corepack prepare pnpm@10.15.1 --activate
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Build registry data
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-          LOCK_DIR: .lock
-          TEMPLATE_DIR: .plugin-template
-          PREVIOUS_API_URL: ${{ env.SITE_URL }}/plugin-registry/api/v1/
-          REGISTRY_OPEN_ISSUES: "true"
-        run: pnpm registry:build
-
-      - name: Commit lock branch
-        working-directory: .lock
-        run: |
-          git add -A
-          if git diff --cached --quiet; then
-            echo "lock unchanged"
-            exit 0
-          fi
-          git commit -m "chore: update sources lock (${GITHUB_SHA::7})"
-          git push origin lock
-
-      - name: Build site
-        run: pnpm build
-        env:
-          PUBLIC_GITHUB_OWNER: ${{ github.repository_owner }}
-          PUBLIC_GITHUB_REPO: ${{ github.event.repository.name }}
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+    uses: OneDragon-Anyone/plugin-registry/.github/workflows/reusable-build.yml@v1

@@ -68,7 +68,7 @@
 
 ## 4. 本地测试与命令
 
-在 `plugin-registry` 目录下：
+代码在 [plugin-registry](https://github.com/OneDragon-Anyone/plugin-registry)（构建脚本、机器人、WebUI）。clone 本数据仓到旁边后，在代码仓目录下：
 
 ```shell
 pnpm registry:check                      # 校验本地 registry 规则
@@ -76,3 +76,6 @@ pnpm registry:check --resolve --deep <id> # 联网校验指定插件并下载检
 pnpm registry:build                      # 本地执行全量构建（生成 public/api/v1 与站点）
 pnpm dev                                 # 本地启动预览
 ```
+
+联调需要环境变量：`REGISTRY_DATA_DIR` 指向本数据仓目录、`TEMPLATE_DIR` 指向 plugin-template、`GITHUB_TOKEN=$(gh auth token)`，详见代码仓 README。
+
