@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZZZOD Plugin Registry - 设计方案对比预览</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* 全局与预览切换器控制栏 */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #0d0e12;
+      color: #e5e7eb;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #switcher-bar {
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+      background: rgba(18, 20, 26, 0.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: 13px;
+    }
+    .switcher-left { display: flex; align-items: center; gap: 12px; }
+    .switcher-label { color: #9ca3af; font-weight: 500; }
+    .pill-group {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 3px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .pill-btn {
+      background: transparent;
+      border: none;
+      color: #9ca3af;
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+      transition: all 0.15s ease;
+    }
+    .pill-btn:hover { color: #f3f4f6; }
+    .pill-btn.active {
+      background: #0078d4;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+    .switcher-right { display: flex; align-items: center; gap: 12px; }
+    .theme-toggle-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #e5e7eb;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+    }
+
+    #preview-stage {
+      flex: 1;
+      padding: 28px 24px;
+      display: flex;
+      justify-content: center;
+    }
+    .preview-container {
+      width: 100%;
+      max-width: 1040px;
+      display: none;
+    }
+    .preview-container.active { display: block; }
+
+    /* ==========================================================================
+       真正的 MICROSOFT FLUENT DESIGN 2 (Windows 11 / Microsoft Store 规范)
+       - 规范源自：Microsoft Fluent 2 Web & WinUI 3 设计系统
+       - 核心要素：
+         1. 字体：Segoe UI Variable (Display / Text / Small)
+         2. 背景体系：Mica / ApplicationPageBackground (#202020 暗色 / #f3f3f3 浅色)
+         3. 卡片系统：LayerFill / CardBackgroundFill，带经典的顶部微反光与底部微阴影 (Specular 1px highlight)
+         4. 控件特征：TextBox 经典底部 2px Accent 聚焦线、Fluent 胶囊按钮、Windows 11 磁贴图标底座 (Squircle Tile)
+         5. 状态反馈：WinUI 经典 Rest -> Hover -> Pressed 按压物理微反馈
+       ========================================================================== */
+    .theme-fluent-real {
+      /* 暗色模式 Token (对齐 Windows 11 Dark Theme) */
+      --win-bg: #202020;
+      --win-card-bg: rgba(255, 255, 255, 0.05);
+      --win-card-hover: rgba(255, 255, 255, 0.08);
+      --win-card-active: rgba(255, 255, 255, 0.03);
+      --win-card-border: rgba(255, 255, 255, 0.08);
+      --win-card-border-top: rgba(255, 255, 255, 0.12); /* 顶部微反光边 */
+      --win-card-border-bottom: rgba(0, 0, 0, 0.4);      /* 底部环境暗边 */
+      
+      --win-fg: #ffffff;
+      --win-fg-secondary: #d0d0d0;
+      --win-fg-muted: #9e9e9e;
+      --win-fg-subtle: #6e6e6e;
+      
+      --win-accent: #60cdff;             /* Win11 暗色默认主题蓝 */
+      --win-accent-hover: #54b6e5;
+      --win-accent-active: #489fc9;
+      --win-accent-bg: rgba(96, 205, 255, 0.15);
+      
+      --win-input-bg: rgba(255, 255, 255, 0.06);
+      --win-input-border: rgba(255, 255, 255, 0.08);
+      --win-input-bottom: rgba(255, 255, 255, 0.54);   /* Fluent TextBox 标志性底线 */
+      
+      --win-btn-bg: rgba(255, 255, 255, 0.06);
+      --win-btn-border: rgba(255, 255, 255, 0.09);
+      --win-btn-hover: rgba(255, 255, 255, 0.09);
+      
+      --win-badge-bg: rgba(255, 255, 255, 0.08);
+      --win-tile-bg: rgba(255, 255, 255, 0.07);
+    }
+
+    .light .theme-fluent-real {
+      /* 浅色模式 Token (对齐 Windows 11 Light Theme) */
+      --win-bg: #f3f3f3;
+      --win-card-bg: #ffffff;
+      --win-card-hover: #fbfbfb;
+      --win-card-active: #f0f0f0;
+      --win-card-border: rgba(0, 0, 0, 0.06);
+      --win-card-border-top: rgba(0, 0, 0, 0.04);
+      --win-card-border-bottom: rgba(0, 0, 0, 0.12);
+      
+      --win-fg: #1b1b1b;
+      --win-fg-secondary: #424242;
+      --win-fg-muted: #616161;
+      --win-fg-subtle: #8a8a8a;
+      
+      --win-accent: #0067c0;             /* Win11 浅色默认主题蓝 */
+      --win-accent-hover: #1875c7;
+      --win-accent-active: #2f83ce;
+      --win-accent-bg: rgba(0, 103, 192, 0.08);
+      
+      --win-input-bg: #ffffff;
+      --win-input-border: rgba(0, 0, 0, 0.08);
+      --win-input-bottom: rgba(0, 0, 0, 0.44);
+      
+      --win-btn-bg: #fdfdfd;
+      --win-btn-border: rgba(0, 0, 0, 0.12);
+      --win-btn-hover: #f7f7f7;
+      
+      --win-badge-bg: rgba(0, 0, 0, 0.05);
+      --win-tile-bg: rgba(0, 0, 0, 0.04);
+    }
+
+    .theme-fluent-real .win-shell {
+      background: var(--win-bg);
+      color: var(--win-fg);
+      border-radius: 8px;
+      border: 1px solid var(--win-card-border);
+      font-family: "Segoe UI Variable Text", "Segoe UI Variable", "Segoe UI", -apple-system, sans-serif;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+    }
+
+    /* Win11 顶栏 / TitleBar */
+    .theme-fluent-real .win-titlebar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 24px;
+      background: transparent;
+      border-bottom: 1px solid var(--win-card-border);
+    }
+    .theme-fluent-real .win-app-identity {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .theme-fluent-real .win-app-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, #0078d4, #004578);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 13px;
+      box-shadow: 0 2px 6px rgba(0, 120, 212, 0.35);
+    }
+    .theme-fluent-real .win-app-name {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    .theme-fluent-real .win-pivot-tabs {
+      display: flex;
+      gap: 4px;
+    }
+    .theme-fluent-real .win-pivot-item {
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: var(--win-fg-muted);
+      cursor: pointer;
+      position: relative;
+      user-select: none;
+      transition: all 0.15s ease;
+    }
+    .theme-fluent-real .win-pivot-item:hover {
+      color: var(--win-fg);
+      background: rgba(255, 255, 255, 0.04);
+    }
+    .theme-fluent-real .win-pivot-item.active {
+      color: var(--win-fg);
+      font-weight: 600;
+    }
+    /* Fluent 经典指示条 (2.5px 胶囊下划线) */
+    .theme-fluent-real .win-pivot-item.active::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 14px;
+      right: 14px;
+      height: 3px;
+      background: var(--win-accent);
+      border-radius: 2px;
+    }
+
+    /* 控制栏与搜索框 */
+    .theme-fluent-real .win-main { padding: 24px; }
+    .theme-fluent-real .win-command-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    
+    /* 标志性的 Win11 TextBox（带底部微反光线与激活双层线） */
+    .theme-fluent-real .win-textbox {
+      position: relative;
+      flex: 1;
+      max-width: 380px;
+    }
+    .theme-fluent-real .win-textbox input {
+      width: 100%;
+      height: 34px;
+      background: var(--win-input-bg);
+      border: 1px solid var(--win-input-border);
+      border-bottom: 1px solid var(--win-input-bottom);
+      border-radius: 4px;
+      padding: 0 10px 0 34px;
+      color: var(--win-fg);
+      font-size: 13px;
+      font-family: inherit;
+      outline: none;
+      transition: all 0.1s ease;
+    }
+    .theme-fluent-real .win-textbox input:focus {
+      border-bottom: 2px solid var(--win-accent);
+      padding-bottom: 0px;
+    }
+    .theme-fluent-real .win-textbox-icon {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--win-fg-muted);
+      width: 14px;
+      height: 14px;
+    }
+
+    /* Windows 11 Microsoft Store 风格的应用卡片列表 (Settings/Store Card) */
+    .theme-fluent-real .win-card-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .theme-fluent-real .win-store-card {
+      background: var(--win-card-bg);
+      border: 1px solid var(--win-card-border);
+      border-top-color: var(--win-card-border-top);
+      border-bottom-color: var(--win-card-border-bottom);
+      border-radius: 6px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+      transition: background 0.1s ease, border-color 0.1s ease, transform 0.08s ease;
+    }
+    .theme-fluent-real .win-store-card:hover {
+      background: var(--win-card-hover);
+    }
+    .theme-fluent-real .win-store-card:active {
+      background: var(--win-card-active);
+      transform: scale(0.998);
+    }
+    
+    .theme-fluent-real .win-card-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex: 1;
+      min-width: 0;
+    }
+    /* Win11 Squircle 磁贴图标 */
+    .theme-fluent-real .win-tile-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      background: var(--win-tile-bg);
+      border: 1px solid var(--win-card-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--win-accent);
+      flex-shrink: 0;
+    }
+    .theme-fluent-real .win-card-content { flex: 1; min-width: 0; }
+    .theme-fluent-real .win-card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 3px;
+    }
+    .theme-fluent-real .win-card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--win-fg);
+    }
+    .theme-fluent-real .win-pill-badge {
+      font-size: 11px;
+      font-family: ui-monospace, Consolas, monospace;
+      padding: 1px 6px;
+      border-radius: 4px;
+      background: var(--win-badge-bg);
+      color: var(--win-fg-secondary);
+      border: 1px solid var(--win-card-border);
+    }
+    .theme-fluent-real .win-card-desc {
+      font-size: 12.5px;
+      color: var(--win-fg-muted);
+      line-height: 1.4;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .theme-fluent-real .win-card-tags {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .theme-fluent-real .win-sub-tag {
+      font-size: 11px;
+      color: var(--win-fg-muted);
+      padding: 0 6px;
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--win-card-border);
+    }
+
+    .theme-fluent-real .win-card-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+    .theme-fluent-real .win-meta-info {
+      text-align: right;
+      font-size: 12px;
+      color: var(--win-fg-muted);
+    }
+    .theme-fluent-real .win-meta-author {
+      font-weight: 500;
+      color: var(--win-fg-secondary);
+    }
+    
+    /* Fluent 经典操作按钮 (Primary & Standard Button) */
+    .theme-fluent-real .win-btn-primary {
+      height: 32px;
+      padding: 0 16px;
+      border-radius: 4px;
+      border: 1px solid transparent;
+      background: var(--win-accent);
+      color: #000000;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.1s ease;
+    }
+    .theme-fluent-real .win-btn-primary:hover {
+      background: var(--win-accent-hover);
+    }
+    .theme-fluent-real .win-btn-primary:active {
+      background: var(--win-accent-active);
+      transform: scale(0.98);
+    }
+    .theme-fluent-real .win-btn-standard {
+      height: 32px;
+      padding: 0 14px;
+      border-radius: 4px;
+      border: 1px solid var(--win-btn-border);
+      border-bottom-color: rgba(0,0,0,0.3);
+      background: var(--win-btn-bg);
+      color: var(--win-fg);
+      font-size: 12.5px;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.1s ease;
+    }
+    .theme-fluent-real .win-btn-standard:hover {
+      background: var(--win-btn-hover);
+    }
+    .theme-fluent-real .win-btn-standard:active {
+      transform: scale(0.98);
+    }
+
+
+    /* ==========================================================================
+       STYLE 2: SEMI DESIGN (字节跳动)
+       ========================================================================== */
+    .theme-semi {
+      --semi-bg: #161823;
+      --semi-card: #232738;
+      --semi-border: #33384e;
+      --semi-text: #f1f2f5;
+      --semi-sub: #86909c;
+      --semi-primary: #336df4;
+      --semi-primary-light: rgba(51, 109, 244, 0.15);
+      --semi-radius: 8px;
+    }
+    .light .theme-semi {
+      --semi-bg: #f4f5f8;
+      --semi-card: #ffffff;
+      --semi-border: #e5e6eb;
+      --semi-text: #1d2129;
+      --semi-sub: #4e5969;
+      --semi-primary: #336df4;
+      --semi-primary-light: #e8f3ff;
+    }
+    .theme-semi .semi-wrapper {
+      background: var(--semi-bg);
+      color: var(--semi-text);
+      border-radius: 10px;
+      border: 1px solid var(--semi-border);
+      padding: 24px;
+    }
+    .theme-semi .semi-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .theme-semi .semi-logo {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--semi-text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .theme-semi .semi-logo-dot { width: 8px; height: 8px; background: var(--semi-primary); border-radius: 50%; }
+    .theme-semi .semi-table-card {
+      background: var(--semi-card);
+      border: 1px solid var(--semi-border);
+      border-radius: var(--semi-radius);
+      overflow: hidden;
+    }
+    .theme-semi .semi-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--semi-border);
+    }
+    .theme-semi .semi-row:last-child { border-bottom: none; }
+    .theme-semi .semi-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--semi-primary);
+      text-decoration: none;
+    }
+    .theme-semi .semi-btn {
+      background: var(--semi-primary-light);
+      color: var(--semi-primary);
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+
+    /* ==========================================================================
+       STYLE 3: GITHUB PRIMER / KERNELSU
+       ========================================================================== */
+    .theme-github {
+      --gh-bg: #0d1117;
+      --gh-card: #161b22;
+      --gh-border: #30363d;
+      --gh-text: #c9d1d9;
+      --gh-heading: #f0f6fc;
+      --gh-muted: #8b949e;
+      --gh-link: #58a6ff;
+      --gh-badge-bg: #1f242c;
+      --gh-radius: 6px;
+    }
+    .light .theme-github {
+      --gh-bg: #ffffff;
+      --gh-card: #f6f8fa;
+      --gh-border: #d0d7de;
+      --gh-text: #24292f;
+      --gh-heading: #1f2328;
+      --gh-muted: #57606a;
+      --gh-link: #0969da;
+      --gh-badge-bg: #eaeef2;
+    }
+    .theme-github .gh-wrapper {
+      background: var(--gh-bg);
+      color: var(--gh-text);
+      border-radius: var(--gh-radius);
+      border: 1px solid var(--gh-border);
+      padding: 24px;
+    }
+    .theme-github .gh-nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--gh-border);
+      padding-bottom: 16px;
+      margin-bottom: 18px;
+    }
+    .theme-github .gh-brand { font-size: 15px; font-weight: 600; color: var(--gh-heading); display:flex; align-items:center; gap:8px; }
+    .theme-github .gh-input {
+      width: 100%;
+      background: var(--gh-bg);
+      border: 1px solid var(--gh-border);
+      border-radius: var(--gh-radius);
+      padding: 6px 12px;
+      font-size: 13px;
+      color: var(--gh-text);
+      outline: none;
+      margin-bottom: 16px;
+    }
+    .theme-github .gh-list {
+      border: 1px solid var(--gh-border);
+      border-radius: var(--gh-radius);
+    }
+    .theme-github .gh-item {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--gh-border);
+      display: flex;
+      justify-content: space-between;
+    }
+    .theme-github .gh-item:last-child { border-bottom: none; }
+    .theme-github .gh-name { font-size: 14px; font-weight: 600; color: var(--gh-link); text-decoration: none; }
+    .theme-github .gh-name:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- 顶部交互式切换栏 -->
+  <div id="switcher-bar">
+    <div class="switcher-left">
+      <span class="switcher-label">真实设计系统体验：</span>
+      <div class="pill-group">
+        <button class="pill-btn active" onclick="switchTheme('fluent')">1. 真正的 Microsoft Fluent 2 (Win11 Store 风格)</button>
+        <button class="pill-btn" onclick="switchTheme('semi')">2. Semi Design (字节工具系)</button>
+        <button class="pill-btn" onclick="switchTheme('github')">3. GitHub Primer / KernelSU</button>
+      </div>
+    </div>
+    <div class="switcher-right">
+      <button class="theme-toggle-btn" onclick="toggleDarkMode()">
+        <i data-lucide="moon" id="theme-icon" style="width:14px;height:14px"></i>
+        <span id="theme-text">暗色模式</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="preview-stage">
+
+    <!-- ====================================================================
+         方案 1: 真正的 MICROSOFT FLUENT 2 (Win11 Store / Settings 规范)
+         ==================================================================== -->
+    <div class="preview-container active theme-fluent-real" id="view-fluent">
+      <div class="win-shell">
+        <!-- Win11 顶栏 -->
+        <header class="win-titlebar">
+          <div class="win-app-identity">
+            <div class="win-app-icon">Z</div>
+            <span class="win-app-name">ZZZOD 插件应用中心</span>
+          </div>
+          <nav class="win-pivot-tabs">
+            <div class="win-pivot-item active">探索插件</div>
+            <div class="win-pivot-item">提交入库</div>
+            <div class="win-pivot-item">规范说明</div>
+            <div class="win-pivot-item">API (v1)</div>
+          </nav>
+        </header>
+
+        <!-- 主内容区 -->
+        <div class="win-main">
+          <!-- Win11 CommandBar 与 TextBox -->
+          <div class="win-command-bar">
+            <div class="win-textbox">
+              <i data-lucide="search" class="win-textbox-icon"></i>
+              <input type="text" placeholder="搜索插件名称、唯一 ID 或作者...">
+            </div>
+            <div style="font-size:12px;color:var(--win-fg-muted)">
+              2 个已收录插件
+            </div>
+          </div>
+
+          <!-- Win11 Microsoft Store 规范应用卡片列表 -->
+          <div class="win-card-grid">
+            <!-- 插件 1: 音游 -->
+            <div class="win-store-card">
+              <div class="win-card-left">
+                <!-- Squircle 磁贴图标底座 -->
+                <div class="win-tile-icon">
+                  <i data-lucide="music" style="width:22px;height:22px"></i>
+                </div>
+                <div class="win-card-content">
+                  <div class="win-card-header">
+                    <span class="win-card-title">音游（2.6）</span>
+                    <span class="win-pill-badge">v1.1.0</span>
+                    <span style="font-size:11.5px;color:var(--win-fg-muted);font-family:monospace">music_game_26</span>
+                  </div>
+                  <div class="win-card-desc">识别 2.6 音游按键轨道并自动触发 F/J 按键，内置 ROI 监测算法与配置面板。</div>
+                  <div class="win-card-tags">
+                    <span class="win-sub-tag">music-game</span>
+                    <span class="win-sub-tag">automation</span>
+                    <span class="win-sub-tag">process</span>
+                  </div>
+                </div>
+              </div>
+              <div class="win-card-right">
+                <div class="win-meta-info">
+                  <div class="win-meta-author">A-nony-mous</div>
+                  <div style="font-size:11px;color:var(--win-fg-subtle)">13.8 KB</div>
+                </div>
+                <button class="win-btn-primary">
+                  <i data-lucide="download" style="width:14px;height:14px"></i>下载
+                </button>
+              </div>
+            </div>
+
+            <!-- 插件 2: 连线人生 -->
+            <div class="win-store-card">
+              <div class="win-card-left">
+                <div class="win-tile-icon">
+                  <i data-lucide="gamepad-2" style="width:22px;height:22px"></i>
+                </div>
+                <div class="win-card-content">
+                  <div class="win-card-header">
+                    <span class="win-card-title">连线人生</span>
+                    <span class="win-pill-badge">v1.0.0</span>
+                    <span style="font-size:11.5px;color:var(--win-fg-muted);font-family:monospace">life_on_line</span>
+                  </div>
+                  <div class="win-card-desc">自动巡航与日常任务自动化套件，基于官方模板构建，支持全流程后台静默运行。</div>
+                  <div class="win-card-tags">
+                    <span class="win-sub-tag">dennies</span>
+                    <span class="win-sub-tag">commission</span>
+                  </div>
+                </div>
+              </div>
+              <div class="win-card-right">
+                <div class="win-meta-info">
+                  <div class="win-meta-author">idk500</div>
+                  <div style="font-size:11px;color:var(--win-fg-subtle)">24.2 KB</div>
+                </div>
+                <button class="win-btn-standard">
+                  <i data-lucide="info" style="width:14px;height:14px"></i>详情
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         方案 2: SEMI DESIGN
+         ==================================================================== -->
+    <div class="preview-container theme-semi" id="view-semi">
+      <div class="semi-wrapper">
+        <div class="semi-header">
+          <div class="semi-logo">
+            <span class="semi-logo-dot"></span>
+            <span>ZZZOD 插件应用中心</span>
+          </div>
+          <div style="font-size:12px;color:var(--semi-sub)">Semi Design 风格</div>
+        </div>
+
+        <div class="semi-table-card">
+          <div class="semi-row">
+            <div>
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+                <a href="#" class="semi-name">音游（2.6）</a>
+                <span style="font-size:11px;padding:1px 6px;border-radius:4px;background:var(--semi-primary-light);color:var(--semi-primary)">v1.1.0</span>
+              </div>
+              <div style="font-size:12.5px;color:var(--semi-sub)">识别 2.6 音游按键轨道并自动触发 F/J 按键，内置 ROI 监测算法与配置面板。</div>
+            </div>
+            <button class="semi-btn"><i data-lucide="download" style="width:12px;height:12px"></i>安装包</button>
+          </div>
+          <div class="semi-row">
+            <div>
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+                <a href="#" class="semi-name">连线人生</a>
+                <span style="font-size:11px;padding:1px 6px;border-radius:4px;background:var(--semi-primary-light);color:var(--semi-primary)">v1.0.0</span>
+              </div>
+              <div style="font-size:12.5px;color:var(--semi-sub)">自动巡航与日常任务自动化套件，基于官方模板构建，支持全流程后台静默运行。</div>
+            </div>
+            <button class="semi-btn"><i data-lucide="download" style="width:12px;height:12px"></i>安装包</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         方案 3: GITHUB PRIMER / KERNELSU
+         ==================================================================== -->
+    <div class="preview-container theme-github" id="view-github">
+      <div class="gh-wrapper">
+        <div class="gh-nav-bar">
+          <div class="gh-brand">
+            <i data-lucide="package" style="width:18px;height:18px"></i>
+            <span>OneDragon-Anyone / plugin-registry</span>
+          </div>
+          <span style="font-size:12px;color:var(--gh-muted)">KernelSU / Primer 风格</span>
+        </div>
+
+        <input type="text" class="gh-input" placeholder="Filter modules by name, id or author...">
+
+        <div class="gh-list">
+          <div class="gh-item">
+            <div>
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+                <a href="#" class="gh-name">音游（2.6）</a>
+                <span style="font-size:11px;font-family:monospace;padding:1px 5px;border-radius:3px;border:1px solid var(--gh-border);color:var(--gh-muted)">v1.1.0</span>
+                <span style="font-size:11.5px;color:var(--gh-muted);font-family:monospace">music_game_26</span>
+              </div>
+              <div style="font-size:12.5px;color:var(--gh-muted);margin-bottom:6px">识别 2.6 音游按键轨道并自动触发 F/J 按键，内置 ROI 监测算法与配置面板。</div>
+              <div style="font-size:11.5px;color:var(--gh-muted);display:flex;gap:12px">
+                <span>By A-nony-mous</span>
+                <span>sha256: ac90e49b</span>
+              </div>
+            </div>
+            <div>
+              <a href="#" style="font-size:12px;color:var(--gh-link);text-decoration:none;display:flex;align-items:center;gap:4px">
+                <i data-lucide="download" style="width:12px;height:12px"></i>zip
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    function switchTheme(theme) {
+      document.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.preview-container').forEach(c => c.classList.remove('active'));
+      
+      if (theme === 'fluent') {
+        event.target.classList.add('active');
+        document.getElementById('view-fluent').classList.add('active');
+      } else if (theme === 'semi') {
+        event.target.classList.add('active');
+        document.getElementById('view-semi').classList.add('active');
+      } else if (theme === 'github') {
+        event.target.classList.add('active');
+        document.getElementById('view-github').classList.add('active');
+      }
+    }
+
+    let isDark = true;
+    function toggleDarkMode() {
+      isDark = !isDark;
+      const stage = document.body;
+      const icon = document.getElementById('theme-icon');
+      const text = document.getElementById('theme-text');
+      if (isDark) {
+        stage.classList.remove('light');
+        stage.style.background = '#0d0e12';
+        text.textContent = '暗色模式';
+        icon.setAttribute('data-lucide', 'moon');
+      } else {
+        stage.classList.add('light');
+        stage.style.background = '#f5f5f5';
+        text.textContent = '浅色模式';
+        icon.setAttribute('data-lucide', 'sun');
+      }
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
