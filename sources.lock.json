@@ -1,0 +1,53 @@
+{
+  "life_on_line": {
+    "repoId": 1430595926,
+    "repo": "idk500/zzzod-plugin-life-on-line",
+    "maxVersionCode": 0,
+    "releases": {},
+    "rejected": {}
+  },
+  "music_game_26": {
+    "repoId": 1244891200,
+    "repo": "A-nony-mous/rhythm_game_v2.6_zzzod_plugin",
+    "maxVersionCode": 2,
+    "releases": {
+      "v1.1.0": {
+        "version": "1.1.0",
+        "versionCode": 2,
+        "commit": "4e0bcdce9d3d5c31b6a1798fb9702920da6bbae0",
+        "assetId": 669797426,
+        "assetName": "music_game_26.zip",
+        "size": 14083,
+        "sha256": "ac90e49b3dd5eb289542083d043fa5dcf27bc5e45433d28828890eccb5168425",
+        "verifiedAt": "2026-10-23T17:23:16.361Z",
+        "hasAppSetting": true,
+        "cover": "",
+        "manifest": {
+          "id": "music_game_26",
+          "name": "音游（2.6）",
+          "summary": "识别 2.6 音游按键轨道并自动按下 F/J。",
+          "version": "1.1.0",
+          "versionCode": 2,
+          "defaultGroup": true,
+          "needNotify": false,
+          "author": {
+            "name": "A-nony-mous",
+            "url": "https://github.com/A-nony-mous"
+          },
+          "homepage": "https://github.com/A-nony-mous/rhythm_game_v2.6_zzzod_plugin",
+          "risk": [
+            "automation",
+            "process"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      }
+    },
+    "rejected": {}
+  }
+}
