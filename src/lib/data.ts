@@ -2,11 +2,16 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import type { PluginEntry } from "./types";
 
-const rootDir = process.cwd();
+const pluginsFile = join(process.cwd(), "public", "api", "v1", "plugins.json");
 
 export async function getPlugins(): Promise<PluginEntry[]> {
-  const content = await readFile(join(rootDir, "public", "plugins.json"), "utf-8");
-  return JSON.parse(content) as PluginEntry[];
+  try {
+    return JSON.parse(await readFile(pluginsFile, "utf-8")) as PluginEntry[];
+  } catch (error) {
+    // `pnpm dev` / `pnpm build` 可在未运行 registry:build 时启动，此时目录为空
+    if ((error as NodeJS.ErrnoException).code === "ENOENT") return [];
+    throw error;
+  }
 }
 
 export async function getPlugin(id: string): Promise<PluginEntry | undefined> {

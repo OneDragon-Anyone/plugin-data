@@ -1,0 +1,37 @@
+name: 提交插件
+description: 申请收录一个插件。机器人会自动校验并开 PR，由维护者审核合并。
+title: "[submission] "
+labels:
+  - submission
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提交前请确认：仓库已按 [插件模板](https://github.com/OneDragon-Anyone/plugin-template) 发布过带 `<插件ID>.zip` 附件的 Release，且你是仓库所有者。
+        标题保留 `[submission]` 前缀，可在后面写插件名。
+  - type: input
+    id: repo_url
+    attributes:
+      label: 仓库地址
+      placeholder: https://github.com/your-name/your-plugin
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: 标签
+      description: 最多 8 个，逗号分隔，只用小写字母、数字和 -。
+      placeholder: daily, coffee, utility
+  - type: textarea
+    id: notes
+    attributes:
+      label: 备注
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 插件由我本人维护，我对插件代码的行为负责。
+          required: true
+        - label: 插件不依赖主程序以外的第三方 Python 包。
+          required: true

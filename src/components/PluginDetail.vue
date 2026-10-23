@@ -3,41 +3,49 @@ import {
   IconDownload,
   IconExclamationCircle,
   IconGithub,
+  IconStar,
   IconTag,
   IconTool,
   IconUser
 } from "@arco-design/web-vue/es/icon";
+import { computed } from "vue";
+import {
+  coverUrl,
+  formatBytes,
+  formatCount,
+  formatDate,
+  primaryRelease,
+  riskColor,
+  statusColor,
+  statusLabels
+} from "@/lib/display";
 import { riskDescriptions, riskLabels } from "@/lib/risk";
-import type { PluginEntry, RiskTag } from "@/lib/types";
+import { issueFormUrl } from "@/lib/site";
+import type { PluginEntry, PluginRelease } from "@/lib/types";
 
-defineProps<{
+const props = defineProps<{
   plugin: PluginEntry;
 }>();
 
-const statusTranslation: Record<string, string> = {
-  listed: "已上架",
-  deprecated: "已弃用",
-  hidden: "已隐藏",
-  suspended: "已暂停",
-  removed: "已失效"
-};
+const release = computed(() => primaryRelease(props.plugin));
+const downloadable = computed(() => props.plugin.status !== "suspended");
+const reportUrl = computed(() => issueFormUrl("3-report.yml", { title: `[report] ${props.plugin.id}`, plugin_id: props.plugin.id }));
+const appealUrl = computed(() => issueFormUrl("4-appeal.yml", { title: `[appeal] ${props.plugin.id}`, target: props.plugin.id }));
 
-function riskColor(value: RiskTag): string {
-  if (value === "automation") return "orange";
-  if (value === "account" || value === "process") return "red";
-  if (value === "network" || value === "ocr" || value === "yolo") return "blue";
-  return "gray";
+function releaseUrl(item: PluginRelease): string {
+  return `${props.plugin.repo}/releases/tag/${encodeURIComponent(item.tag)}`;
 }
 </script>
 
 <template>
   <div class="grid gap-6 lg:grid-cols-[1fr_360px]">
-    <!-- 左侧详情与文档区 -->
-    <section class="space-y-6">
+    <section class="space-y-6 min-w-0">
       <a-card class="detail-header-card">
+        <img v-if="plugin.cover" :src="coverUrl(plugin)" :alt="plugin.name" class="detail-cover" />
         <div class="flex flex-wrap items-center gap-2">
-          <a-tag v-if="plugin.pinned" color="cyan" size="small">精选推荐</a-tag>
-          <a-tag color="green" size="small">{{ statusTranslation[plugin.status] || plugin.status }}</a-tag>
+          <a-tag v-if="plugin.pinned" color="cyan" size="small">推荐</a-tag>
+          <a-tag :color="statusColor(plugin.status)" size="small">{{ statusLabels[plugin.status] }}</a-tag>
+          <a-tag v-if="plugin.stale" color="red" size="small">仓库失联</a-tag>
           <a-tag v-for="tag in plugin.tags" :key="tag" size="small"># {{ tag }}</a-tag>
         </div>
         <h1 class="mt-4 text-3xl font-extrabold tracking-tight text-[var(--registry-text)]">{{ plugin.name }}</h1>
@@ -45,21 +53,56 @@ function riskColor(value: RiskTag): string {
         <p class="mt-4 text-sm leading-relaxed text-[var(--registry-muted)] font-medium">{{ plugin.summary }}</p>
       </a-card>
 
-      <!-- 圆润毛玻璃选项卡 -->
+      <a-alert v-if="plugin.status === 'suspended'" type="error" title="已暂停分发">
+        该插件因安全或合规问题被暂停，网站不再提供下载。作者可通过申诉 Issue 申请恢复。
+      </a-alert>
+      <a-alert v-else-if="plugin.status === 'deprecated'" type="warning" title="已弃用">
+        作者或维护者已停止推荐该插件，可能不再更新。
+      </a-alert>
+      <a-alert v-if="plugin.stale" type="warning" title="源仓库无法访问">
+        源仓库已连续多日无法访问，以下数据来自最后一次成功同步。
+      </a-alert>
+      <a-alert v-if="plugin.warnings.length > 0" type="info" title="同步提示">
+        <ul class="warning-list">
+          <li v-for="(item, index) in plugin.warnings" :key="index">
+            <span class="mono text-[11px]">{{ item.code }}</span> {{ item.message }}
+          </li>
+        </ul>
+      </a-alert>
+
       <a-tabs default-active-key="readme" class="detail-tabs">
-        <a-tab-pane key="readme" title="📄 说明文档">
+        <a-tab-pane key="readme" title="说明文档">
           <a-card class="mt-3">
-            <div class="readme-content" v-html="plugin.readmeHtml" />
+            <div v-if="plugin.readmeHtml" class="readme-content" v-html="plugin.readmeHtml" />
+            <div v-else class="empty-hint">仓库没有 README。</div>
           </a-card>
         </a-tab-pane>
-        <a-tab-pane key="release" title="🚀 更新日志">
-          <a-card class="mt-3">
-            <div class="readme-content" v-html="plugin.latest.changelogHtml" />
-          </a-card>
+        <a-tab-pane key="release" :title="`版本历史 (${plugin.releases.length})`">
+          <div class="mt-3 space-y-4">
+            <a-card v-for="item in plugin.releases" :key="item.tag">
+              <div class="release-head">
+                <a :href="releaseUrl(item)" target="_blank" class="release-version">v{{ item.version }}</a>
+                <a-tag v-if="item === plugin.latest" color="green" size="small">最新稳定版</a-tag>
+                <a-tag v-if="item.prerelease" color="purple" size="small">测试版</a-tag>
+                <a-tag v-if="item.immutable" color="arcoblue" size="small">不可变</a-tag>
+                <span class="release-date">{{ formatDate(item.publishedAt) }}</span>
+                <a-button v-if="downloadable" :href="item.downloadUrl" size="mini" class="release-download">
+                  <template #icon><IconDownload /></template>
+                  {{ formatBytes(item.size) }}
+                </a-button>
+              </div>
+              <div v-if="item.changelogHtml" class="readme-content mt-3" v-html="item.changelogHtml" />
+              <div class="release-meta mono">
+                <span>versionCode {{ item.versionCode }}</span>
+                <span :title="item.commit">commit {{ item.commit.slice(0, 7) }}</span>
+                <span :title="item.sha256">sha256 {{ item.sha256.slice(0, 16) }}…</span>
+              </div>
+            </a-card>
+          </div>
         </a-tab-pane>
-        <a-tab-pane key="risk" title="⚠️ 安全风险">
+        <a-tab-pane key="risk" title="风险声明">
           <a-card class="mt-3">
-            <div v-if="plugin.risk && plugin.risk.length > 0" class="grid gap-4 md:grid-cols-2">
+            <div v-if="plugin.risk.length > 0" class="grid gap-4 md:grid-cols-2">
               <div v-for="item in plugin.risk" :key="item" class="rounded-xl border border-[var(--registry-border)] p-4 bg-slate-500/5">
                 <div class="flex items-center gap-2">
                   <IconExclamationCircle class="text-amber-500 icon-lead" />
@@ -68,95 +111,107 @@ function riskColor(value: RiskTag): string {
                 <p class="mt-3 text-xs leading-relaxed text-[var(--registry-muted)] font-medium">{{ riskDescriptions[item] }}</p>
               </div>
             </div>
-            <div v-else class="text-center py-8 text-sm text-[var(--registry-muted)]">
-              🛡️ 该插件无已知高危系统权限访问，可放心安装。
-            </div>
+            <div v-else class="empty-hint">作者未声明风险标签。</div>
+            <p class="mt-4 text-xs text-[var(--registry-muted)]">
+              风险标签由作者在 plugin.json 声明，维护者审核时可追加。插件代码在本机以完整权限运行，请只安装信任的插件。
+            </p>
           </a-card>
         </a-tab-pane>
       </a-tabs>
     </section>
 
-    <!-- 右侧高度整合的现代规格属性面板 -->
     <aside class="space-y-6">
-      <a-card title="⚙️ 规格与数据面板">
-        <!-- 版本与构建组 -->
+      <a-card title="规格与数据">
         <div class="aside-section">
           <h3 class="aside-section-title">
-            <IconTag class="text-[var(--registry-accent)] icon-lead" /> 
-            版本与构建
+            <IconTag class="text-[var(--registry-accent)] icon-lead" />
+            版本
           </h3>
           <div class="aside-grid">
             <div class="aside-item">
-              <span class="aside-label">最新版本</span>
-              <span class="aside-value font-semibold text-[var(--registry-accent)]">v{{ plugin.latest.version }}</span>
+              <span class="aside-label">稳定版</span>
+              <span class="aside-value font-semibold text-[var(--registry-accent)]">{{ plugin.latest ? `v${plugin.latest.version}` : "暂无" }}</span>
             </div>
-            <div class="aside-item">
-              <span class="aside-label">构建代码</span>
-              <span class="aside-value mono text-xs">{{ plugin.latest.versionCode }}</span>
+            <div v-if="plugin.latestBeta" class="aside-item">
+              <span class="aside-label">测试版</span>
+              <span class="aside-value font-semibold">v{{ plugin.latestBeta.version }}</span>
             </div>
-            <div class="aside-item">
-              <span class="aside-label">Git Tag</span>
-              <span class="aside-value mono text-xs">{{ plugin.latest.tag }}</span>
+            <div v-if="release" class="aside-item">
+              <span class="aside-label">包大小</span>
+              <span class="aside-value">{{ formatBytes(release.size) }}</span>
             </div>
-            <div class="aside-item">
+            <div v-if="release" class="aside-item">
               <span class="aside-label">SHA256</span>
-              <span class="aside-value mono text-[10px] break-all max-w-[200px] text-right">{{ plugin.latest.sha256.substring(0, 16) }}...</span>
+              <span class="aside-value mono text-[10px]" :title="release.sha256">{{ release.sha256.slice(0, 16) }}…</span>
+            </div>
+            <div class="aside-item">
+              <span class="aside-label">下载 / Stars</span>
+              <span class="aside-value flex items-center gap-2">
+                <span class="flex items-center gap-1"><IconDownload />{{ formatCount(plugin.downloads) }}</span>
+                <span class="flex items-center gap-1"><IconStar class="text-amber-500" />{{ formatCount(plugin.stars) }}</span>
+              </span>
+            </div>
+            <div class="aside-item">
+              <span class="aside-label">更新时间</span>
+              <span class="aside-value">{{ formatDate(plugin.updatedAt) }}</span>
             </div>
           </div>
         </div>
 
-        <!-- 兼容性组 -->
         <div class="aside-section mt-6 pt-5 border-t border-[var(--registry-border)]">
           <h3 class="aside-section-title">
-            <IconTool class="text-[var(--registry-accent)] icon-lead" /> 
-            运行兼容性
+            <IconTool class="text-[var(--registry-accent)] icon-lead" />
+            兼容性
           </h3>
           <div class="aside-grid">
             <div class="aside-item">
-              <span class="aside-label">App 兼容</span>
-              <span class="aside-value font-semibold">>= {{ plugin.compatibility.minAppVersion }}</span>
+              <span class="aside-label">主程序</span>
+              <span class="aside-value font-semibold">&gt;= {{ plugin.compatibility.minAppVersion }}</span>
             </div>
             <div class="aside-item">
               <span class="aside-label">Core API</span>
-              <span class="aside-value font-semibold">>= {{ plugin.compatibility.minCoreApiVersion }}</span>
+              <span class="aside-value font-semibold">&gt;= {{ plugin.compatibility.minCoreApiVersion }}</span>
             </div>
-            <div class="aside-item" v-if="plugin.compatibility.python">
-              <span class="aside-label">Python 环境</span>
-              <span class="aside-value font-medium text-emerald-500">{{ plugin.compatibility.python }}</span>
+            <div v-if="plugin.compatibility.python" class="aside-item">
+              <span class="aside-label">Python</span>
+              <span class="aside-value font-medium">{{ plugin.compatibility.python }}</span>
+            </div>
+            <div class="aside-item">
+              <span class="aside-label">设置页</span>
+              <span class="aside-value">{{ plugin.capabilities.hasAppSetting ? "有" : "无" }}</span>
             </div>
           </div>
         </div>
 
-        <!-- 作者信息组 -->
         <div class="aside-section mt-6 pt-5 border-t border-[var(--registry-border)]">
           <h3 class="aside-section-title">
-            <IconUser class="text-[var(--registry-accent)] icon-lead" /> 
-            开发与维护
+            <IconUser class="text-[var(--registry-accent)] icon-lead" />
+            作者
           </h3>
           <div class="aside-grid">
             <div class="aside-item">
-              <span class="aside-label">维护作者</span>
-              <span class="aside-value font-semibold text-[var(--registry-text)]">@{{ plugin.author.name }}</span>
-            </div>
-            <div class="aside-item" v-if="plugin.author.url">
-              <span class="aside-label">官方主页</span>
-              <span class="aside-value text-xs text-blue-500 truncate max-w-[180px] hover:underline">
-                <a :href="plugin.author.url" target="_blank">{{ plugin.author.url.replace('https://', '') }}</a>
+              <span class="aside-label">维护者</span>
+              <span class="aside-value font-semibold">
+                <a v-if="plugin.author.url" :href="plugin.author.url" target="_blank" rel="noopener noreferrer" class="hover:underline">@{{ plugin.author.name }}</a>
+                <template v-else>@{{ plugin.author.name }}</template>
               </span>
             </div>
           </div>
         </div>
 
-        <!-- 操作区 -->
         <div class="mt-8 space-y-3">
-          <a-button :href="plugin.latest.downloadUrl" target="_blank" type="primary" long class="action-btn">
+          <a-button v-if="release && downloadable" :href="release.downloadUrl" type="primary" long class="action-btn">
             <template #icon><IconDownload /></template>
-            下载插件包
+            下载 v{{ release.version }}
           </a-button>
           <a-button :href="plugin.repo" target="_blank" long class="action-btn">
             <template #icon><IconGithub /></template>
-            访问源码仓库
+            源码仓库
           </a-button>
+          <div class="flex justify-center gap-4 pt-1 text-xs">
+            <a :href="reportUrl" target="_blank" class="text-[var(--registry-muted)] hover:text-red-500">举报问题</a>
+            <a :href="appealUrl" target="_blank" class="text-[var(--registry-muted)] hover:text-[var(--registry-accent)]">申诉</a>
+          </div>
         </div>
       </a-card>
     </aside>
@@ -164,13 +219,64 @@ function riskColor(value: RiskTag): string {
 </template>
 
 <style scoped>
+.detail-cover {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.warning-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+}
+
+.empty-hint {
+  padding: 32px 0;
+  text-align: center;
+  font-size: 13px;
+  color: var(--registry-muted);
+}
+
+.release-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.release-version {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--registry-text);
+}
+
+.release-date {
+  font-size: 12px;
+  color: var(--registry-muted);
+}
+
+.release-download {
+  margin-left: auto;
+}
+
+.release-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 12px;
+  font-size: 11px;
+  color: var(--registry-muted);
+}
+
 .aside-section-title {
   display: flex;
   align-items: center;
   gap: 6px;
   font-size: 13px;
   font-weight: 750;
-  text-transform: uppercase;
   letter-spacing: 0.04em;
   margin: 0 0 12px 0;
   color: var(--registry-text);

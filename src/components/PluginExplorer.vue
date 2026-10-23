@@ -2,6 +2,7 @@
 import {
   IconCalendar,
   IconCode,
+  IconDownload,
   IconGithub,
   IconLaunch,
   IconSearch,
@@ -9,8 +10,9 @@ import {
 } from "@arco-design/web-vue/es/icon";
 import Fuse from "fuse.js";
 import { computed, ref } from "vue";
+import { coverUrl, formatCount, primaryRelease, riskColor, statusColor, statusLabels } from "@/lib/display";
 import { riskLabels } from "@/lib/risk";
-import type { PluginEntry, RiskTag, RegistryStatus } from "@/lib/types";
+import type { PluginEntry } from "@/lib/types";
 import { withBase } from "@/lib/utils";
 
 const props = defineProps<{
@@ -19,34 +21,39 @@ const props = defineProps<{
 
 const query = ref("");
 const activeTag = ref("all");
-const activeStatus = ref("all");
+const showDeprecated = ref(false);
 const sort = ref("recommended");
+
+const visiblePlugins = computed(() =>
+  props.plugins.filter((plugin) => plugin.status === "listed" || plugin.status === "deprecated")
+);
 
 const fuse = computed(
   () =>
-    new Fuse(props.plugins, {
+    new Fuse(visiblePlugins.value, {
       threshold: 0.32,
       keys: ["id", "name", "summary", "author.name", "tags"]
     })
 );
 
-const tags = computed(() => Array.from(new Set(props.plugins.flatMap((plugin) => plugin.tags))).sort());
-const statuses = computed(() => Array.from(new Set(props.plugins.map((plugin) => plugin.status))).sort() as RegistryStatus[]);
+const tags = computed(() => Array.from(new Set(visiblePlugins.value.flatMap((plugin) => plugin.tags))).sort());
+const deprecatedCount = computed(() => visiblePlugins.value.filter((plugin) => plugin.status === "deprecated").length);
 
 const filteredPlugins = computed(() => {
   const searched = query.value.trim()
     ? fuse.value.search(query.value.trim()).map((result) => result.item)
-    : [...props.plugins];
+    : [...visiblePlugins.value];
 
-  const filtered = searched.filter((plugin) => {
-    return (
+  const filtered = searched.filter(
+    (plugin) =>
       (activeTag.value === "all" || plugin.tags.includes(activeTag.value)) &&
-      (activeStatus.value === "all" || plugin.status === activeStatus.value)
-    );
-  });
+      (showDeprecated.value || plugin.status !== "deprecated")
+  );
 
+  if (sort.value === "recommended" && query.value.trim()) return filtered;
   return filtered.sort((a, b) => {
     if (sort.value === "stars") return b.stars - a.stars;
+    if (sort.value === "downloads") return b.downloads - a.downloads;
     if (sort.value === "name") return a.name.localeCompare(b.name, "zh-CN");
     if (sort.value === "updated") return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
     if (a.pinned !== b.pinned) return a.pinned ? -1 : 1;
@@ -54,39 +61,12 @@ const filteredPlugins = computed(() => {
     return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
   });
 });
-
-const statusTranslation: Record<RegistryStatus, string> = {
-  listed: "已上架",
-  deprecated: "已弃用",
-  hidden: "已隐藏",
-  suspended: "已暂停",
-  removed: "已失效"
-};
-
-function statusColor(value: RegistryStatus): string {
-  if (value === "listed") return "green";
-  if (value === "deprecated") return "orange";
-  if (value === "hidden") return "gray";
-  return "red";
-}
-
-function riskColor(value: RiskTag): string {
-  if (value === "automation") return "orange";
-  if (value === "account" || value === "process") return "red";
-  if (value === "network" || value === "ocr" || value === "yolo") return "blue";
-  return "gray";
-}
 </script>
 
 <template>
   <section class="directory-hero">
     <div class="directory-search">
-      <a-input-search
-        v-model="query"
-        allow-clear
-        size="large"
-        placeholder="搜索插件、作者、标签或 ID..."
-      >
+      <a-input-search v-model="query" allow-clear size="large" placeholder="搜索插件、作者、标签或 ID...">
         <template #button-icon>
           <IconSearch />
         </template>
@@ -94,38 +74,14 @@ function riskColor(value: RiskTag): string {
       <a-select v-model="sort" size="large" class="directory-sort" placeholder="排序">
         <a-option value="recommended">推荐优先</a-option>
         <a-option value="updated">最近更新</a-option>
+        <a-option value="downloads">最多下载</a-option>
         <a-option value="stars">最多 Stars</a-option>
         <a-option value="name">名称排序</a-option>
       </a-select>
     </div>
 
-    <!-- 过滤器面板 -->
     <div class="filter-strip">
-      <button
-        class="filter-chip"
-        :class="{ active: activeStatus === 'all' }"
-        type="button"
-        @click="activeStatus = 'all'"
-      >
-        所有状态
-      </button>
-      <button
-        v-for="item in statuses"
-        :key="item"
-        class="filter-chip"
-        :class="{ active: activeStatus === item }"
-        type="button"
-        @click="activeStatus = item"
-      >
-        {{ statusTranslation[item] || item }}
-      </button>
-      <span class="filter-divider" />
-      <button
-        class="filter-chip"
-        :class="{ active: activeTag === 'all' }"
-        type="button"
-        @click="activeTag = 'all'"
-      >
+      <button class="filter-chip" :class="{ active: activeTag === 'all' }" type="button" @click="activeTag = 'all'">
         所有标签
       </button>
       <button
@@ -138,15 +94,28 @@ function riskColor(value: RiskTag): string {
       >
         # {{ item }}
       </button>
+      <template v-if="deprecatedCount > 0">
+        <span class="filter-divider" />
+        <button
+          class="filter-chip"
+          :class="{ active: showDeprecated }"
+          type="button"
+          @click="showDeprecated = !showDeprecated"
+        >
+          显示已弃用 ({{ deprecatedCount }})
+        </button>
+      </template>
     </div>
   </section>
 
-  <!-- 极简流式总数 -->
   <div class="directory-meta">
-    <span>✨ 共找到 <b>{{ filteredPlugins.length }}</b> 款可用插件 (总计 {{ plugins.length }} 款)</span>
+    <span>共找到 <b>{{ filteredPlugins.length }}</b> 款插件</span>
   </div>
 
-  <!-- 插件列表网格 -->
+  <div v-if="filteredPlugins.length === 0" class="py-16 text-center text-sm text-[var(--registry-muted)]">
+    没有符合条件的插件。
+  </div>
+
   <section class="plugin-grid">
     <article
       v-for="(plugin, index) in filteredPlugins"
@@ -154,6 +123,9 @@ function riskColor(value: RiskTag): string {
       class="plugin-card"
       :style="{ '--delay': `${Math.min(index, 6) * 35}ms` }"
     >
+      <a v-if="plugin.cover" :href="withBase(`/plugins/${plugin.id}/`)" class="plugin-cover">
+        <img :src="coverUrl(plugin)" :alt="plugin.name" loading="lazy" />
+      </a>
       <div class="plugin-card-main">
         <div class="plugin-card-head">
           <div class="min-w-0">
@@ -165,37 +137,41 @@ function riskColor(value: RiskTag): string {
           </div>
           <div class="plugin-badges">
             <a-tag v-if="plugin.pinned" color="cyan" size="small">推荐</a-tag>
-            <a-tag :color="statusColor(plugin.status)" size="small">
-              {{ statusTranslation[plugin.status] || plugin.status }}
+            <a-tag v-if="plugin.status !== 'listed'" :color="statusColor(plugin.status)" size="small">
+              {{ statusLabels[plugin.status] }}
             </a-tag>
+            <a-tag v-if="plugin.stale" color="red" size="small">仓库失联</a-tag>
+            <a-tag v-if="!plugin.latest" color="purple" size="small">仅测试版</a-tag>
           </div>
         </div>
 
         <p class="plugin-summary">{{ plugin.summary }}</p>
 
-        <!-- 科技扁平 Tag 墙 -->
         <div class="plugin-tags">
           <a-tag v-for="item in plugin.tags" :key="item" size="small"># {{ item }}</a-tag>
           <a-tag v-for="item in plugin.risk" :key="item" :color="riskColor(item)" size="small">
-            ⚠️ {{ riskLabels[item] }}
+            {{ riskLabels[item] }}
           </a-tag>
         </div>
       </div>
 
-      <!-- 底部数据栏，用精美 Arco 图标替代说教文字 -->
       <div class="plugin-card-foot">
         <div class="plugin-stats">
-          <span class="flex items-center gap-1">
+          <span class="flex items-center gap-1" title="最新版本">
             <IconCode class="text-[var(--registry-muted)] icon-tweak" />
-            v{{ plugin.latest.version }}
+            v{{ primaryRelease(plugin)?.version }}
           </span>
-          <span class="flex items-center gap-1">
+          <span class="flex items-center gap-1" title="下载量">
+            <IconDownload class="text-[var(--registry-muted)] icon-tweak" />
+            {{ formatCount(plugin.downloads) }}
+          </span>
+          <span class="flex items-center gap-1" title="Stars">
             <IconStar class="text-amber-500 fill-amber-500 icon-tweak" />
-            {{ plugin.stars }}
+            {{ formatCount(plugin.stars) }}
           </span>
-          <span class="flex items-center gap-1">
+          <span class="flex items-center gap-1" title="更新时间">
             <IconCalendar class="text-[var(--registry-muted)] icon-tweak" />
-            {{ new Date(plugin.updatedAt).toLocaleDateString(undefined, { month: '2-digit', day: '2-digit' }) }}
+            {{ new Date(plugin.updatedAt).toLocaleDateString(undefined, { month: "2-digit", day: "2-digit" }) }}
           </span>
         </div>
         <a-space :size="8">
@@ -218,6 +194,23 @@ function riskColor(value: RiskTag): string {
 </template>
 
 <style scoped>
+.plugin-cover {
+  display: block;
+  margin: -1px -1px 12px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: color-mix(in srgb, var(--registry-border) 30%, transparent);
+}
+
+.plugin-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .plugin-action-btn {
   display: inline-flex !important;
   align-items: center !important;

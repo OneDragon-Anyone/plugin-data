@@ -7,7 +7,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "registry:build": "tsx scripts/build-registry.ts"
+    "registry:build": "tsx scripts/build-registry.ts",
+    "registry:check": "tsx scripts/check-registry.ts",
+    "registry:bot": "tsx scripts/submission-bot.ts",
+    "check": "tsc --noEmit"
   },
   "dependencies": {
     "@arco-design/web-vue": "^2.58.0",
@@ -19,12 +22,14 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "fuse.js": "^7.1.0",
+    "sanitize-html": "^2.18.1",
     "tailwind-merge": "^2.6.0",
     "tailwindcss": "^3.4.17",
     "vue": "^3.5.13"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
+    "@types/sanitize-html": "^2.16.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   },

@@ -1,0 +1,22 @@
+{
+  "reservedIds": [
+    "one_dragon",
+    "one_dragon_qt",
+    "zzz_od",
+    "plugins",
+    "plugin",
+    "test",
+    "example",
+    "sample_plugin"
+  ],
+  "bannedRepoIds": [],
+  "bannedUsers": [],
+  "maxZipBytes": 52428800,
+  "maxCoverBytes": 524288,
+  "keepReleases": 10,
+  "repoUnreachableDays": 7,
+  "rateLimit": {
+    "maxOpenSubmissionsPerUser": 3,
+    "windowHours": 24
+  }
+}

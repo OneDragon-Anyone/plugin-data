@@ -6,9 +6,11 @@ node_modules/
 dist/
 
 # Generated registry API
-public/plugins.json
-public/search-index.json
-public/plugins/
+public/api/
+
+# CI working directories
+.lock/
+.plugin-template/
 
 # Logs
 *.log

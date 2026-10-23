@@ -1,0 +1,19 @@
+name: 举报插件
+description: 插件存在恶意行为、侵权或严重问题。
+title: "[report] "
+labels:
+  - report
+body:
+  - type: input
+    id: plugin_id
+    attributes:
+      label: 插件 ID
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 问题描述
+      description: 请附上版本号、相关代码位置或复现方式。
+    validations:
+      required: true
