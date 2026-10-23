@@ -1,19 +1,11 @@
 ---
-import SubmissionForm from "@/components/SubmissionForm.vue";
-import BaseLayout from "@/layouts/BaseLayout.astro";
+import AppLayout from "@/layouts/AppLayout.astro";
+import SubmissionApp from "@/components/app/SubmissionApp";
 ---
 
-<BaseLayout title="提交" description="提交 ZZZOD 插件">
-  <section class="grid gap-5 lg:grid-cols-[280px_1fr]">
-    <aside>
-      <h1 class="page-title">提交</h1>
-      <p class="page-subtitle">GitHub Issue submission.</p>
-      <div class="mt-4 flex flex-wrap gap-2 rounded border border-[var(--registry-border)] bg-[var(--registry-surface)] p-3">
-        {["plugin.json", "GitHub Release", "*_const.py", "README"].map((item) => (
-          <span class="rounded bg-[var(--color-fill-2)] px-2 py-1 text-xs">{item}</span>
-        ))}
-      </div>
-    </aside>
-    <SubmissionForm client:load />
-  </section>
-</BaseLayout>
+<AppLayout
+  title="提交插件 · ZZZOD Plugins"
+  description="预检 GitHub 仓库并提交 ZZZOD 插件收录申请。"
+>
+  <SubmissionApp client:load />
+</AppLayout>

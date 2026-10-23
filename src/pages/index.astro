@@ -1,32 +1,14 @@
 ---
-import PluginExplorer from "@/components/PluginExplorer.vue";
-import BaseLayout from "@/layouts/BaseLayout.astro";
+import AppLayout from "@/layouts/AppLayout.astro";
+import MarketApp from "@/components/app/MarketApp";
 import { getPlugins } from "@/lib/data";
 
 const plugins = await getPlugins();
-const listedCount = plugins.filter((plugin) => plugin.status === "listed").length;
-const pinnedCount = plugins.filter((plugin) => plugin.pinned).length;
-const totalStars = plugins.reduce((sum, plugin) => sum + plugin.stars, 0);
 ---
 
-<BaseLayout title="插件" description="ZZZOD 插件目录">
-  <section class="home-head">
-    <div class="flex flex-col gap-1.5">
-      <h1 class="page-title">ZZZOD Plugins</h1>
-      <p class="text-[11px] font-bold uppercase tracking-widest text-[var(--registry-accent)]">OneDragon Plugin Hub</p>
-    </div>
-    <div class="home-stats">
-      {[
-        ["TOTAL", plugins.length],
-        ["LISTED", listedCount],
-        ["PINNED", pinnedCount]
-      ].map(([label, value]) => (
-        <div class="stat-card">
-          <span class="text-[9px] font-extrabold tracking-widest text-[var(--registry-muted)]">{label}</span>
-          <span class="text-sm font-extrabold text-[var(--registry-text)]">{value}</span>
-        </div>
-      ))}
-    </div>
-  </section>
-  <PluginExplorer client:load plugins={plugins} />
-</BaseLayout>
+<AppLayout
+  title="插件市场 · ZZZOD Plugins"
+  description="发现、安装与提交 ZZZ OneDragon 插件。"
+>
+  <MarketApp client:load plugins={plugins} />
+</AppLayout>

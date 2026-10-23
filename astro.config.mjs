@@ -1,5 +1,5 @@
+import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
-import vue from "@astrojs/vue";
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
@@ -7,9 +7,7 @@ export default defineConfig({
   base: "/plugin-registry",
   output: "static",
   integrations: [
-    vue({
-      appEntrypoint: "./src/vue-app.ts"
-    }),
+    react(),
     tailwind({
       applyBaseStyles: false
     })
