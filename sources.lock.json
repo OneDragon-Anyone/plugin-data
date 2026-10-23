@@ -49,5 +49,46 @@
       }
     },
     "rejected": {}
+  },
+  "demo_plugin": {
+    "repoId": 1431540916,
+    "repo": "A-nony-mous/zzzod-demo-plugin",
+    "maxVersionCode": 1,
+    "releases": {
+      "v0.1.0": {
+        "version": "0.1.0",
+        "versionCode": 1,
+        "commit": "3e87c9ecb528849e243b8c4480ee17796d10a62a",
+        "assetId": 670381993,
+        "assetName": "demo_plugin.zip",
+        "size": 3177,
+        "sha256": "31fcc03c3a1a6c1d8159dcd968880e23b9415137c38bdda8f5f0b2db7a83a407",
+        "verifiedAt": "2026-10-23T21:02:35.502Z",
+        "hasAppSetting": true,
+        "cover": "",
+        "manifest": {
+          "id": "demo_plugin",
+          "name": "演示插件",
+          "summary": "用于验证插件仓库收录与发版流程的演示插件。",
+          "version": "0.1.0",
+          "versionCode": 1,
+          "defaultGroup": false,
+          "needNotify": false,
+          "author": {
+            "name": "A-nony-mous",
+            "url": "https://github.com/A-nony-mous"
+          },
+          "homepage": "https://github.com/A-nony-mous/zzzod-demo-plugin",
+          "risk": [],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      }
+    },
+    "rejected": {}
   }
 }
