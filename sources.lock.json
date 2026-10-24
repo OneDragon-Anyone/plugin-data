@@ -130,7 +130,7 @@
   "inventory_scan": {
     "repoId": 1432190207,
     "repo": "idk500/zzzod-plugin-inventory-scan",
-    "maxVersionCode": 7,
+    "maxVersionCode": 8,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -359,6 +359,41 @@
           "summary": "自动翻页扫描仓库中的代理人/驱动盘/音擎并 OCR 导出清单（输出到 .debug/inventory_exports）。",
           "version": "1.0.6",
           "versionCode": 7,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-inventory-scan",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      },
+      "v1.0.7": {
+        "version": "1.0.7",
+        "versionCode": 8,
+        "commit": "adc60087a16bac2309f9331bcc7910662e9f15fb",
+        "assetId": 672912847,
+        "assetName": "inventory_scan.zip",
+        "size": 563003,
+        "sha256": "c3021b91d10bb47ab93365393e7ac69a5e865fead1bab9cfce7a6966ed7957ba",
+        "verifiedAt": "2026-10-24T18:30:59.301Z",
+        "hasAppSetting": false,
+        "cover": "",
+        "manifest": {
+          "id": "inventory_scan",
+          "name": "仓库扫描器",
+          "summary": "自动翻页扫描仓库中的代理人/驱动盘/音擎并 OCR 导出清单（输出到 .debug/inventory_exports）。",
+          "version": "1.0.7",
+          "versionCode": 8,
           "defaultGroup": true,
           "needNotify": true,
           "author": {
