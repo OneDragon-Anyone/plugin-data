@@ -1,0 +1,13 @@
+{
+  "id": "zode_switcher",
+  "repo": "idk500/zzzod-plugin-zode-switcher",
+  "repoId": 1430594678,
+  "tags": ["utility", "source-switch"],
+  "extraRisk": [],
+  "status": "listed",
+  "pinned": false,
+  "review": {
+    "pr": 2,
+    "submittedBy": "idk500"
+  }
+}
