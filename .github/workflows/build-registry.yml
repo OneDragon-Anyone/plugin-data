@@ -1,0 +1,23 @@
+name: Build Registry
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: build-registry
+  cancel-in-progress: false
+
+jobs:
+  build:
+    uses: OneDragon-Anyone/plugin-registry/.github/workflows/reusable-build.yml@v1

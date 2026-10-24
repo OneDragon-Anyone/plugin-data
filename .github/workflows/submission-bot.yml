@@ -1,0 +1,28 @@
+name: Submission Bot
+
+on:
+  issues:
+    types: [opened, edited, reopened]
+  issue_comment:
+    types: [created]
+  pull_request_target:
+    types: [closed]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  statuses: write
+  actions: write
+
+concurrency:
+  group: submission-${{ github.event.issue.number || github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  bot:
+    if: >-
+      github.event_name != 'issue_comment' ||
+      (!github.event.issue.pull_request && startsWith(github.event.comment.body, '/recheck')) ||
+      (!github.event.issue.pull_request && startsWith(github.event.comment.body, '/sync'))
+    uses: OneDragon-Anyone/plugin-registry/.github/workflows/reusable-submission-bot.yml@v1

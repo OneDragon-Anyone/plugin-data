@@ -1,0 +1,18 @@
+name: 申诉
+description: 对拒绝收录、下架或封禁的决定提出申诉。
+title: "[appeal] "
+labels:
+  - appeal
+body:
+  - type: input
+    id: target
+    attributes:
+      label: 插件 ID 或相关 Issue/PR 链接
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 申诉理由
+    validations:
+      required: true
