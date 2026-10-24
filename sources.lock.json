@@ -2,8 +2,44 @@
   "life_on_line": {
     "repoId": 1430595926,
     "repo": "idk500/zzzod-plugin-life-on-line",
-    "maxVersionCode": 0,
-    "releases": {},
+    "maxVersionCode": 2,
+    "releases": {
+      "v1.0.1": {
+        "version": "1.0.1",
+        "versionCode": 2,
+        "commit": "e3e6a402060efe3179db7c119918d806db78ca48",
+        "assetId": 671325236,
+        "assetName": "life_on_line.zip",
+        "size": 8118,
+        "sha256": "33fae1e5fcc8a011b969212d0763bc2167a8f65a220ef48f5cbdee89e018d7ef",
+        "verifiedAt": "2026-10-24T09:31:05.818Z",
+        "hasAppSetting": true,
+        "cover": "",
+        "manifest": {
+          "id": "life_on_line",
+          "name": "真·拿命验收",
+          "summary": "一直刷拿命验收用于换取微量丁尼；编队需 1 号位妮可、2 号位比利。",
+          "version": "1.0.1",
+          "versionCode": 2,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "DoctorReid（原作）/ idk500（插件化）",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-life-on-line",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      }
+    },
     "rejected": {}
   },
   "music_game_26": {
