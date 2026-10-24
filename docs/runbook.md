@@ -87,11 +87,14 @@ git push origin v1.0.0
 
 GitHub Actions 会自动打包并在此 tag 对应的 Release 页面下上传名为 `<id>.zip` 的安装包。
 
+> [!WARNING]
+> 推完 tag 后请到仓库的 Releases 页面确认两件事：该版本没有 `Draft` 标记（**草稿不会被收录，也不会报错**），且附件里有 `<id>.zip`。
+
 ---
 
 ## 第四步：首次申请收录
 
-当仓库生成了第一个附带 `<id>.zip` 的 Release 后，即可申请收录：
+当仓库有了第一个**已发布**且附带 `<id>.zip` 的 Release 后，即可申请收录：
 
 1. **发起申请**：
    - 打开 [plugin-data Issue 页面](https://github.com/OneDragon-Anyone/plugin-data/issues/new/choose)；
@@ -121,3 +124,4 @@ GitHub Actions 会自动打包并在此 tag 对应的 Release 页面下上传名
 1. **发新版必须递增 `versionCode`**：若发布了新 tag 但整数版本号没变，系统会自动跳过不更新。
 2. **切勿直接覆盖同版本的 zip 附件**：为保障安全，系统已收录的版本会记录文件指纹。如果需要修改任何代码或资源，请发一个新版本号的 Release，切勿在旧 Release 下删除重新上传。
 3. **附件命名需一致**：自动打包会生成 `<id>.zip`，如手动上传必须确保文件名与插件 ID 严格一致。
+4. **发版后插件市场里没出现？** 在本仓库 **Actions** 的 [Build Registry](https://github.com/OneDragon-Anyone/plugin-data/actions/workflows/build-registry.yml) 里，点击最近一次运行记录，Summary 会逐条列出每个插件的结果，没被收录的会写明原因。
