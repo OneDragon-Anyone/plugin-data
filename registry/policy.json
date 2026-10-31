@@ -18,5 +18,10 @@
   "rateLimit": {
     "maxOpenSubmissionsPerUser": 3,
     "windowHours": 24
+  },
+  "mirror": {
+    "enabled": false,
+    "repo": "OneDragon-Anything/plugin-mirror",
+    "branch": "main"
   }
 }
