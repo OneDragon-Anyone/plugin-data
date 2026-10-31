@@ -1,0 +1,19 @@
+{
+  "id": "bagel",
+  "repo": "Cora093/zzz-bagel-plugin",
+  "repoId": 1440859224,
+  "tags": [
+    "automation",
+    "route",
+    "farming",
+    "route-editor"
+  ],
+  "extraRisk": [],
+  "status": "listed",
+  "pinned": false,
+  "review": {
+    "issue": 17,
+    "pr": 18,
+    "submittedBy": "Cora093"
+  }
+}
