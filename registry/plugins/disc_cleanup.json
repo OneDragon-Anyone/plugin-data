@@ -1,0 +1,14 @@
+{
+  "id": "disc_cleanup",
+  "repo": "idk500/zzzod-plugin-disc-cleanup",
+  "repoId": 1440878973,
+  "tags": [],
+  "extraRisk": [],
+  "status": "listed",
+  "pinned": false,
+  "review": {
+    "issue": 10,
+    "pr": 14,
+    "submittedBy": "idk500"
+  }
+}
