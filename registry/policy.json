@@ -21,7 +21,7 @@
   },
   "mirror": {
     "enabled": false,
-    "repo": "OneDragon-Anything/plugin-mirror",
+    "repo": "OneDragon-Anyone/plugin-mirror",
     "branch": "main"
   }
 }
