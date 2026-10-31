@@ -20,7 +20,7 @@
     "windowHours": 24
   },
   "mirror": {
-    "enabled": false,
+    "enabled": true,
     "repo": "OneDragon-Anyone/plugin-mirror",
     "branch": "main"
   }
