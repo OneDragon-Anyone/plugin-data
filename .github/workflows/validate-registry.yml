@@ -10,4 +10,4 @@ jobs:
   validate:
     # 与机器人写入的 commit status 同名，供数据仓 ruleset 配置必需检查
     name: registry/validate
-    uses: OneDragon-Anyone/plugin-registry/.github/workflows/reusable-validate.yml@v1
+    uses: OneDragon-Anyone/plugin-market/.github/workflows/reusable-validate.yml@v1

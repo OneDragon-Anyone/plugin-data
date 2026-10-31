@@ -68,7 +68,7 @@
 
 ## 4. 本地测试与命令
 
-代码在 [plugin-registry](https://github.com/OneDragon-Anyone/plugin-registry)（构建脚本、机器人、WebUI）。clone 本数据仓到旁边后，在代码仓目录下：
+代码在 [plugin-market](https://github.com/OneDragon-Anyone/plugin-market)（构建脚本、机器人、WebUI）。clone 本数据仓到旁边后，在代码仓目录下：
 
 ```shell
 pnpm registry:check                      # 校验本地 registry 规则

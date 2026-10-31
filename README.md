@@ -1,11 +1,11 @@
-# ZZZOD Plugin Data (数据仓)
+# ZZZOD 插件数据仓
 
-ZZZOD 官方插件应用中心的数据仓库，用于存储所有已收录插件的配置、审核决策与在线索引。
+存放所有已收录插件的配置、审核决策与在线索引。
 
 - 🌐 **在线插件市场**：[https://onedragon-anyone.github.io/plugin-data/](https://onedragon-anyone.github.io/plugin-data/)
 - 📖 **开发者发版指南**：[docs/runbook.md](docs/runbook.md)
 - 🛠️ **仓库维护手册**：[docs/maintainer.md](docs/maintainer.md)
-- 💻 **核心代码仓**：[OneDragon-Anyone/plugin-registry](https://github.com/OneDragon-Anyone/plugin-registry)（前端界面与自动化机器人）
+- 💻 **配套市场仓**：[OneDragon-Anyone/plugin-market](https://github.com/OneDragon-Anyone/plugin-market)（自动审核、构建索引、渲染市场网页与镜像分发）
 
 ---
 
