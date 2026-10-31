@@ -37,7 +37,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/life_on_line/life_on_line-2.zip"
       }
     },
     "rejected": {}
@@ -81,7 +82,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/music_game_26/music_game_26-2.zip"
       }
     },
     "rejected": {}
@@ -165,7 +167,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-1.zip"
       },
       "v1.0.1": {
         "version": "1.0.1",
@@ -200,7 +203,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-2.zip"
       },
       "v1.0.2": {
         "version": "1.0.2",
@@ -235,7 +239,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-3.zip"
       },
       "v1.0.3": {
         "version": "1.0.3",
@@ -270,7 +275,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-4.zip"
       },
       "v1.0.4": {
         "version": "1.0.4",
@@ -305,7 +311,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-5.zip"
       },
       "v1.0.5": {
         "version": "1.0.5",
@@ -340,7 +347,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-6.zip"
       },
       "v1.0.6": {
         "version": "1.0.6",
@@ -375,7 +383,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-7.zip"
       },
       "v1.0.7": {
         "version": "1.0.7",
@@ -410,7 +419,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-8.zip"
       },
       "v1.0.8": {
         "version": "1.0.8",
@@ -445,7 +455,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-9.zip"
       },
       "v1.0.9": {
         "version": "1.0.9",
@@ -480,7 +491,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-10.zip"
       },
       "v1.1.0": {
         "version": "1.1.0",
@@ -515,7 +527,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-13.zip"
       }
     },
     "rejected": {}
