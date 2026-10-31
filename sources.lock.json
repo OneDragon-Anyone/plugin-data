@@ -568,5 +568,51 @@
       }
     },
     "rejected": {}
+  },
+  "bagel": {
+    "repoId": 1440859224,
+    "repo": "Cora093/zzz-bagel-plugin",
+    "maxVersionCode": 1,
+    "releases": {
+      "v0.1.0": {
+        "version": "0.1.0",
+        "versionCode": 1,
+        "commit": "3145b62078f218829dcab16ff7fb26b6a54bff26",
+        "assetId": 695517364,
+        "assetName": "bagel.zip",
+        "size": 911956,
+        "sha256": "6fb16ead7782727304975cba3801ad12e79370ec65559e787fac7fbea12e666a",
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/bagel/bagel-1.zip",
+        "verifiedAt": "2026-10-31T16:03:19.097Z",
+        "hasAppSetting": true,
+        "cover": "bagel-1.webp",
+        "manifest": {
+          "id": "bagel",
+          "name": "贝果计划",
+          "summary": "在高危雅努斯幻境按自录路线跑图、收集物品、清理仓库并结算的完整自动化流程。",
+          "version": "0.1.0",
+          "versionCode": 1,
+          "defaultGroup": false,
+          "needNotify": true,
+          "author": {
+            "name": "Cora、kawayiYokami、ShadowLemoon、PoorKid1112、RRRR623、wusaqi、Ada、A-nony-mous",
+            "url": "https://github.com/kawayiYokami"
+          },
+          "homepage": "https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon",
+          "risk": [
+            "automation",
+            "ocr",
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "cover": "assets/cover.webp"
+        }
+      }
+    },
+    "rejected": {}
   }
 }
