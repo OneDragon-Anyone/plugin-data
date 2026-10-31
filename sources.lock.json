@@ -132,7 +132,7 @@
   "inventory_scan": {
     "repoId": 1432190207,
     "repo": "idk500/zzzod-plugin-inventory-scan",
-    "maxVersionCode": 13,
+    "maxVersionCode": 14,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -529,6 +529,42 @@
           "apps": []
         },
         "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-13.zip"
+      },
+      "v1.1.1": {
+        "version": "1.1.1",
+        "versionCode": 14,
+        "commit": "c36ea716ab1e455e4c9b4be1deef7bc5c824a665",
+        "assetId": 695707255,
+        "assetName": "inventory_scan.zip",
+        "size": 565940,
+        "sha256": "e5553ab63747605e813faf9011b0a63bb8fd2a4825f50cd94828599bd59f2d18",
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-14.zip",
+        "verifiedAt": "2026-10-31T15:25:06.394Z",
+        "hasAppSetting": false,
+        "cover": "",
+        "manifest": {
+          "id": "inventory_scan",
+          "name": "仓库扫描器",
+          "summary": "自动翻页扫描仓库中的代理人/驱动盘/音擎并 OCR 导出清单（输出到 .debug/inventory_exports）。",
+          "version": "1.1.1",
+          "versionCode": 14,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-inventory-scan",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
       }
     },
     "rejected": {}
