@@ -1,0 +1,14 @@
+{
+  "id": "agent_train",
+  "repo": "idk500/zzzod-plugin-agent-train",
+  "repoId": 1440879110,
+  "tags": [],
+  "extraRisk": [],
+  "status": "listed",
+  "pinned": false,
+  "review": {
+    "issue": 12,
+    "pr": 16,
+    "submittedBy": "idk500"
+  }
+}
