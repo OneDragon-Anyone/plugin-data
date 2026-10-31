@@ -1,0 +1,13 @@
+{
+  "id": "battery_exchange",
+  "repo": "idk500/zzzod-plugin-battery-exchange",
+  "repoId": 1440879046,
+  "tags": [],
+  "extraRisk": [],
+  "status": "listed",
+  "pinned": false,
+  "review": {
+    "issue": 11,
+    "submittedBy": "idk500"
+  }
+}
