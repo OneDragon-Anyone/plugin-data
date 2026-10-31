@@ -1,0 +1,18 @@
+{
+  "id": "inventory_scan",
+  "repo": "idk500/zzzod-plugin-inventory-scan",
+  "repoId": 1432190207,
+  "tags": [
+    "utility",
+    "ocr",
+    "inventory"
+  ],
+  "extraRisk": [],
+  "status": "listed",
+  "pinned": false,
+  "review": {
+    "issue": 8,
+    "pr": 9,
+    "submittedBy": "idk500"
+  }
+}
