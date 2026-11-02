@@ -2,7 +2,7 @@
   "life_on_line": {
     "repoId": 1430595926,
     "repo": "idk500/zzzod-plugin-life-on-line",
-    "maxVersionCode": 2,
+    "maxVersionCode": 3,
     "releases": {
       "v1.0.1": {
         "version": "1.0.1",
@@ -39,6 +39,43 @@
           "apps": []
         },
         "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/life_on_line/life_on_line-2.zip"
+      },
+      "v1.0.2": {
+        "version": "1.0.2",
+        "versionCode": 3,
+        "commit": "424f18d7bb64df410d1349a335283854359f643e",
+        "assetId": 701795809,
+        "assetName": "life_on_line.zip",
+        "size": 155076,
+        "sha256": "c0063598a635ade68cb8babe66322e98e7812549f89205a0257b01813d0adf81",
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/life_on_line/life_on_line-3.zip",
+        "verifiedAt": "2026-11-02T18:18:30.884Z",
+        "hasAppSetting": true,
+        "cover": "life_on_line-3.png",
+        "manifest": {
+          "id": "life_on_line",
+          "name": "真·拿命验收",
+          "summary": "一直刷拿命验收用于换取微量丁尼；编队需 1 号位妮可、2 号位比利。",
+          "cover": "assets/ui/cover.png",
+          "version": "1.0.2",
+          "versionCode": 3,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "DoctorReid（原作）/ idk500（插件化）",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-life-on-line",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
       }
     },
     "rejected": {}
@@ -132,7 +169,7 @@
   "inventory_scan": {
     "repoId": 1432190207,
     "repo": "idk500/zzzod-plugin-inventory-scan",
-    "maxVersionCode": 15,
+    "maxVersionCode": 18,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -601,6 +638,80 @@
           },
           "apps": []
         }
+      },
+      "v1.2.1": {
+        "version": "1.2.1",
+        "versionCode": 17,
+        "commit": "deb141984f55f795bb1a2651a09c5e6418ebaf49",
+        "assetId": 701795207,
+        "assetName": "inventory_scan.zip",
+        "size": 750695,
+        "sha256": "53a12308c71a05bbbd9c484fb21e344ff06768e3c9ecb322094158817938f807",
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-17.zip",
+        "verifiedAt": "2026-11-02T18:18:30.884Z",
+        "hasAppSetting": false,
+        "cover": "inventory_scan-17.png",
+        "manifest": {
+          "id": "inventory_scan",
+          "name": "仓库扫描器",
+          "summary": "自动翻页扫描仓库中的代理人/驱动盘/音擎并 OCR 导出清单（输出到 .debug/inventory_exports）。",
+          "cover": "assets/ui/cover.png",
+          "version": "1.2.1",
+          "versionCode": 17,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-inventory-scan",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      },
+      "v1.3.0": {
+        "version": "1.3.0",
+        "versionCode": 18,
+        "commit": "250d34a0a4db726c61b9a591f4a37b4867bfc9ad",
+        "assetId": 702137529,
+        "assetName": "inventory_scan.zip",
+        "size": 754623,
+        "sha256": "d17c847315f3820f6ddefa7114894fb3b1c1bee10e3402533fc03c27a768cda2",
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-18.zip",
+        "verifiedAt": "2026-11-02T18:18:30.884Z",
+        "hasAppSetting": false,
+        "cover": "inventory_scan-18.png",
+        "manifest": {
+          "id": "inventory_scan",
+          "name": "仓库扫描器",
+          "summary": "自动翻页扫描仓库中的代理人/驱动盘/音擎并 OCR 导出清单（输出到 .debug/inventory_exports）。",
+          "cover": "assets/ui/cover.png",
+          "version": "1.3.0",
+          "versionCode": 18,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-inventory-scan",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
       }
     },
     "rejected": {}
@@ -608,7 +719,7 @@
   "bagel": {
     "repoId": 1440859224,
     "repo": "Cora093/zzz-bagel-plugin",
-    "maxVersionCode": 3,
+    "maxVersionCode": 4,
     "releases": {
       "v0.1.0": {
         "version": "0.1.0",
@@ -723,6 +834,44 @@
           },
           "cover": "assets/cover.webp"
         }
+      },
+      "v0.3.0": {
+        "version": "0.3.0",
+        "versionCode": 4,
+        "commit": "e65622d7981e2c7c4f4f217a4c356c50bb54e6c2",
+        "assetId": 702231344,
+        "assetName": "bagel.zip",
+        "size": 912226,
+        "sha256": "f78e0fa710bed73fc37d542f4a71db96d8b60e8cd14dc89efc296f4ac6313fd9",
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/bagel/bagel-4.zip",
+        "verifiedAt": "2026-11-02T18:18:30.884Z",
+        "hasAppSetting": true,
+        "cover": "bagel-4.webp",
+        "manifest": {
+          "id": "bagel",
+          "name": "贝果计划",
+          "summary": "贝果计划自动跑刀：按自录路线跑图、收集物品、清理仓库并结算的完整自动化流程。",
+          "version": "0.3.0",
+          "versionCode": 4,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "Cora、kawayiYokami、ShadowLemoon、PoorKid1112、RRRR623、wusaqi、Ada、A-nony-mous",
+            "url": "https://github.com/kawayiYokami"
+          },
+          "homepage": "https://github.com/Cora093/zzz-bagel-plugin",
+          "risk": [
+            "automation",
+            "ocr",
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "cover": "assets/cover.webp"
+        }
       }
     },
     "rejected": {}
@@ -730,7 +879,7 @@
   "battery_exchange": {
     "repoId": 1440879046,
     "repo": "idk500/zzzod-plugin-battery-exchange",
-    "maxVersionCode": 3,
+    "maxVersionCode": 4,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -822,6 +971,43 @@
           "summary": "角色培养不再消耗体力时，把储蓄电量自动兑换为可存储道具：以太电池（恢复60电量，流程复用框架已验证的快捷手册→[获取]合成→道具处理链路）或储值电卡（材料副本快速刷取，入口待实机映射）。配置：目标物品/单轮张数上限/储蓄电量保底线。probe 模式默认开启。",
           "version": "1.0.2",
           "versionCode": 3,
+          "defaultGroup": false,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-inventory-scan",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      },
+      "v1.0.3": {
+        "version": "1.0.3",
+        "versionCode": 4,
+        "commit": "5c649503f28aa1e8fbb514ef095d9d93ec73e7ad",
+        "assetId": 701795312,
+        "assetName": "battery_exchange.zip",
+        "size": 163488,
+        "sha256": "fa72e3efdd736d5401eb0c3631d2ffc66ea89608566112018f341724f8621bd9",
+        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/battery_exchange/battery_exchange-4.zip",
+        "verifiedAt": "2026-11-02T18:18:30.884Z",
+        "hasAppSetting": false,
+        "cover": "battery_exchange-4.png",
+        "manifest": {
+          "id": "battery_exchange",
+          "name": "自动兑换电卡",
+          "summary": "角色培养不再消耗体力时，把储蓄电量自动兑换为可存储道具：以太电池（恢复60电量，流程复用框架已验证的快捷手册→[获取]合成→道具处理链路）或储值电卡（材料副本快速刷取，入口待实机映射）。配置：目标物品/单轮张数上限/储蓄电量保底线。probe 模式默认开启。",
+          "cover": "assets/ui/cover.png",
+          "version": "1.0.3",
+          "versionCode": 4,
           "defaultGroup": false,
           "needNotify": true,
           "author": {
