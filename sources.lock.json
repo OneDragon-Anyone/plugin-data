@@ -79,7 +79,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 12
+    "cnbDownloads": 16
   },
   "music_game_26": {
     "repoId": 1244891200,
@@ -125,7 +125,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 4
+    "cnbDownloads": 8
   },
   "demo_plugin": {
     "repoId": 1431540916,
@@ -754,7 +754,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 27
+    "cnbDownloads": 50
   },
   "bagel": {
     "repoId": 1440859224,
@@ -953,7 +953,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 30
+    "cnbDownloads": 131
   },
   "battery_exchange": {
     "repoId": 1440879046,
@@ -1107,12 +1107,12 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 12
+    "cnbDownloads": 19
   },
   "graphics_restore": {
     "repoId": 1442127559,
     "repo": "kinggod899/graphics_restore",
-    "maxVersionCode": 2,
+    "maxVersionCode": 4,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -1189,15 +1189,91 @@
           "apps": []
         },
         "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/48/b8/880173af64ae8792436b6952abdabd50710731dddb85ffe0a1cffd10b9ae/graphics_restore-1.1.0.zip"
+      },
+      "v1.2.0": {
+        "version": "1.2.0",
+        "versionCode": 3,
+        "commit": "278f40570c70a06585dfb97b244cc4f382c72c56",
+        "assetId": 704866238,
+        "assetName": "graphics_restore.zip",
+        "size": 48320,
+        "sha256": "e63ce86988d0445b6b5b38afe87ecf19b57748a5127f5943a0fa297c3d7f8c8b",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/48/23/c4e1fa1c07582a5f4e62712a785c7490bd83bb95c9b276e711535b6deb30/graphics_restore-1.2.0.zip",
+        "verifiedAt": "2026-11-03T09:29:37.441Z",
+        "hasAppSetting": true,
+        "cover": "graphics_restore-3.png",
+        "manifest": {
+          "id": "graphics_restore",
+          "name": "恢复游戏画质",
+          "summary": "把帧率、渲染精度、抗锯齿恢复成「降低游戏画质」记录的原始档位，没有记录时用兜底档位。",
+          "version": "1.2.0",
+          "versionCode": 3,
+          "defaultGroup": true,
+          "needNotify": false,
+          "author": {
+            "name": "kinggod899",
+            "url": "https://github.com/kinggod899"
+          },
+          "homepage": "https://github.com/kinggod899/graphics_restore",
+          "cover": "cover.png",
+          "risk": [
+            "automation",
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "2.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      },
+      "v1.3.0": {
+        "version": "1.3.0",
+        "versionCode": 4,
+        "commit": "61d9f6da4d9be757513bb41afdd316f190b48654",
+        "assetId": 704970794,
+        "assetName": "graphics_restore.zip",
+        "size": 50078,
+        "sha256": "45aa40920795793848e77202caa6bb27933f6d6de613f1d70fd34231305c0408",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/0e/c8/8d65c9e999184d0e267b3dd4a1da8a136dce492dcc791f6d0eeb8f6be999/graphics_restore-1.3.0.zip",
+        "verifiedAt": "2026-11-03T09:29:37.441Z",
+        "hasAppSetting": true,
+        "cover": "graphics_restore-4.png",
+        "manifest": {
+          "id": "graphics_restore",
+          "name": "恢复游戏画质",
+          "summary": "把帧率、渲染精度、抗锯齿和字体选项恢复成「降低游戏画质」记录的原始档位，没有记录时用兜底档位，也可以改成只用兜底档位。",
+          "version": "1.3.0",
+          "versionCode": 4,
+          "defaultGroup": true,
+          "needNotify": false,
+          "author": {
+            "name": "kinggod899",
+            "url": "https://github.com/kinggod899"
+          },
+          "homepage": "https://github.com/kinggod899/graphics_restore",
+          "cover": "cover.png",
+          "risk": [
+            "automation",
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "2.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
       }
     },
     "rejected": {},
-    "cnbDownloads": 5
+    "cnbDownloads": 11
   },
   "graphics_low": {
     "repoId": 1442127504,
     "repo": "kinggod899/graphics_low",
-    "maxVersionCode": 2,
+    "maxVersionCode": 3,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -1274,9 +1350,47 @@
           "apps": []
         },
         "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/c2/72/0e7f7449ac93abdd174e0dae41105ac840481b30802d178fa80acad4da27/graphics_low-1.1.0.zip"
+      },
+      "v1.2.0": {
+        "version": "1.2.0",
+        "versionCode": 3,
+        "commit": "3ae9d9c45f90fce4a2c31a22158a2e33132fcc17",
+        "assetId": 704970342,
+        "assetName": "graphics_low.zip",
+        "size": 47018,
+        "sha256": "cf206da620d39cd3de5edefe56df90dd267524ab871539530a59a4320e6c191d",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/4e/d6/4dd241ee3f9c07f61c14b4309ed709bd685b6f76de6aef2a6a415ec7101f/graphics_low-1.2.0.zip",
+        "verifiedAt": "2026-11-03T09:29:37.441Z",
+        "hasAppSetting": true,
+        "cover": "graphics_low-3.png",
+        "manifest": {
+          "id": "graphics_low",
+          "name": "降低游戏画质",
+          "summary": "进游戏后把帧率、渲染精度、抗锯齿和字体选项（全局细体）调到低档，并记录修改前的原始档位，供「恢复游戏画质」使用。",
+          "version": "1.2.0",
+          "versionCode": 3,
+          "defaultGroup": true,
+          "needNotify": false,
+          "author": {
+            "name": "kinggod899",
+            "url": "https://github.com/kinggod899"
+          },
+          "homepage": "https://github.com/kinggod899/graphics_low",
+          "cover": "cover.png",
+          "risk": [
+            "automation",
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "2.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
       }
     },
     "rejected": {},
-    "cnbDownloads": 5
+    "cnbDownloads": 10
   }
 }
