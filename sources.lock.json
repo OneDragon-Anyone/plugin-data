@@ -37,8 +37,7 @@
             "python": ">=3.11"
           },
           "apps": []
-        },
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/life_on_line/life_on_line-2.zip"
+        }
       },
       "v1.0.2": {
         "version": "1.0.2",
@@ -48,7 +47,6 @@
         "assetName": "life_on_line.zip",
         "size": 155076,
         "sha256": "c0063598a635ade68cb8babe66322e98e7812549f89205a0257b01813d0adf81",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/life_on_line/life_on_line-3.zip",
         "verifiedAt": "2026-11-02T18:18:30.884Z",
         "hasAppSetting": true,
         "cover": "life_on_line-3.png",
@@ -119,8 +117,7 @@
             "python": ">=3.11"
           },
           "apps": []
-        },
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/music_game_26/music_game_26-2.zip"
+        }
       }
     },
     "rejected": {}
@@ -204,8 +201,7 @@
             "python": ">=3.11"
           },
           "apps": []
-        },
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-1.zip"
+        }
       },
       "v1.0.1": {
         "version": "1.0.1",
@@ -240,8 +236,7 @@
             "python": ">=3.11"
           },
           "apps": []
-        },
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-2.zip"
+        }
       },
       "v1.0.2": {
         "version": "1.0.2",
@@ -276,8 +271,7 @@
             "python": ">=3.11"
           },
           "apps": []
-        },
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-3.zip"
+        }
       },
       "v1.0.3": {
         "version": "1.0.3",
@@ -312,8 +306,7 @@
             "python": ">=3.11"
           },
           "apps": []
-        },
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-4.zip"
+        }
       },
       "v1.0.4": {
         "version": "1.0.4",
@@ -348,8 +341,7 @@
             "python": ">=3.11"
           },
           "apps": []
-        },
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-5.zip"
+        }
       },
       "v1.0.5": {
         "version": "1.0.5",
@@ -384,8 +376,7 @@
             "python": ">=3.11"
           },
           "apps": []
-        },
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-6.zip"
+        }
       },
       "v1.0.6": {
         "version": "1.0.6",
@@ -420,8 +411,7 @@
             "python": ">=3.11"
           },
           "apps": []
-        },
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-7.zip"
+        }
       },
       "v1.0.7": {
         "version": "1.0.7",
@@ -456,8 +446,7 @@
             "python": ">=3.11"
           },
           "apps": []
-        },
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-8.zip"
+        }
       },
       "v1.0.8": {
         "version": "1.0.8",
@@ -492,8 +481,7 @@
             "python": ">=3.11"
           },
           "apps": []
-        },
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-9.zip"
+        }
       },
       "v1.0.9": {
         "version": "1.0.9",
@@ -528,8 +516,7 @@
             "python": ">=3.11"
           },
           "apps": []
-        },
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-10.zip"
+        }
       },
       "v1.1.0": {
         "version": "1.1.0",
@@ -564,8 +551,7 @@
             "python": ">=3.11"
           },
           "apps": []
-        },
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-13.zip"
+        }
       },
       "v1.1.1": {
         "version": "1.1.1",
@@ -575,7 +561,6 @@
         "assetName": "inventory_scan.zip",
         "size": 565940,
         "sha256": "e5553ab63747605e813faf9011b0a63bb8fd2a4825f50cd94828599bd59f2d18",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-14.zip",
         "verifiedAt": "2026-10-31T15:25:06.394Z",
         "hasAppSetting": false,
         "cover": "",
@@ -611,7 +596,6 @@
         "assetName": "inventory_scan.zip",
         "size": 566438,
         "sha256": "78835fc4f2d9a1ccb10de6bab1f15677fe7194ebc39f9c200807bafc954c1800",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-15.zip",
         "verifiedAt": "2026-11-01T15:59:51.917Z",
         "hasAppSetting": false,
         "cover": "",
@@ -647,7 +631,6 @@
         "assetName": "inventory_scan.zip",
         "size": 750695,
         "sha256": "53a12308c71a05bbbd9c484fb21e344ff06768e3c9ecb322094158817938f807",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-17.zip",
         "verifiedAt": "2026-11-02T18:18:30.884Z",
         "hasAppSetting": false,
         "cover": "inventory_scan-17.png",
@@ -684,7 +667,6 @@
         "assetName": "inventory_scan.zip",
         "size": 754623,
         "sha256": "d17c847315f3820f6ddefa7114894fb3b1c1bee10e3402533fc03c27a768cda2",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/inventory_scan/inventory_scan-18.zip",
         "verifiedAt": "2026-11-02T18:18:30.884Z",
         "hasAppSetting": false,
         "cover": "inventory_scan-18.png",
@@ -729,7 +711,6 @@
         "assetName": "bagel.zip",
         "size": 911956,
         "sha256": "6fb16ead7782727304975cba3801ad12e79370ec65559e787fac7fbea12e666a",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/bagel/bagel-1.zip",
         "verifiedAt": "2026-10-31T16:03:19.097Z",
         "hasAppSetting": true,
         "cover": "bagel-1.webp",
@@ -767,7 +748,6 @@
         "assetName": "bagel.zip",
         "size": 914509,
         "sha256": "b7c8f6a6281580cd2331281ca0fe231b323ca3a416cdd8d2692533b6701c648b",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/bagel/bagel-2.zip",
         "verifiedAt": "2026-11-01T09:12:23.835Z",
         "hasAppSetting": true,
         "cover": "bagel-2.webp",
@@ -805,7 +785,6 @@
         "assetName": "bagel.zip",
         "size": 914037,
         "sha256": "13127d0d94fd95ff19b45ecb482324f4af8f522e623523b4ef7eeab1e5111afe",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/bagel/bagel-3.zip",
         "verifiedAt": "2026-11-01T15:59:51.917Z",
         "hasAppSetting": true,
         "cover": "bagel-3.webp",
@@ -843,7 +822,6 @@
         "assetName": "bagel.zip",
         "size": 912226,
         "sha256": "f78e0fa710bed73fc37d542f4a71db96d8b60e8cd14dc89efc296f4ac6313fd9",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/bagel/bagel-4.zip",
         "verifiedAt": "2026-11-02T18:18:30.884Z",
         "hasAppSetting": true,
         "cover": "bagel-4.webp",
@@ -881,7 +859,6 @@
         "assetName": "bagel.zip",
         "size": 911614,
         "sha256": "7e1f0392bd8f62264258ab0666a7a4e56fff16f9d0767e615ffb13927f38decc",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/bagel/bagel-5.zip",
         "verifiedAt": "2026-11-02T19:50:41.407Z",
         "hasAppSetting": false,
         "cover": "bagel-5.webp",
@@ -927,7 +904,6 @@
         "assetName": "battery_exchange.zip",
         "size": 7045,
         "sha256": "e8068c8814bf73a47651ee0db48b5f37794666c0a96a3a0e76e8a4ceb56884f9",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/battery_exchange/battery_exchange-1.zip",
         "verifiedAt": "2026-10-31T16:08:58.377Z",
         "hasAppSetting": false,
         "cover": "",
@@ -963,7 +939,6 @@
         "assetName": "battery_exchange.zip",
         "size": 7100,
         "sha256": "40935bd0577fdac67a096b07ab57624d1729863a03340dfdca7cae87beecf5d5",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/battery_exchange/battery_exchange-2.zip",
         "verifiedAt": "2026-10-31T16:08:58.377Z",
         "hasAppSetting": false,
         "cover": "",
@@ -999,7 +974,6 @@
         "assetName": "battery_exchange.zip",
         "size": 8007,
         "sha256": "16d1313274d32bec4e00646c8a58bfcbf14d662d38eb72fbeb8490aad960257f",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/battery_exchange/battery_exchange-3.zip",
         "verifiedAt": "2026-11-01T15:59:51.917Z",
         "hasAppSetting": false,
         "cover": "",
@@ -1035,7 +1009,6 @@
         "assetName": "battery_exchange.zip",
         "size": 163488,
         "sha256": "fa72e3efdd736d5401eb0c3631d2ffc66ea89608566112018f341724f8621bd9",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/battery_exchange/battery_exchange-4.zip",
         "verifiedAt": "2026-11-02T18:18:30.884Z",
         "hasAppSetting": false,
         "cover": "battery_exchange-4.png",
@@ -1080,7 +1053,6 @@
         "assetName": "graphics_restore.zip",
         "size": 46352,
         "sha256": "faec7dfd67eefe86b52e5c9e5fa5e516f161173bfd9b9b56e6aa65d86e64641d",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/graphics_restore/graphics_restore-1.zip",
         "verifiedAt": "2026-11-02T02:33:04.444Z",
         "hasAppSetting": true,
         "cover": "graphics_restore-1.png",
@@ -1118,7 +1090,6 @@
         "assetName": "graphics_restore.zip",
         "size": 47404,
         "sha256": "8b3b626afd633274d7e454a04df273c33d7b04732873f630232e99f15988aecd",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/graphics_restore/graphics_restore-2.zip",
         "verifiedAt": "2026-11-02T02:33:04.444Z",
         "hasAppSetting": true,
         "cover": "graphics_restore-2.png",
@@ -1164,7 +1135,6 @@
         "assetName": "graphics_low.zip",
         "size": 43773,
         "sha256": "5b1a986734810ae4ed09cade1caba908e71ca46204b47cb8ad03dfafc7d602ab",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/graphics_low/graphics_low-1.zip",
         "verifiedAt": "2026-11-02T02:34:10.973Z",
         "hasAppSetting": true,
         "cover": "graphics_low-1.png",
@@ -1202,7 +1172,6 @@
         "assetName": "graphics_low.zip",
         "size": 45068,
         "sha256": "c028f715edcb2410609e0cef6b1edbc022f5c2253931e94b1d15aa6fd10e7c08",
-        "mirrorUrl": "https://cnb.cool/OneDragon-Anyone/plugin-mirror/-/releases/download/graphics_low/graphics_low-2.zip",
         "verifiedAt": "2026-11-02T02:34:10.973Z",
         "hasAppSetting": true,
         "cover": "graphics_low-2.png",
