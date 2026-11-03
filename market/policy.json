@@ -22,6 +22,7 @@
   "mirror": {
     "enabled": true,
     "repo": "OneDragon-Anyone/plugin-mirror",
+    "pypi": "OneDragon-Anyone/plugin-mirror-release",
     "branch": "main"
   }
 }
