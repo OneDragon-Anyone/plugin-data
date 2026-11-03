@@ -37,7 +37,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/0f/09/749a371ca61492d80f7f223ca792047cf26bf8a019376599dd8c38003e6c/life_on_line-1.0.1.zip"
       },
       "v1.0.2": {
         "version": "1.0.2",
@@ -73,10 +74,12 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/42/50/70bc46a23aed1b04a046bde5b85b811b72ecaccfc008d00e02ac740cd76c/life_on_line-1.0.2.zip"
       }
     },
-    "rejected": {}
+    "rejected": {},
+    "cnbDownloads": 0
   },
   "music_game_26": {
     "repoId": 1244891200,
@@ -117,10 +120,12 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/90/f3/6d469200157c6e1ff1972cd305f9c5c93cd81f0f0e92c5601a95ad2bddc3/music_game_26-1.1.0.zip"
       }
     },
-    "rejected": {}
+    "rejected": {},
+    "cnbDownloads": 0
   },
   "demo_plugin": {
     "repoId": 1431540916,
@@ -201,7 +206,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/45/13/69ed42e7d41749b36b066ec1d0a990943f8d677545ea0ae04faa2a216347/inventory_scan-1.0.0.zip"
       },
       "v1.0.1": {
         "version": "1.0.1",
@@ -236,7 +242,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/01/1c/c037ece4fa10c66f91729f92c4e2a6b10a62d94c929906affb78651e9faa/inventory_scan-1.0.1.zip"
       },
       "v1.0.2": {
         "version": "1.0.2",
@@ -271,7 +278,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/d1/30/82dc61c0b04e4d9d0d79db85a6ee86a45fb611947965f008f0db4c7d3a0c/inventory_scan-1.0.2.zip"
       },
       "v1.0.3": {
         "version": "1.0.3",
@@ -306,7 +314,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/ec/26/4a8887c429785aadd3e33f2e8d7b70c05a35db15f6dc64fe837d3cb784a3/inventory_scan-1.0.3.zip"
       },
       "v1.0.4": {
         "version": "1.0.4",
@@ -341,7 +350,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/93/48/69ce87779a6887a9a5548ec3a39ad3e997f960d8e21f74894a65650cef2e/inventory_scan-1.0.4.zip"
       },
       "v1.0.5": {
         "version": "1.0.5",
@@ -376,7 +386,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/d4/d2/27df74e3b2e54e8adb2514ab1d2d203775b721d783f7b09bd234d5ef02ca/inventory_scan-1.0.5.zip"
       },
       "v1.0.6": {
         "version": "1.0.6",
@@ -411,7 +422,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/89/52/d8932795dce41ee2c092c4114f84c71dadb884c7f90dea6ff27828d2bbb0/inventory_scan-1.0.6.zip"
       },
       "v1.0.7": {
         "version": "1.0.7",
@@ -446,7 +458,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/e6/ad/e6b77989329e10fcbc1726348d75d55f40c8c99dfabfe1981462d0a092db/inventory_scan-1.0.7.zip"
       },
       "v1.0.8": {
         "version": "1.0.8",
@@ -481,7 +494,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/6e/43/4d2cfb91a77c1fd07935c960073d414514cdcc249ced690a448eb2cda833/inventory_scan-1.0.8.zip"
       },
       "v1.0.9": {
         "version": "1.0.9",
@@ -516,7 +530,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/4c/c3/337270562f4568a93d7d005a9c79e4e1afedb54ee76b24d3902bed096482/inventory_scan-1.0.9.zip"
       },
       "v1.1.0": {
         "version": "1.1.0",
@@ -551,7 +566,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/6b/41/59877c1336a9a13ad46903c877764ced66adcf192c54c4a061e1eceadc70/inventory_scan-1.1.0.zip"
       },
       "v1.1.1": {
         "version": "1.1.1",
@@ -586,7 +602,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/b7/f1/082f0d50a1ee103d08758a076788cdf389ce2c9abff2a74417d209d1b2d3/inventory_scan-1.1.1.zip"
       },
       "v1.1.2": {
         "version": "1.1.2",
@@ -621,7 +638,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/1b/d8/fd9846419cf133cbc684ebff64bbfde6ed2514fc2704fcede872106b45ed/inventory_scan-1.1.2.zip"
       },
       "v1.2.1": {
         "version": "1.2.1",
@@ -657,7 +675,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/ff/1e/33bf2187fda957b7631368bc119f3978f722c92043106cc8f17281dcddc2/inventory_scan-1.2.1.zip"
       },
       "v1.3.0": {
         "version": "1.3.0",
@@ -693,7 +712,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/bf/fa/e0a743446be6c862e718f4e913e66f937c906da2fb5ef58aab5ff92a433f/inventory_scan-1.3.0.zip"
       },
       "v1.3.1": {
         "version": "1.3.1",
@@ -729,10 +749,12 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/f9/bd/c67538ac86f4ecb572a873b482d45ea1f0964bd7eda15e54cb1eb79bd687/inventory_scan-1.3.1.zip"
       }
     },
-    "rejected": {}
+    "rejected": {},
+    "cnbDownloads": 1
   },
   "bagel": {
     "repoId": 1440859224,
@@ -774,7 +796,8 @@
             "python": ">=3.11"
           },
           "cover": "assets/cover.webp"
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/cc/46/5a10195a8d4b3989cdced8a999dd83b0a9a8bddc179e35aaa536f788fb5f/bagel-0.1.0.zip"
       },
       "v0.2.0": {
         "version": "0.2.0",
@@ -811,7 +834,8 @@
             "python": ">=3.11"
           },
           "cover": "assets/cover.webp"
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/7a/64/7cfe6c005ec3b8940698ecfee30b1c498c9435eace579e355227c9d236ff/bagel-0.2.0.zip"
       },
       "v0.2.1": {
         "version": "0.2.1",
@@ -848,7 +872,8 @@
             "python": ">=3.11"
           },
           "cover": "assets/cover.webp"
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/88/10/295be6f5e06e48ff489a7765ed299fa94897449a2bf241066bac16a0527c/bagel-0.2.1.zip"
       },
       "v0.3.0": {
         "version": "0.3.0",
@@ -885,7 +910,8 @@
             "python": ">=3.11"
           },
           "cover": "assets/cover.webp"
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/f5/f6/34c486e0e42c1ef9f71c81afd1db781b416f890c372fa158cc5613307fa5/bagel-0.3.0.zip"
       },
       "v0.3.1": {
         "version": "0.3.1",
@@ -922,10 +948,12 @@
             "python": ">=3.11"
           },
           "cover": "assets/cover.webp"
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/8b/15/9ac16751e0f4215a5414925c879e0ecc78333d5884064ab6d662c0fc24fd/bagel-0.3.1.zip"
       }
     },
-    "rejected": {}
+    "rejected": {},
+    "cnbDownloads": 5
   },
   "battery_exchange": {
     "repoId": 1440879046,
@@ -965,7 +993,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/f0/53/de6efeedc8324cef75283c766bb98743766e5446b31c62c37da60688c018/battery_exchange-1.0.0.zip"
       },
       "v1.0.1": {
         "version": "1.0.1",
@@ -1000,7 +1029,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/95/32/39ee568ca36ac21c7ee21624aab32eae2c04a87fd31f0e78c42ea60a5e1f/battery_exchange-1.0.1.zip"
       },
       "v1.0.2": {
         "version": "1.0.2",
@@ -1035,7 +1065,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/f1/f9/37a075cb04fc5cb601de877bb6cf940696257bca64d4e56b13506bef842c/battery_exchange-1.0.2.zip"
       },
       "v1.0.3": {
         "version": "1.0.3",
@@ -1071,10 +1102,12 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/6d/2d/9a52293290186ecef72fad509a3d76e1942547418bcfd38761fd1279d845/battery_exchange-1.0.3.zip"
       }
     },
-    "rejected": {}
+    "rejected": {},
+    "cnbDownloads": 0
   },
   "graphics_restore": {
     "repoId": 1442127559,
@@ -1116,7 +1149,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/6e/5e/37cfac7b3d903a69765baa9ad533747cc2e9bac2539c8864b616a654a7b2/graphics_restore-1.0.0.zip"
       },
       "v1.1.0": {
         "version": "1.1.0",
@@ -1153,10 +1187,12 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/48/b8/880173af64ae8792436b6952abdabd50710731dddb85ffe0a1cffd10b9ae/graphics_restore-1.1.0.zip"
       }
     },
-    "rejected": {}
+    "rejected": {},
+    "cnbDownloads": 0
   },
   "graphics_low": {
     "repoId": 1442127504,
@@ -1198,7 +1234,8 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/03/23/db0307cea570551119d6330ba1fc0f9fe0c099f617761e0595239fc90681/graphics_low-1.0.0.zip"
       },
       "v1.1.0": {
         "version": "1.1.0",
@@ -1235,9 +1272,11 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/c2/72/0e7f7449ac93abdd174e0dae41105ac840481b30802d178fa80acad4da27/graphics_low-1.1.0.zip"
       }
     },
-    "rejected": {}
+    "rejected": {},
+    "cnbDownloads": 0
   }
 }
