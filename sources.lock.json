@@ -754,7 +754,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 79
+    "cnbDownloads": 81
   },
   "bagel": {
     "repoId": 1440859224,
@@ -991,7 +991,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 288
+    "cnbDownloads": 293
   },
   "battery_exchange": {
     "repoId": 1440879046,
@@ -1145,7 +1145,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 29
+    "cnbDownloads": 30
   },
   "graphics_restore": {
     "repoId": 1442127559,
