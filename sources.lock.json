@@ -79,7 +79,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 25
+    "cnbDownloads": 41
   },
   "music_game_26": {
     "repoId": 1244891200,
@@ -125,7 +125,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 17
+    "cnbDownloads": 27
   },
   "demo_plugin": {
     "repoId": 1431540916,
@@ -171,7 +171,7 @@
   "inventory_scan": {
     "repoId": 1432190207,
     "repo": "idk500/zzzod-plugin-inventory-scan",
-    "maxVersionCode": 19,
+    "maxVersionCode": 20,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -751,10 +751,47 @@
           "apps": []
         },
         "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/f9/bd/c67538ac86f4ecb572a873b482d45ea1f0964bd7eda15e54cb1eb79bd687/inventory_scan-1.3.1.zip"
+      },
+      "v1.3.2": {
+        "version": "1.3.2",
+        "versionCode": 20,
+        "commit": "510143b825fd3cd4c2d28a0a5b6f9d05c0f288e0",
+        "assetId": 705599522,
+        "assetName": "inventory_scan.zip",
+        "size": 768639,
+        "sha256": "ca6465889709c18e0766a60ceb29522b52d31f88716678b7a87369377968c3bd",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/30/70/c7b367403ab04703a9a1bf4de0d28c72490d52cdde6f020d0cf5b453319a/inventory_scan-1.3.2.zip",
+        "verifiedAt": "2026-11-03T15:31:53.438Z",
+        "hasAppSetting": false,
+        "cover": "inventory_scan-20.png",
+        "manifest": {
+          "id": "inventory_scan",
+          "name": "仓库扫描器",
+          "summary": "自动翻页扫描仓库中的代理人/驱动盘/音擎并 OCR 导出清单（输出到 .debug/inventory_exports）。",
+          "cover": "assets/ui/cover.png",
+          "version": "1.3.2",
+          "versionCode": 20,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-inventory-scan",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
       }
     },
     "rejected": {},
-    "cnbDownloads": 81
+    "cnbDownloads": 110
   },
   "bagel": {
     "repoId": 1440859224,
@@ -991,7 +1028,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 293
+    "cnbDownloads": 538
   },
   "battery_exchange": {
     "repoId": 1440879046,
@@ -1145,7 +1182,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 30
+    "cnbDownloads": 47
   },
   "graphics_restore": {
     "repoId": 1442127559,
@@ -1306,7 +1343,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 22
+    "cnbDownloads": 33
   },
   "graphics_low": {
     "repoId": 1442127504,
@@ -1429,6 +1466,6 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 20
+    "cnbDownloads": 30
   }
 }
