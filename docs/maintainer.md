@@ -9,7 +9,7 @@
 本仓库作为静态数据中心，不运行服务器端，所有数据同步与部署由 GitHub Actions 驱动：
 
 1. **作者发版**：插件作者在自己的仓库打 tag 发 Release（包含 `<id>.zip`）。
-2. **提交审核**：作者在 Registry 提 Issue，机器人自动核验包结构并提 PR；维护者确认后合并 PR。
+2. **提交审核**：作者在插件市场仓库提 Issue，机器人自动核验包结构并提 PR；维护者确认后合并 PR。
 3. **数据抓取**：定时任务（每小时）抓取所有已收录插件的最新 Release，计算 sha256 写入 `lock` 分支并生成静态 API（`/api/v1/`）和网页。
 4. **客户端拉取**：客户端直接读取 GitHub Pages 上的静态 JSON 获取插件列表与下载链接。
 
@@ -20,11 +20,11 @@
 ### 2.1 审核新插件 PR
 机器人收到合格的提交 Issue 后会自动开 PR：
 1. 检查 PR 中的清单（功能说明、权限与风险声明是否如实）。
-2. 如需微调标签或风险说明，直接在 PR 的 `registry/plugins/{id}.json` 中修改。
+2. 如需微调标签或风险说明，直接在 PR 的 `market/plugins/{id}.json` 中修改。
 3. 确认无误后点击 Merge。合并后定时任务会自动提取该插件的 Release。
 
 ### 2.2 修改或下架插件
-修改对应插件的元数据文件 `registry/plugins/{id}.json` 中的 `status` 字段：
+修改对应插件的元数据文件 `market/plugins/{id}.json` 中的 `status` 字段：
 
 - `listed`：正常展示，允许安装与更新（默认）。
 - `deprecated`：展示并提示已弃用，允许用户继续使用。
@@ -36,7 +36,7 @@
 
 ### 2.3 手动录入插件
 若无需经过 Issue 机器人（如官方自带插件或存量迁移插件）：
-1. 在 `registry/plugins/` 目录下创建 `{id}.json`：
+1. 在 `market/plugins/` 目录下创建 `{id}.json`：
    ```json
    {
      "id": "music_game_26",
@@ -53,7 +53,7 @@
 3. 提交并合并至 master。
 
 ### 2.4 手动触发更新
-- 在 GitHub 仓库页面进入 **Actions** -> **Build Registry** -> 点击 **Run workflow**。
+- 在 GitHub 仓库页面进入 **Actions** -> **Build Market** -> 点击 **Run workflow**。
 
 ---
 
@@ -71,11 +71,11 @@
 代码在 [plugin-market](https://github.com/OneDragon-Anyone/plugin-market)（构建脚本、机器人、WebUI）。clone 本数据仓到旁边后，在代码仓目录下：
 
 ```shell
-pnpm registry:check                      # 校验本地 registry 规则
-pnpm registry:check --resolve --deep <id> # 联网校验指定插件并下载检查 Release 附件
-pnpm registry:build                      # 本地执行全量构建（生成 public/api/v1 与站点）
+pnpm market:check                      # 校验本地市场规则
+pnpm market:check --resolve --deep <id> # 联网校验指定插件并下载检查 Release 附件
+pnpm market:build                      # 本地执行全量构建（生成 public/api/v1 与站点）
 pnpm dev                                 # 本地启动预览
 ```
 
-联调需要环境变量：`REGISTRY_DATA_DIR` 指向本数据仓目录、`TEMPLATE_DIR` 指向 plugin-template、`GITHUB_TOKEN=$(gh auth token)`，详见代码仓 README。
+联调需要环境变量：`MARKET_DATA_DIR` 指向本数据仓目录、`TEMPLATE_DIR` 指向 plugin-template、`GITHUB_TOKEN=$(gh auth token)`，详见代码仓 README。
 

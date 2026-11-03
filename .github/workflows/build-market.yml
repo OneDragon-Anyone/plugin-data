@@ -1,4 +1,4 @@
-name: Build Registry
+name: Build Market
 
 on:
   push:
@@ -15,7 +15,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: build-registry
+  group: build-market
   cancel-in-progress: false
 
 jobs:

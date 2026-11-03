@@ -12,7 +12,7 @@
 ## 目录结构
 
 ```text
-├── registry/
+├── market/
 │   ├── plugins/{id}.json    # 各插件配置与审核信息（提交 Issue 后由机器人自动生成）
 │   └── policy.json          # 插件收录规则（命名限制、保留 ID 等）
 ├── docs/                    # 开发者发布手册与维护说明
