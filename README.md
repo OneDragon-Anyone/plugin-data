@@ -14,7 +14,7 @@
 ```text
 ├── market/
 │   ├── plugins/{id}.json    # 各插件配置与审核信息（提交 Issue 后由机器人自动生成）
-│   └── policy.json          # 插件收录规则（命名限制、保留 ID 等）
+│   └── policy.json          # 收录规则（命名限制、保留 ID）与国内镜像源配置
 ├── docs/                    # 开发者发布手册与维护说明
 └── .github/workflows/       # 自动化流水线（定时构建、提交自动审核）
 ```
@@ -27,3 +27,14 @@
 2. **自动校验**：审核机器人会自动检查插件包规范，并自动创建收录 PR。
 3. **审核上线**：维护人员核对后合并 PR，定时构建任务会自动抓取最新版本并同步到插件商店中。
 4. **后续更新**：插件收录后，作者后续在自己仓库发布新版本均会全自动同步，无需重复提交。
+
+---
+
+## 国内镜像
+
+索引、封面与安装包在 CNB 各有一份，国内网络访问更快：
+
+- **索引与封面**：[plugin-mirror](https://cnb.cool/OneDragon-Anyone/plugin-mirror)，内容与本仓 `api/v1/` 一致
+- **安装包**：[plugin-mirror-release](https://cnb.cool/OneDragon-Anyone/plugin-mirror-release)，每个插件一个包，包名为插件 id
+
+`plugins.json` 里每个版本的 `sources.cnb` 给出安装包直链，客户端按网络情况切换下载源；镜像不可用时自动回落 GitHub 原址。
