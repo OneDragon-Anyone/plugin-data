@@ -26,3 +26,6 @@ jobs:
       (!github.event.issue.pull_request && startsWith(github.event.comment.body, '/recheck')) ||
       (!github.event.issue.pull_request && startsWith(github.event.comment.body, '/sync'))
     uses: OneDragon-Anyone/plugin-market/.github/workflows/reusable-submission-bot.yml@v1
+    with:
+      template_repository: ${{ vars.TEMPLATE_REPOSITORY || 'OneDragon-Anyone/plugin-template' }}
+      template_ref: ${{ vars.TEMPLATE_REF || 'v1' }}

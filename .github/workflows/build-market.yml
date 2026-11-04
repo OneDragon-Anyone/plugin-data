@@ -21,4 +21,7 @@ concurrency:
 jobs:
   build:
     uses: OneDragon-Anyone/plugin-market/.github/workflows/reusable-build.yml@v1
+    with:
+      template_repository: ${{ vars.TEMPLATE_REPOSITORY || 'OneDragon-Anyone/plugin-template' }}
+      template_ref: ${{ vars.TEMPLATE_REF || 'v1' }}
     secrets: inherit

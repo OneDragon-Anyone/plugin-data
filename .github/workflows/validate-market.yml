@@ -11,3 +11,6 @@ jobs:
     # 与机器人写入的 commit status 同名，供数据仓 ruleset 配置必需检查
     name: market/validate
     uses: OneDragon-Anyone/plugin-market/.github/workflows/reusable-validate.yml@v1
+    with:
+      template_repository: ${{ vars.TEMPLATE_REPOSITORY || 'OneDragon-Anyone/plugin-template' }}
+      template_ref: ${{ vars.TEMPLATE_REF || 'v1' }}
