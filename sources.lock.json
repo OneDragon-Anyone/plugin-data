@@ -79,7 +79,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 47
+    "cnbDownloads": 52
   },
   "music_game_26": {
     "repoId": 1244891200,
@@ -791,7 +791,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 202
+    "cnbDownloads": 203
   },
   "bagel": {
     "repoId": 1440859224,
@@ -1028,7 +1028,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 843
+    "cnbDownloads": 853
   },
   "battery_exchange": {
     "repoId": 1440879046,
@@ -1182,7 +1182,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 67
+    "cnbDownloads": 68
   },
   "graphics_restore": {
     "repoId": 1442127559,
@@ -1466,6 +1466,123 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 52
+    "cnbDownloads": 53
+  },
+  "disc_cleanup": {
+    "repoId": 1440878973,
+    "repo": "idk500/zzzod-plugin-disc-cleanup",
+    "maxVersionCode": 3,
+    "releases": {
+      "v1.0.0": {
+        "version": "1.0.0",
+        "versionCode": 1,
+        "commit": "9d2df1f63b1515935d1f2d176ea47403e0b8e749",
+        "assetId": 695490214,
+        "assetName": "disc_cleanup.zip",
+        "size": 16293,
+        "sha256": "9993b8e456500b6a340a6f7a1c00bcf328bed785afdd7ce5cda0b2f86eb93797",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/0b/c5/4f803466f04a90234369ed4abf5051595f610165dcac62aaf27f91d3a2f8/disc_cleanup-1.0.0.zip",
+        "verifiedAt": "2026-11-04T04:18:44.117Z",
+        "hasAppSetting": false,
+        "cover": "",
+        "manifest": {
+          "id": "disc_cleanup",
+          "name": "驱动盘清理标记",
+          "summary": "按规则层决策（.debug/cleanup_decisions.json）在仓库内逐盘指纹匹配并标记弃置；余位≥门槛自动跳过，满级盘永不标记。依赖仓库扫描器插件的解析模块。",
+          "version": "1.0.0",
+          "versionCode": 1,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-inventory-scan",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      },
+      "v1.0.1": {
+        "version": "1.0.1",
+        "versionCode": 2,
+        "commit": "43097f943385d237f8ddb7bbe0eb53c03c6f0ad2",
+        "assetId": 695708044,
+        "assetName": "disc_cleanup.zip",
+        "size": 16350,
+        "sha256": "85cdbf206c5357dab2a26bf5d15a50eafe5e69ff674b6bf5495c22985b8e8885",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/c8/ec/8e93e2b79820b7a7102782862b1459fbfe9cb838f841e203e043518c9015/disc_cleanup-1.0.1.zip",
+        "verifiedAt": "2026-11-04T04:18:44.117Z",
+        "hasAppSetting": false,
+        "cover": "",
+        "manifest": {
+          "id": "disc_cleanup",
+          "name": "驱动盘清理标记",
+          "summary": "按规则层决策（.debug/cleanup_decisions.json）在仓库内逐盘指纹匹配并标记弃置；余位≥门槛自动跳过，满级盘永不标记。依赖仓库扫描器插件的解析模块。",
+          "version": "1.0.1",
+          "versionCode": 2,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-inventory-scan",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      },
+      "v1.0.2": {
+        "version": "1.0.2",
+        "versionCode": 3,
+        "commit": "9770f42925285ceb96c26f48792d9a606fe73d0a",
+        "assetId": 698509938,
+        "assetName": "disc_cleanup.zip",
+        "size": 17275,
+        "sha256": "d3cc8885ff40d43911161a6257f0547846c66af246a76bd0ea072174c2f3bd17",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/22/50/3acc6fe605cde759ae0feb5fbdaedcaa8a190d41c3208286589e15ea3bcc/disc_cleanup-1.0.2.zip",
+        "verifiedAt": "2026-11-04T04:18:44.117Z",
+        "hasAppSetting": false,
+        "cover": "",
+        "manifest": {
+          "id": "disc_cleanup",
+          "name": "驱动盘清理标记",
+          "summary": "按规则层决策（.debug/cleanup_decisions.json）在仓库内逐盘指纹匹配并标记弃置；余位≥门槛自动跳过，满级盘永不标记。依赖仓库扫描器插件的解析模块。",
+          "version": "1.0.2",
+          "versionCode": 3,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-inventory-scan",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      }
+    },
+    "rejected": {},
+    "cnbDownloads": 0
   }
 }
