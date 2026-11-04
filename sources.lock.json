@@ -79,7 +79,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 83
+    "cnbDownloads": 100
   },
   "music_game_26": {
     "repoId": 1244891200,
@@ -125,7 +125,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 57
+    "cnbDownloads": 61
   },
   "demo_plugin": {
     "repoId": 1431540916,
@@ -791,12 +791,12 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 296
+    "cnbDownloads": 321
   },
   "bagel": {
     "repoId": 1440859224,
     "repo": "Cora093/zzz-bagel-plugin",
-    "maxVersionCode": 6,
+    "maxVersionCode": 7,
     "releases": {
       "v0.1.0": {
         "version": "0.1.0",
@@ -1025,10 +1025,48 @@
           },
           "cover": "assets/cover.webp"
         }
+      },
+      "v0.3.3": {
+        "version": "0.3.3",
+        "versionCode": 7,
+        "commit": "11fcaf32fe0eda80c682168b55085718efad8743",
+        "assetId": 710163120,
+        "assetName": "bagel.zip",
+        "size": 884764,
+        "sha256": "20827b979b38d41de94d9c27fe42ea5e7d08ddb69f4bcc44af5ccd555a756758",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/12/9e/8d80b9aca3e73a4d292dda97e5891665b001cbe44eaac4fa8908dd6833af/bagel-0.3.3.zip",
+        "verifiedAt": "2026-11-04T21:18:09.793Z",
+        "hasAppSetting": false,
+        "cover": "bagel-7.webp",
+        "manifest": {
+          "id": "bagel",
+          "name": "贝果计划",
+          "summary": "贝果计划自动跑刀：按自录路线跑图、收集物品、清理仓库并结算的完整自动化流程。",
+          "version": "0.3.3",
+          "versionCode": 7,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "Cora、kawayiYokami、ShadowLemoon、PoorKid1112、RRRR623、wusaqi、Ada、A-nony-mous",
+            "url": "https://github.com/kawayiYokami"
+          },
+          "homepage": "https://github.com/Cora093/zzz-bagel-plugin",
+          "risk": [
+            "automation",
+            "ocr",
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "cover": "assets/cover.webp"
+        }
       }
     },
     "rejected": {},
-    "cnbDownloads": 1232
+    "cnbDownloads": 1376
   },
   "battery_exchange": {
     "repoId": 1440879046,
@@ -1182,7 +1220,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 96
+    "cnbDownloads": 112
   },
   "graphics_restore": {
     "repoId": 1442127559,
@@ -1343,7 +1381,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 76
+    "cnbDownloads": 80
   },
   "graphics_low": {
     "repoId": 1442127504,
@@ -1466,7 +1504,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 81
+    "cnbDownloads": 90
   },
   "disc_cleanup": {
     "repoId": 1440878973,
@@ -1583,6 +1621,6 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 37
+    "cnbDownloads": 47
   }
 }
