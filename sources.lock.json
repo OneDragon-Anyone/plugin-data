@@ -79,7 +79,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 111
+    "cnbDownloads": 132
   },
   "music_game_26": {
     "repoId": 1244891200,
@@ -125,7 +125,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 65
+    "cnbDownloads": 72
   },
   "demo_plugin": {
     "repoId": 1431540916,
@@ -791,7 +791,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 329
+    "cnbDownloads": 361
   },
   "bagel": {
     "repoId": 1440859224,
@@ -1066,7 +1066,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 1541
+    "cnbDownloads": 1942
   },
   "battery_exchange": {
     "repoId": 1440879046,
@@ -1220,7 +1220,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 114
+    "cnbDownloads": 127
   },
   "graphics_restore": {
     "repoId": 1442127559,
@@ -1381,7 +1381,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 86
+    "cnbDownloads": 93
   },
   "graphics_low": {
     "repoId": 1442127504,
@@ -1504,7 +1504,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 96
+    "cnbDownloads": 106
   },
   "disc_cleanup": {
     "repoId": 1440878973,
@@ -1621,6 +1621,6 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 57
+    "cnbDownloads": 76
   }
 }
