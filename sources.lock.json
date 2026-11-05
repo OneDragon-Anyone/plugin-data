@@ -828,7 +828,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 365
+    "cnbDownloads": 369
   },
   "bagel": {
     "repoId": 1440859224,
@@ -1103,7 +1103,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 2038
+    "cnbDownloads": 2047
   },
   "battery_exchange": {
     "repoId": 1440879046,
@@ -1732,7 +1732,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 79
+    "cnbDownloads": 80
   },
   "bangboo_companion": {
     "repoId": 1444204673,
@@ -1820,7 +1820,7 @@
   "mys_checkin": {
     "repoId": 1446451406,
     "repo": "idk500/zzzod-plugin-mys-checkin",
-    "maxVersionCode": 4,
+    "maxVersionCode": 5,
     "releases": {
       "v0.1.1": {
         "version": "0.1.1",
@@ -1932,9 +1932,46 @@
           },
           "apps": []
         }
+      },
+      "v0.1.4": {
+        "version": "0.1.4",
+        "versionCode": 5,
+        "commit": "d1e1d3a1677ea898ecd9c58d97bb1d88138b1971",
+        "assetId": 713396626,
+        "assetName": "mys_checkin.zip",
+        "size": 153820,
+        "sha256": "aedc609aaf58c33d2e8b3ffee3c8f3ce570ce26b411615650c4b0b53c51f3cc6",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/0f/9c/7c1cc13edf3e34417eba55739b20d2732ba65d37c549debbf27e89793d6e/mys_checkin-0.1.4.zip",
+        "verifiedAt": "2026-11-05T12:50:23.137Z",
+        "hasAppSetting": false,
+        "cover": "mys_checkin-5.png",
+        "manifest": {
+          "id": "mys_checkin",
+          "name": "米游社签到",
+          "summary": "一条龙运行时顺便完成米游社每日签到：游戏签到领福利（绝区零/原神/星穹铁道/崩坏3）+ 米游币打卡，可选库街区（鸣潮/战双）。内核为 DailyCheckIn 单文件工具（MIT），state.json 当日防重签，stoken 自动续期 cookie_token。仅手机号验证码登录（插件自带交互入口，号码不落盘），首次使用需在本机登录一次。",
+          "version": "0.1.4",
+          "versionCode": 5,
+          "cover": "assets/ui/cover.png",
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-mys-checkin",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
       }
     },
     "rejected": {},
-    "cnbDownloads": 3
+    "cnbDownloads": 7
   }
 }
