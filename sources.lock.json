@@ -79,7 +79,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 136
+    "cnbDownloads": 137
   },
   "music_game_26": {
     "repoId": 1244891200,
@@ -171,7 +171,7 @@
   "inventory_scan": {
     "repoId": 1432190207,
     "repo": "idk500/zzzod-plugin-inventory-scan",
-    "maxVersionCode": 20,
+    "maxVersionCode": 23,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -788,10 +788,47 @@
           },
           "apps": []
         }
+      },
+      "v1.3.5": {
+        "version": "1.3.5",
+        "versionCode": 23,
+        "commit": "520a9a8e82b82f5123fdbd0bd4dff4408c0d7658",
+        "assetId": 713363862,
+        "assetName": "inventory_scan.zip",
+        "size": 770017,
+        "sha256": "7de0a62682da29fe2f424119be25b068e4a4efe0f1f903e678e2527e8a911f62",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/5f/c8/2e3e8b9979b1e0d5697470d5f5a63f2947405a8eb689502e7fd10e825b84/inventory_scan-1.3.5.zip",
+        "verifiedAt": "2026-11-05T12:39:05.835Z",
+        "hasAppSetting": false,
+        "cover": "inventory_scan-23.png",
+        "manifest": {
+          "id": "inventory_scan",
+          "name": "仓库扫描器",
+          "summary": "自动翻页扫描仓库中的代理人/驱动盘/音擎并 OCR 导出清单（输出到一条龙安装目录 .debug/inventory_exports，导出后自动打开文件夹并选中 json；大仓库有进度日志，中断也会存部分数据）。可导入在线分析器 zzz.233618.xyz。",
+          "cover": "assets/ui/cover.png",
+          "version": "1.3.5",
+          "versionCode": 23,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-inventory-scan",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
       }
     },
     "rejected": {},
-    "cnbDownloads": 364
+    "cnbDownloads": 365
   },
   "bagel": {
     "repoId": 1440859224,
@@ -1066,12 +1103,12 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 2009
+    "cnbDownloads": 2038
   },
   "battery_exchange": {
     "repoId": 1440879046,
     "repo": "idk500/zzzod-plugin-battery-exchange",
-    "maxVersionCode": 4,
+    "maxVersionCode": 5,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -1217,6 +1254,43 @@
           "apps": []
         },
         "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/6d/2d/9a52293290186ecef72fad509a3d76e1942547418bcfd38761fd1279d845/battery_exchange-1.0.3.zip"
+      },
+      "v1.0.4": {
+        "version": "1.0.4",
+        "versionCode": 5,
+        "commit": "8bc590d4d27ecb4d28af23a705483ed9c249f8a2",
+        "assetId": 713364464,
+        "assetName": "battery_exchange.zip",
+        "size": 163474,
+        "sha256": "3f84a344cc531dea8d84a1a2389015bb08435c2fe484e9216b99be019f6799d9",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/be/d8/ea3a948a365f6a9d6f1fd70b8190ad016d3ec0d408ff92e36cc22e4296a3/battery_exchange-1.0.4.zip",
+        "verifiedAt": "2026-11-05T12:39:05.835Z",
+        "hasAppSetting": false,
+        "cover": "battery_exchange-5.png",
+        "manifest": {
+          "id": "battery_exchange",
+          "name": "自动兑换电卡",
+          "summary": "角色培养不再消耗体力时，把储蓄电量自动兑换为可存储道具：以太电池（恢复60电量，流程复用框架已验证的快捷手册→[获取]合成→道具处理链路）或储值电卡（材料副本快速刷取，入口待实机映射）。配置：目标物品/单轮张数上限/储蓄电量保底线。probe 模式默认开启。",
+          "cover": "assets/ui/cover.png",
+          "version": "1.0.4",
+          "versionCode": 5,
+          "defaultGroup": false,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-battery-exchange",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
       }
     },
     "rejected": {},
@@ -1509,7 +1583,7 @@
   "disc_cleanup": {
     "repoId": 1440878973,
     "repo": "idk500/zzzod-plugin-disc-cleanup",
-    "maxVersionCode": 3,
+    "maxVersionCode": 5,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -1618,6 +1692,43 @@
           },
           "apps": []
         }
+      },
+      "v1.0.4": {
+        "version": "1.0.4",
+        "versionCode": 5,
+        "commit": "3fd2258b0a084305af1d9d12cabafe13a6f862bf",
+        "assetId": 713364223,
+        "assetName": "disc_cleanup.zip",
+        "size": 182676,
+        "sha256": "f2638b4fa87b5caec498330529149b093dbdcc897ecb1bc9bd8264e9057ed7a9",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/a9/a4/7897a80e78161d6208a347020a97b05406bd7551ec3fe3378241d45a443e/disc_cleanup-1.0.4.zip",
+        "verifiedAt": "2026-11-05T12:39:05.835Z",
+        "hasAppSetting": false,
+        "cover": "disc_cleanup-5.png",
+        "manifest": {
+          "id": "disc_cleanup",
+          "name": "驱动盘清理标记",
+          "summary": "按规则层决策（.debug/cleanup_decisions.json）在仓库内逐盘指纹匹配并标记弃置；余位≥门槛自动跳过，满级盘永不标记。依赖仓库扫描器插件的解析模块。",
+          "cover": "assets/ui/cover.png",
+          "version": "1.0.4",
+          "versionCode": 5,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-disc-cleanup",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
       }
     },
     "rejected": {},
@@ -1704,12 +1815,12 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 0
+    "cnbDownloads": 2
   },
   "mys_checkin": {
     "repoId": 1446451406,
     "repo": "idk500/zzzod-plugin-mys-checkin",
-    "maxVersionCode": 3,
+    "maxVersionCode": 4,
     "releases": {
       "v0.1.1": {
         "version": "0.1.1",
@@ -1784,9 +1895,46 @@
           },
           "apps": []
         }
+      },
+      "v0.1.3": {
+        "version": "0.1.3",
+        "versionCode": 4,
+        "commit": "66bd0b6257c8a8c8c62d31a7be992f0d580af5a5",
+        "assetId": 713364503,
+        "assetName": "mys_checkin.zip",
+        "size": 153795,
+        "sha256": "6b56f70752dd65361097c5c1458142a082b601f4c11eec341536dcca575cc8f7",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/fd/9f/7927a3dc6186df659a5d2c65721142b7c36d4d070074850a4b652cf7bf77/mys_checkin-0.1.3.zip",
+        "verifiedAt": "2026-11-05T12:39:05.835Z",
+        "hasAppSetting": false,
+        "cover": "mys_checkin-4.png",
+        "manifest": {
+          "id": "mys_checkin",
+          "name": "米游社签到",
+          "summary": "一条龙运行时顺便完成米游社每日签到：游戏签到领福利（绝区零/原神/星穹铁道/崩坏3）+ 米游币打卡，可选库街区（鸣潮/战双）。内核为 DailyCheckIn 单文件工具（MIT），state.json 当日防重签，stoken 自动续期 cookie_token。仅手机号验证码登录（插件自带交互入口，号码不落盘），首次使用需在本机登录一次。",
+          "version": "0.1.3",
+          "versionCode": 4,
+          "cover": "assets/ui/cover.png",
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-mys-checkin",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
       }
     },
     "rejected": {},
-    "cnbDownloads": 0
+    "cnbDownloads": 3
   }
 }
