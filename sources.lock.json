@@ -79,7 +79,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 137
+    "cnbDownloads": 160
   },
   "music_game_26": {
     "repoId": 1244891200,
@@ -125,7 +125,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 74
+    "cnbDownloads": 81
   },
   "demo_plugin": {
     "repoId": 1431540916,
@@ -171,7 +171,7 @@
   "inventory_scan": {
     "repoId": 1432190207,
     "repo": "idk500/zzzod-plugin-inventory-scan",
-    "maxVersionCode": 23,
+    "maxVersionCode": 30,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -825,10 +825,121 @@
           },
           "apps": []
         }
+      },
+      "v1.3.7": {
+        "version": "1.3.7",
+        "versionCode": 25,
+        "commit": "13cc7ea910927a93415c814f7f3265a01e000d1a",
+        "assetId": 713968154,
+        "assetName": "inventory_scan.zip",
+        "size": 774895,
+        "sha256": "2bea1e542285db6bfd10030002316cbae0295462e8a3284900a28d2e76a79b74",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/85/54/7d218c6cbb23b45b638d52d24fc9f54a2359072a19d4d476c53daaa122e5/inventory_scan-1.3.7.zip",
+        "verifiedAt": "2026-11-05T18:42:52.030Z",
+        "hasAppSetting": false,
+        "cover": "inventory_scan-25.png",
+        "manifest": {
+          "id": "inventory_scan",
+          "name": "仓库扫描器",
+          "summary": "自动翻页扫描仓库中的代理人/驱动盘/音擎并 OCR 导出清单（输出到一条龙安装目录 .debug/inventory_exports，导出后自动打开文件夹并选中 json；大仓库有进度日志，中断也会存部分数据）。可导入在线分析器 zzz.233618.xyz。",
+          "cover": "assets/ui/cover.png",
+          "version": "1.3.7",
+          "versionCode": 25,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-inventory-scan",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      },
+      "v1.3.8": {
+        "version": "1.3.8",
+        "versionCode": 26,
+        "commit": "4d5f23f7a3c855e99239d68cb247eb597b554130",
+        "assetId": 714177611,
+        "assetName": "inventory_scan.zip",
+        "size": 775563,
+        "sha256": "315c76808acd6e4fa33e23a08f75420d5e895785ff637460daba2e84481e03b0",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/f2/a7/164ca47d85c9c2b3c06a1b015cdf95a730154777ca74f3e2ec98b9b65e4a/inventory_scan-1.3.8.zip",
+        "verifiedAt": "2026-11-05T18:42:52.030Z",
+        "hasAppSetting": false,
+        "cover": "inventory_scan-26.png",
+        "manifest": {
+          "id": "inventory_scan",
+          "name": "仓库扫描器",
+          "summary": "自动翻页扫描仓库中的代理人/驱动盘/音擎并 OCR 导出清单（输出到一条龙安装目录 .debug/inventory_exports，导出后自动打开文件夹并选中 json；大仓库有进度日志，中断也会存部分数据）。可导入在线分析器 zzz.233618.xyz。",
+          "cover": "assets/ui/cover.png",
+          "version": "1.3.8",
+          "versionCode": 26,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-inventory-scan",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      },
+      "v1.4.3": {
+        "version": "1.4.3",
+        "versionCode": 30,
+        "commit": "d58fba2640d9422f7f1d7ab126b767aa9b4fa16d",
+        "assetId": 714276254,
+        "assetName": "inventory_scan.zip",
+        "size": 774686,
+        "sha256": "5e657683a28562349d582cb333527b5b4c28be1c7c50832cd0a6221359e8f644",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/bc/1d/60e28a2f327d2c9c83ee5ac691aaa9778aac58485c91682ed22af81b2aa0/inventory_scan-1.4.3.zip",
+        "verifiedAt": "2026-11-05T18:42:52.030Z",
+        "hasAppSetting": false,
+        "cover": "inventory_scan-30.png",
+        "manifest": {
+          "id": "inventory_scan",
+          "name": "仓库扫描器",
+          "summary": "自动翻页扫描仓库中的代理人/驱动盘/音擎并 OCR 导出清单（输出到一条龙安装目录 .debug/inventory_exports，导出后自动打开文件夹并选中 json；大仓库有进度日志，中断也会存部分数据）。可导入在线分析器 zzz.233618.xyz。",
+          "cover": "assets/ui/cover.png",
+          "version": "1.4.3",
+          "versionCode": 30,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-inventory-scan",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
       }
     },
     "rejected": {},
-    "cnbDownloads": 371
+    "cnbDownloads": 430
   },
   "bagel": {
     "repoId": 1440859224,
@@ -1103,7 +1214,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 2057
+    "cnbDownloads": 2270
   },
   "battery_exchange": {
     "repoId": 1440879046,
@@ -1294,7 +1405,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 129
+    "cnbDownloads": 159
   },
   "graphics_restore": {
     "repoId": 1442127559,
@@ -1455,7 +1566,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 97
+    "cnbDownloads": 101
   },
   "graphics_low": {
     "repoId": 1442127504,
@@ -1578,7 +1689,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 111
+    "cnbDownloads": 118
   },
   "disc_cleanup": {
     "repoId": 1440878973,
@@ -1732,7 +1843,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 81
+    "cnbDownloads": 111
   },
   "bangboo_companion": {
     "repoId": 1444204673,
@@ -1815,12 +1926,12 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 2
+    "cnbDownloads": 19
   },
   "mys_checkin": {
     "repoId": 1446451406,
     "repo": "idk500/zzzod-plugin-mys-checkin",
-    "maxVersionCode": 5,
+    "maxVersionCode": 6,
     "releases": {
       "v0.1.1": {
         "version": "0.1.1",
@@ -1951,6 +2062,43 @@
           "summary": "一条龙运行时顺便完成米游社每日签到：游戏签到领福利（绝区零/原神/星穹铁道/崩坏3）+ 米游币打卡，可选库街区（鸣潮/战双）。内核为 DailyCheckIn 单文件工具（MIT），state.json 当日防重签，stoken 自动续期 cookie_token。仅手机号验证码登录（插件自带交互入口，号码不落盘），首次使用需在本机登录一次。",
           "version": "0.1.4",
           "versionCode": 5,
+          "cover": "assets/ui/cover.png",
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-mys-checkin",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      },
+      "v0.1.5": {
+        "version": "0.1.5",
+        "versionCode": 6,
+        "commit": "1b263c989d78ab4d0bd4bdee1cd22d2da6b8b436",
+        "assetId": 714177935,
+        "assetName": "mys_checkin.zip",
+        "size": 153981,
+        "sha256": "8fab7d49e73d872334e1e186df97f61e825fd641ef56055695846c2a23cf3742",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/fb/e7/c9e668b8647406e19732971f00924a09f3ad95e594e3d41e2bb69ddefef4/mys_checkin-0.1.5.zip",
+        "verifiedAt": "2026-11-05T18:42:52.030Z",
+        "hasAppSetting": false,
+        "cover": "mys_checkin-6.png",
+        "manifest": {
+          "id": "mys_checkin",
+          "name": "米游社签到",
+          "summary": "一条龙运行时顺便完成米游社每日签到：游戏签到领福利（绝区零/原神/星穹铁道/崩坏3）+ 米游币打卡，可选库街区（鸣潮/战双）。内核为 DailyCheckIn 单文件工具（MIT），state.json 当日防重签，stoken 自动续期 cookie_token。仅手机号验证码登录（插件自带交互入口，号码不落盘），首次使用需在本机登录一次。",
+          "version": "0.1.5",
+          "versionCode": 6,
           "cover": "assets/ui/cover.png",
           "defaultGroup": true,
           "needNotify": true,
