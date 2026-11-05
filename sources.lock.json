@@ -828,7 +828,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 369
+    "cnbDownloads": 371
   },
   "bagel": {
     "repoId": 1440859224,
@@ -1103,7 +1103,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 2047
+    "cnbDownloads": 2057
   },
   "battery_exchange": {
     "repoId": 1440879046,
@@ -1294,7 +1294,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 127
+    "cnbDownloads": 129
   },
   "graphics_restore": {
     "repoId": 1442127559,
@@ -1732,7 +1732,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 80
+    "cnbDownloads": 81
   },
   "bangboo_companion": {
     "repoId": 1444204673,
@@ -1972,6 +1972,6 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 7
+    "cnbDownloads": 10
   }
 }
