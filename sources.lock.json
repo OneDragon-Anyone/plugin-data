@@ -79,7 +79,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 132
+    "cnbDownloads": 136
   },
   "music_game_26": {
     "repoId": 1244891200,
@@ -125,7 +125,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 72
+    "cnbDownloads": 74
   },
   "demo_plugin": {
     "repoId": 1431540916,
@@ -791,7 +791,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 361
+    "cnbDownloads": 364
   },
   "bagel": {
     "repoId": 1440859224,
@@ -1066,7 +1066,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 1942
+    "cnbDownloads": 2009
   },
   "battery_exchange": {
     "repoId": 1440879046,
@@ -1381,7 +1381,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 93
+    "cnbDownloads": 97
   },
   "graphics_low": {
     "repoId": 1442127504,
@@ -1504,7 +1504,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 106
+    "cnbDownloads": 110
   },
   "disc_cleanup": {
     "repoId": 1440878973,
@@ -1621,6 +1621,89 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 76
+    "cnbDownloads": 79
+  },
+  "bangboo_companion": {
+    "repoId": 1444204673,
+    "repo": "idk500/zzzod-plugin-bangboo-companion",
+    "maxVersionCode": 2,
+    "releases": {
+      "v0.1.0": {
+        "version": "0.1.0",
+        "versionCode": 1,
+        "commit": "7dbed501c480e4053a1784f414c3a6a593312069",
+        "assetId": 705463696,
+        "assetName": "bangboo_companion.zip",
+        "size": 300865,
+        "sha256": "2b92bf2ed8220a4cce2103827d7832c987bd2c8dee5f1e0fc2eb29ba05c4ca26",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/53/80/65ea6c23163d84a16af9f802c935fd7174fb0b22ed154b70bc3d664b0b45/bangboo_companion-0.1.0.zip",
+        "verifiedAt": "2026-11-05T12:17:18.089Z",
+        "hasAppSetting": true,
+        "cover": "bangboo_companion-1.png",
+        "manifest": {
+          "id": "bangboo_companion",
+          "name": "邦布伴侣",
+          "summary": "桌面装饰插件：一条龙启动时，邦布在桌面右下角跳舞；一条龙停止时定格原地。支持自定义 GIF 素材（设置页选择或替换 assets/dance.gif）。纯桌面演出，不操作游戏、不影响一条龙流程。支持左键拖动、右键菜单暂停/退出。",
+          "cover": "assets/ui/cover.png",
+          "version": "0.1.0",
+          "versionCode": 1,
+          "defaultGroup": false,
+          "needNotify": false,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-bangboo-companion",
+          "risk": [
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      },
+      "v0.1.1": {
+        "version": "0.1.1",
+        "versionCode": 2,
+        "commit": "4f8e742da3baae48d5bdec737456362201724119",
+        "assetId": 705676218,
+        "assetName": "bangboo_companion.zip",
+        "size": 301243,
+        "sha256": "fe70cab749fabfe254dcb1ec1ecc39c7b5a456b57f864db066bd5ee3ea87c816",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/3d/a5/f5f1b71623b5cc519034e0b20362aef7751d3afdd8b20f2abf1ff4f20bdc/bangboo_companion-0.1.1.zip",
+        "verifiedAt": "2026-11-05T12:17:18.089Z",
+        "hasAppSetting": true,
+        "cover": "bangboo_companion-2.png",
+        "manifest": {
+          "id": "bangboo_companion",
+          "name": "邦布伴侣",
+          "summary": "桌面装饰插件：一条龙启动时，邦布在桌面右下角跳舞；一条龙停止时定格原地。支持自定义 GIF 素材（设置页选择或替换 assets/dance.gif）。纯桌面演出，不操作游戏、不影响一条龙流程。支持左键拖动、右键菜单暂停/退出。",
+          "cover": "assets/ui/cover.png",
+          "version": "0.1.1",
+          "versionCode": 2,
+          "defaultGroup": false,
+          "needNotify": false,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-bangboo-companion",
+          "risk": [
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      }
+    },
+    "rejected": {},
+    "cnbDownloads": 0
   }
 }
