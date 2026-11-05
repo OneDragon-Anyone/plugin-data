@@ -1504,7 +1504,7 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 110
+    "cnbDownloads": 111
   },
   "disc_cleanup": {
     "repoId": 1440878973,
@@ -1693,6 +1693,89 @@
           "homepage": "https://github.com/idk500/zzzod-plugin-bangboo-companion",
           "risk": [
             "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      }
+    },
+    "rejected": {},
+    "cnbDownloads": 0
+  },
+  "mys_checkin": {
+    "repoId": 1446451406,
+    "repo": "idk500/zzzod-plugin-mys-checkin",
+    "maxVersionCode": 3,
+    "releases": {
+      "v0.1.1": {
+        "version": "0.1.1",
+        "versionCode": 2,
+        "commit": "da7dbd481f4f0dff186f58fe7380ebd75fa20d81",
+        "assetId": 713217798,
+        "assetName": "mys_checkin.zip",
+        "size": 140216,
+        "sha256": "668a926d18746eb2ad6860489fd0473c95fc4c8cc3c76bd48eaae7de3ff9af6c",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/39/c9/51c3c52f50a960c24ede404b08894054c911da5032c48c60e1ae6fff46de/mys_checkin-0.1.1.zip",
+        "verifiedAt": "2026-11-05T12:19:06.070Z",
+        "hasAppSetting": false,
+        "cover": "mys_checkin-2.webp",
+        "manifest": {
+          "id": "mys_checkin",
+          "name": "米游社签到",
+          "summary": "一条龙运行时顺便完成米游社每日签到：游戏签到领福利（绝区零/原神/星穹铁道/崩坏3）+ 米游币打卡，可选库街区（鸣潮/战双）。内核为 DailyCheckIn 单文件工具（MIT，零抓包登录），state.json 当日防重签，stoken 自动续期 cookie_token。短信登录可拿满权限；扫码登录仅够游戏签到。首次使用需在本机登录一次。",
+          "version": "0.1.1",
+          "versionCode": 2,
+          "cover": "assets/cover.webp",
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-mys-checkin",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      },
+      "v0.1.2": {
+        "version": "0.1.2",
+        "versionCode": 3,
+        "commit": "8ee31e77ecf8aa6c36e1867c756a511f53cb6df8",
+        "assetId": 713243970,
+        "assetName": "mys_checkin.zip",
+        "size": 76906,
+        "sha256": "d291792d02fb6c9675f267c181c7036a0e1b84dcb554ee788af3fbd604b8772c",
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/4b/a4/ef1bcb8f8ef714c875bf961798f6771fc7a14902e75f9f2e36bcd7d2444a/mys_checkin-0.1.2.zip",
+        "verifiedAt": "2026-11-05T12:19:06.070Z",
+        "hasAppSetting": false,
+        "cover": "mys_checkin-3.webp",
+        "manifest": {
+          "id": "mys_checkin",
+          "name": "米游社签到",
+          "summary": "一条龙运行时顺便完成米游社每日签到：游戏签到领福利（绝区零/原神/星穹铁道/崩坏3）+ 米游币打卡，可选库街区（鸣潮/战双）。内核为 DailyCheckIn 单文件工具（MIT），state.json 当日防重签，stoken 自动续期 cookie_token。仅手机号验证码登录（插件自带交互入口，号码不落盘），首次使用需在本机登录一次。",
+          "version": "0.1.2",
+          "versionCode": 3,
+          "cover": "assets/cover.webp",
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-mys-checkin",
+          "risk": [
+            "automation"
           ],
           "compatibility": {
             "minAppVersion": "0.0.0",
