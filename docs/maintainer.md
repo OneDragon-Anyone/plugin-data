@@ -50,7 +50,7 @@
    }
    ```
 2. `repoId` 为仓库的 GitHub 数字 ID，可在终端通过 `gh api repos/<owner>/<repo> --jq .id` 查询。
-3. 作者自建镜像按版本写进 `sources`（格式见 README 的「国内镜像」），没有就省略。
+3. 作者自建镜像写 `mirror`，填对应仓库首页；没有就省略。
 4. 提交并合并至 master。
 
 ### 2.4 手动触发更新
@@ -79,4 +79,3 @@ pnpm dev                                 # 本地启动预览
 ```
 
 联调需要环境变量：`MARKET_DATA_DIR` 指向本数据仓目录、`TEMPLATE_DIR` 指向 plugin-template、`GITHUB_TOKEN=$(gh auth token)`，详见代码仓 README。
-

@@ -5,7 +5,7 @@
 - 🌐 **在线插件市场**：[https://onedragon-anyone.github.io/plugin-data/](https://onedragon-anyone.github.io/plugin-data/)
 - 📖 **开发者发版指南**：[docs/runbook.md](docs/runbook.md)
 - 🛠️ **仓库维护手册**：[docs/maintainer.md](docs/maintainer.md)
-- 💻 **配套市场仓**：[OneDragon-Anyone/plugin-market](https://github.com/OneDragon-Anyone/plugin-market)（自动审核、构建索引、渲染市场网页与索引镜像）
+- 💻 **配套市场仓**：[OneDragon-Anyone/plugin-market](https://github.com/OneDragon-Anyone/plugin-market)（自动审核、构建索引与网页、同步镜像）
 
 ---
 
@@ -32,8 +32,13 @@
 
 ## 国内镜像
 
-索引 `plugins.json` 与封面 `covers/` 在 [plugin-mirror](https://cnb.cool/OneDragon-Anyone/plugin-mirror)
-另发一份，内容与线上一致，国内访问更快。
+安装包默认走你仓库 GitHub Release 的直链，安装前校验 sha256。国内有镜像的，在 `market/plugins/{id}.json` 里加一行 `mirror`（与 `repo` 同级），值填仓库首页；下载路径由构建拼，之后的版本自动套用：
 
-插件安装包不托管：客户端按 `sources.github` 从作者仓库的 GitHub Release 下载，安装前校验
-sha256。作者自建镜像按版本写进 `market/plugins/{id}.json` 的 `sources`，格式见市场仓 README。
+```jsonc
+// 最多两条，没镜像就不写这行
+"mirror": ["https://cnb.cool/组名/仓库名", "https://gitee.com/用户名/仓库名"]
+```
+
+镜像里的 tag 和附件名要跟 GitHub Release 一致；别贴某一版的链接，会被校验拒绝。
+
+还没收录的把地址写在 issue 的备注里，维护者合并前加进去；已收录的改文件提 PR。
