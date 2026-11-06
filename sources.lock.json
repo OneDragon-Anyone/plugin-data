@@ -171,7 +171,7 @@
   "inventory_scan": {
     "repoId": 1432190207,
     "repo": "idk500/zzzod-plugin-inventory-scan",
-    "maxVersionCode": 32,
+    "maxVersionCode": 34,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -1008,6 +1008,78 @@
           },
           "apps": []
         }
+      },
+      "v1.4.6": {
+        "version": "1.4.6",
+        "versionCode": 33,
+        "commit": "3704721d303ec6e6994069d7e778e9c529619f2a",
+        "assetId": 716278044,
+        "assetName": "inventory_scan.zip",
+        "size": 780329,
+        "sha256": "cbf508a9bc74904b4d2d5e9e2638cd858a1827c018c7ad5a0b4eac8758e82a52",
+        "verifiedAt": "2026-11-06T13:36:54.595Z",
+        "hasAppSetting": false,
+        "cover": "inventory_scan-33.png",
+        "manifest": {
+          "id": "inventory_scan",
+          "name": "仓库扫描器",
+          "summary": "自动翻页扫描仓库中的代理人/驱动盘/音擎并 OCR 导出清单（输出到一条龙安装目录 .debug/inventory_exports，导出后自动打开文件夹并选中 json；大仓库有进度日志，中断也会存部分数据）。可导入在线分析器 zzz.233618.xyz。",
+          "cover": "assets/ui/cover.png",
+          "version": "1.4.6",
+          "versionCode": 33,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-inventory-scan",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      },
+      "v1.4.7": {
+        "version": "1.4.7",
+        "versionCode": 34,
+        "commit": "1bb7d01004a5303d4612f15c6ede80d4cfaca42f",
+        "assetId": 717252994,
+        "assetName": "inventory_scan.zip",
+        "size": 780554,
+        "sha256": "ebb1ebb349cba2106d674ffad448db9db0452a96ff8daf947fe5d0660b970888",
+        "verifiedAt": "2026-11-06T13:36:54.595Z",
+        "hasAppSetting": false,
+        "cover": "inventory_scan-34.png",
+        "manifest": {
+          "id": "inventory_scan",
+          "name": "仓库扫描器",
+          "summary": "自动翻页扫描仓库中的代理人/驱动盘/音擎并 OCR 导出清单（输出到一条龙安装目录 .debug/inventory_exports，导出后自动打开文件夹并选中 json；大仓库有进度日志，中断也会存部分数据）。可导入在线分析器 zzz.233618.xyz。原作 kawayiYokami（基座内置扫描器），本插件为其独立迁移维护版。",
+          "cover": "assets/ui/cover.png",
+          "version": "1.4.7",
+          "versionCode": 34,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-inventory-scan",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
       }
     },
     "rejected": {},
@@ -1766,7 +1838,7 @@
   "disc_cleanup": {
     "repoId": 1440878973,
     "repo": "idk500/zzzod-plugin-disc-cleanup",
-    "maxVersionCode": 6,
+    "maxVersionCode": 7,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -1931,6 +2003,42 @@
           "cover": "assets/ui/cover.png",
           "version": "1.0.5",
           "versionCode": 6,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-disc-cleanup",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      },
+      "v1.0.6": {
+        "version": "1.0.6",
+        "versionCode": 7,
+        "commit": "935b5294610c472e297943da33d462453b466e86",
+        "assetId": 716278152,
+        "assetName": "disc_cleanup.zip",
+        "size": 185910,
+        "sha256": "b91892bd0c2fd59f907959bf69927830fbd143d3071fb6f0125a1235c1dc72b6",
+        "verifiedAt": "2026-11-06T13:36:54.595Z",
+        "hasAppSetting": false,
+        "cover": "disc_cleanup-7.png",
+        "manifest": {
+          "id": "disc_cleanup",
+          "name": "驱动盘清理标记",
+          "summary": "按规则层决策（.debug/cleanup_decisions.json）在仓库内逐盘指纹匹配并标记弃置；余位≥门槛自动跳过，满级盘永不标记。依赖仓库扫描器插件的解析模块。",
+          "cover": "assets/ui/cover.png",
+          "version": "1.0.6",
+          "versionCode": 7,
           "defaultGroup": true,
           "needNotify": true,
           "author": {
