@@ -5,7 +5,7 @@
 - 🌐 **在线插件市场**：[https://onedragon-anyone.github.io/plugin-data/](https://onedragon-anyone.github.io/plugin-data/)
 - 📖 **开发者发版指南**：[docs/runbook.md](docs/runbook.md)
 - 🛠️ **仓库维护手册**：[docs/maintainer.md](docs/maintainer.md)
-- 💻 **配套市场仓**：[OneDragon-Anyone/plugin-market](https://github.com/OneDragon-Anyone/plugin-market)（自动审核、构建索引、渲染市场网页与镜像分发）
+- 💻 **配套市场仓**：[OneDragon-Anyone/plugin-market](https://github.com/OneDragon-Anyone/plugin-market)（自动审核、构建索引、渲染市场网页与索引镜像）
 
 ---
 
@@ -14,7 +14,7 @@
 ```text
 ├── market/
 │   ├── plugins/{id}.json    # 各插件配置与审核信息（提交 Issue 后由机器人自动生成）
-│   └── policy.json          # 收录规则（命名限制、保留 ID）与国内镜像源配置
+│   └── policy.json          # 收录规则（命名限制、保留 ID）与索引镜像配置
 ├── docs/                    # 开发者发布手册与维护说明
 └── .github/workflows/       # 自动化流水线（定时构建、提交自动审核）
 ```
@@ -32,9 +32,8 @@
 
 ## 国内镜像
 
-索引、封面与安装包在 CNB 各有一份，国内网络访问更快：
+索引 `plugins.json` 与封面 `covers/` 在 [plugin-mirror](https://cnb.cool/OneDragon-Anyone/plugin-mirror)
+另发一份，内容与线上一致，国内访问更快。
 
-- **索引与封面**：[plugin-mirror](https://cnb.cool/OneDragon-Anyone/plugin-mirror)，内容与本仓 `api/v1/` 一致
-- **安装包**：[plugin-mirror-release](https://cnb.cool/OneDragon-Anyone/plugin-mirror-release)，每个插件一个包，包名为插件 id
-
-`plugins.json` 里每个版本的 `sources.cnb` 给出安装包直链，客户端按网络情况切换下载源；镜像不可用时自动回落 GitHub 原址。
+插件安装包不托管：客户端按 `sources.github` 从作者仓库的 GitHub Release 下载，安装前校验
+sha256。作者自建镜像按版本写进 `market/plugins/{id}.json` 的 `sources`，格式见市场仓 README。

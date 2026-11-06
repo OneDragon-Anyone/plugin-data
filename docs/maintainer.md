@@ -10,7 +10,7 @@
 
 1. **作者发版**：插件作者在自己的仓库打 tag 发 Release（包含 `<id>.zip`）。
 2. **提交审核**：作者在插件市场仓库提 Issue，机器人自动核验包结构并提 PR；维护者确认后合并 PR。
-3. **数据抓取**：定时任务（每小时）抓取所有已收录插件的最新 Release，计算 sha256 写入 `lock` 分支并生成静态 API（`/api/v1/`）和网页。
+3. **数据抓取**：定时任务（每小时）抓取所有已收录插件的最新 Release，计算 sha256 写入 `lock` 分支并生成静态 API 和网页。
 4. **客户端拉取**：客户端直接读取 GitHub Pages 上的静态 JSON 获取插件列表与下载链接。
 
 ---
@@ -50,7 +50,8 @@
    }
    ```
 2. `repoId` 为仓库的 GitHub 数字 ID，可在终端通过 `gh api repos/<owner>/<repo> --jq .id` 查询。
-3. 提交并合并至 master。
+3. 作者自建镜像按版本写进 `sources`（格式见 README 的「国内镜像」），没有就省略。
+4. 提交并合并至 master。
 
 ### 2.4 手动触发更新
 - 在 GitHub 仓库页面进入 **Actions** -> **Build Market** -> 点击 **Run workflow**。
@@ -73,7 +74,7 @@
 ```shell
 pnpm market:check                      # 校验本地市场规则
 pnpm market:check --resolve --deep <id> # 联网校验指定插件并下载检查 Release 附件
-pnpm market:build                      # 本地执行全量构建（生成 public/api/v1 与站点）
+pnpm market:build                      # 本地执行全量构建（生成静态 API 与站点）
 pnpm dev                                 # 本地启动预览
 ```
 
