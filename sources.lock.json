@@ -1088,7 +1088,7 @@
   "bagel": {
     "repoId": 1440859224,
     "repo": "Cora093/zzz-bagel-plugin",
-    "maxVersionCode": 7,
+    "maxVersionCode": 8,
     "releases": {
       "v0.1.0": {
         "version": "0.1.0",
@@ -1336,6 +1336,43 @@
           "summary": "贝果计划自动跑刀：按自录路线跑图、收集物品、清理仓库并结算的完整自动化流程。",
           "version": "0.3.3",
           "versionCode": 7,
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "Cora、kawayiYokami、ShadowLemoon、PoorKid1112、RRRR623、wusaqi、Ada、A-nony-mous",
+            "url": "https://github.com/kawayiYokami"
+          },
+          "homepage": "https://github.com/Cora093/zzz-bagel-plugin",
+          "risk": [
+            "automation",
+            "ocr",
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "cover": "assets/cover.webp"
+        }
+      },
+      "v0.3.4": {
+        "version": "0.3.4",
+        "versionCode": 8,
+        "commit": "8a13545d0af27cc7a23c4cecef464a0e84fb4e5f",
+        "assetId": 720717433,
+        "assetName": "bagel.zip",
+        "size": 887240,
+        "sha256": "8ef11a40b85192753d297e21acfd1000d32354754ae2b6f1042a9ddb6b5e20de",
+        "verifiedAt": "2026-11-07T13:58:09.518Z",
+        "hasAppSetting": true,
+        "cover": "bagel-8.webp",
+        "manifest": {
+          "id": "bagel",
+          "name": "贝果计划",
+          "summary": "贝果计划自动跑刀：按自录路线跑图、收集物品、清理仓库并结算的完整自动化流程。",
+          "version": "0.3.4",
+          "versionCode": 8,
           "defaultGroup": true,
           "needNotify": true,
           "author": {
