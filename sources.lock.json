@@ -207,7 +207,9 @@
           },
           "apps": []
         },
-        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/45/13/69ed42e7d41749b36b066ec1d0a990943f8d677545ea0ae04faa2a216347/inventory_scan-1.0.0.zip"
+        "mirrorUrl": "https://pypi.cnb.cool/OneDragon-Anyone/plugin-mirror-release/-/packages/packages/45/13/69ed42e7d41749b36b066ec1d0a990943f8d677545ea0ae04faa2a216347/inventory_scan-1.0.0.zip",
+        "revokedAt": "2026-11-08T06:49:05.091Z",
+        "revokedReason": "missing_asset"
       },
       "v1.0.1": {
         "version": "1.0.1",
@@ -2107,7 +2109,7 @@
         "version": "0.1.0",
         "versionCode": 1,
         "commit": "7dbed501c480e4053a1784f414c3a6a593312069",
-        "assetId": 705463696,
+        "assetId": 713475166,
         "assetName": "bangboo_companion.zip",
         "size": 300865,
         "sha256": "2b92bf2ed8220a4cce2103827d7832c987bd2c8dee5f1e0fc2eb29ba05c4ca26",
@@ -2144,7 +2146,7 @@
         "version": "0.1.1",
         "versionCode": 2,
         "commit": "4f8e742da3baae48d5bdec737456362201724119",
-        "assetId": 705676218,
+        "assetId": 713474956,
         "assetName": "bangboo_companion.zip",
         "size": 301243,
         "sha256": "fe70cab749fabfe254dcb1ec1ecc39c7b5a456b57f864db066bd5ee3ea87c816",
@@ -2184,13 +2186,13 @@
   "mys_checkin": {
     "repoId": 1446451406,
     "repo": "idk500/zzzod-plugin-mys-checkin",
-    "maxVersionCode": 6,
+    "maxVersionCode": 7,
     "releases": {
       "v0.1.1": {
         "version": "0.1.1",
         "versionCode": 2,
         "commit": "da7dbd481f4f0dff186f58fe7380ebd75fa20d81",
-        "assetId": 713217798,
+        "assetId": 713418705,
         "assetName": "mys_checkin.zip",
         "size": 140216,
         "sha256": "668a926d18746eb2ad6860489fd0473c95fc4c8cc3c76bd48eaae7de3ff9af6c",
@@ -2258,7 +2260,9 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "revokedAt": "2026-11-08T06:49:05.091Z",
+        "revokedReason": "asset_changed"
       },
       "v0.1.3": {
         "version": "0.1.3",
@@ -2295,7 +2299,9 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "revokedAt": "2026-11-08T06:49:05.091Z",
+        "revokedReason": "asset_changed"
       },
       "v0.1.4": {
         "version": "0.1.4",
@@ -2332,7 +2338,9 @@
             "python": ">=3.11"
           },
           "apps": []
-        }
+        },
+        "revokedAt": "2026-11-08T06:49:05.091Z",
+        "revokedReason": "asset_changed"
       },
       "v0.1.5": {
         "version": "0.1.5",
@@ -2370,9 +2378,52 @@
           },
           "apps": []
         }
+      },
+      "v0.2.0": {
+        "version": "0.2.0",
+        "versionCode": 7,
+        "commit": "fcdf5360f8cec589e8d0f348d2c2840759791066",
+        "assetId": 722806735,
+        "assetName": "mys_checkin.zip",
+        "size": 228853,
+        "sha256": "08684b65babf20efb8edfabf2578160aea4814f426314fb6c4b896fffc5b7a9c",
+        "verifiedAt": "2026-11-08T06:49:05.091Z",
+        "hasAppSetting": true,
+        "cover": "mys_checkin-7.png",
+        "manifest": {
+          "id": "mys_checkin",
+          "name": "米游社签到",
+          "summary": "一条龙运行时顺便完成米游社每日签到：游戏签到领福利（绝区零/原神/星穹铁道/崩坏3）+ 米游币打卡，可选库街区（鸣潮/战双）。内核为 DailyCheckIn 单文件工具（MIT），state.json 当日防重签，stoken 自动续期 cookie_token。仅手机号验证码登录（GUI 设置页内登录，号码不落盘）。",
+          "version": "0.2.0",
+          "versionCode": 7,
+          "cover": "assets/ui/cover.png",
+          "defaultGroup": true,
+          "needNotify": true,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-mys-checkin",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
       }
     },
     "rejected": {},
-    "cnbDownloads": 17
+    "cnbDownloads": 17,
+    "revokedIssue": 32,
+    "revokedNotified": [
+      "v0.1.2",
+      "v0.1.3",
+      "v0.1.4"
+    ],
+    "revokedFloor": 6
   }
 }
