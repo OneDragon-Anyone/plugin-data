@@ -2424,6 +2424,7 @@
       "v0.1.3",
       "v0.1.4"
     ],
-    "revokedFloor": 6
+    "revokedFloor": 6,
+    "revokedResolved": "leftover attachments removed"
   }
 }
