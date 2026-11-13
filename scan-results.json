@@ -5551,6 +5551,1387 @@
           "review": 6
         }
       }
+    },
+    "e5553ab63747605e813faf9011b0a63bb8fd2a4825f50cd94828599bd59f2d18": {
+      "id": "inventory_scan",
+      "tag": "v1.1.1",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 82,
+        "pythonFiles": 25,
+        "findings": [
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/drive_disk/drive_disk_scan_app.py",
+            "line": 84,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 70,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 4,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 5,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 3,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 6,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 6
+        }
+      }
+    },
+    "78835fc4f2d9a1ccb10de6bab1f15677fe7194ebc39f9c200807bafc954c1800": {
+      "id": "inventory_scan",
+      "tag": "v1.1.2",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 83,
+        "pythonFiles": 26,
+        "findings": [
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/drive_disk/drive_disk_scan_app.py",
+            "line": 82,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 70,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 4,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 5,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 3,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 6,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 6
+        }
+      }
+    },
+    "53a12308c71a05bbbd9c484fb21e344ff06768e3c9ecb322094158817938f807": {
+      "id": "inventory_scan",
+      "tag": "v1.2.1",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 85,
+        "pythonFiles": 27,
+        "findings": [
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/drive_disk/drive_disk_scan_app.py",
+            "line": 88,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 71,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 4,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 5,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 3,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 6,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 6
+        }
+      }
+    },
+    "d17c847315f3820f6ddefa7114894fb3b1c1bee10e3402533fc03c27a768cda2": {
+      "id": "inventory_scan",
+      "tag": "v1.3.0",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 85,
+        "pythonFiles": 27,
+        "findings": [
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/drive_disk/drive_disk_scan_app.py",
+            "line": 94,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 71,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 4,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 5,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 3,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 6,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 6
+        }
+      }
+    },
+    "0bc84a192c3d87ab19bbf6c934359bc3cdb0679dc5cd4b6304ae77a2bcbaa5d6": {
+      "id": "inventory_scan",
+      "tag": "v1.3.1",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 89,
+        "pythonFiles": 28,
+        "findings": [
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/drive_disk/drive_disk_scan_app.py",
+            "line": 94,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 72,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 4,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 5,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 3,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 6,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 6
+        }
+      }
+    },
+    "ca6465889709c18e0766a60ceb29522b52d31f88716678b7a87369377968c3bd": {
+      "id": "inventory_scan",
+      "tag": "v1.3.2",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 89,
+        "pythonFiles": 28,
+        "findings": [
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/drive_disk/drive_disk_scan_app.py",
+            "line": 94,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 72,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 4,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 5,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 3,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 6,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 6
+        }
+      }
+    },
+    "7de0a62682da29fe2f424119be25b068e4a4efe0f1f903e678e2527e8a911f62": {
+      "id": "inventory_scan",
+      "tag": "v1.3.5",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 89,
+        "pythonFiles": 28,
+        "findings": [
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/drive_disk/drive_disk_scan_app.py",
+            "line": 94,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 74,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "SHELL_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 415,
+            "detail": "subprocess 启动子进程"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 408,
+            "detail": "使用网络模块 webbrowser，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 4,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 5,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 3,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 6,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 8
+        }
+      }
+    },
+    "2bea1e542285db6bfd10030002316cbae0295462e8a3284900a28d2e76a79b74": {
+      "id": "inventory_scan",
+      "tag": "v1.3.7",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 92,
+        "pythonFiles": 28,
+        "findings": [
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/drive_disk/drive_disk_scan_app.py",
+            "line": 94,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 75,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "SHELL_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 464,
+            "detail": "subprocess 启动子进程"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 457,
+            "detail": "使用网络模块 webbrowser，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 4,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 5,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 3,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 6,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 8
+        }
+      }
+    },
+    "315c76808acd6e4fa33e23a08f75420d5e895785ff637460daba2e84481e03b0": {
+      "id": "inventory_scan",
+      "tag": "v1.3.8",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 92,
+        "pythonFiles": 28,
+        "findings": [
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/drive_disk/drive_disk_scan_app.py",
+            "line": 94,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 75,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "SHELL_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 464,
+            "detail": "subprocess 启动子进程"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 457,
+            "detail": "使用网络模块 webbrowser，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 4,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 5,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 3,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 6,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 8
+        }
+      }
+    },
+    "5e657683a28562349d582cb333527b5b4c28be1c7c50832cd0a6221359e8f644": {
+      "id": "inventory_scan",
+      "tag": "v1.4.3",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 90,
+        "pythonFiles": 28,
+        "findings": [
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/drive_disk/drive_disk_scan_app.py",
+            "line": 94,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 82,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "SHELL_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 469,
+            "detail": "subprocess 启动子进程"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 462,
+            "detail": "使用网络模块 webbrowser，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 4,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 5,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 3,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 6,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 8
+        }
+      }
+    },
+    "df326cf27cc23a30258669f078f8d9c8c7f172db97393c5bc8d552f5039242cc": {
+      "id": "inventory_scan",
+      "tag": "v1.4.4",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 90,
+        "pythonFiles": 28,
+        "findings": [
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/drive_disk/drive_disk_scan_app.py",
+            "line": 94,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 82,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "SHELL_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 469,
+            "detail": "subprocess 启动子进程"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 462,
+            "detail": "使用网络模块 webbrowser，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 4,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 5,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 3,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 6,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 8
+        }
+      }
+    },
+    "a5a5a38824e2ed21361bbc5d5229c2febc6d853a627333179e21ec08c7846a8e": {
+      "id": "inventory_scan",
+      "tag": "v1.4.5",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 90,
+        "pythonFiles": 28,
+        "findings": [
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/drive_disk/drive_disk_scan_app.py",
+            "line": 94,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 116,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "SHELL_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 506,
+            "detail": "subprocess 启动子进程"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 499,
+            "detail": "使用网络模块 webbrowser，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 4,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 5,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 3,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 6,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 8
+        }
+      }
+    },
+    "cbf508a9bc74904b4d2d5e9e2638cd858a1827c018c7ad5a0b4eac8758e82a52": {
+      "id": "inventory_scan",
+      "tag": "v1.4.6",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 91,
+        "pythonFiles": 29,
+        "findings": [
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/drive_disk/drive_disk_scan_app.py",
+            "line": 94,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 656,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "SHELL_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 508,
+            "detail": "subprocess 启动子进程"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 501,
+            "detail": "使用网络模块 webbrowser，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 4,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 5,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 3,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 6,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 8
+        }
+      }
+    },
+    "ebb1ebb349cba2106d674ffad448db9db0452a96ff8daf947fe5d0660b970888": {
+      "id": "inventory_scan",
+      "tag": "v1.4.7",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 91,
+        "pythonFiles": 29,
+        "findings": [
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/drive_disk/drive_disk_scan_app.py",
+            "line": 94,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "RECURSIVE_DELETE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 662,
+            "detail": "递归删除目录"
+          },
+          {
+            "code": "SHELL_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 514,
+            "detail": "subprocess 启动子进程"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/inventory_scan.py",
+            "line": 507,
+            "detail": "使用网络模块 webbrowser，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 4,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/icon_downloader.py",
+            "line": 5,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 3,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "inventory_scan/translation/translation_updater.py",
+            "line": 6,
+            "detail": "使用网络模块 urllib，需确认与申报的风险标签一致"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 8
+        }
+      }
+    },
+    "33fae1e5fcc8a011b969212d0763bc2167a8f65a220ef48f5cbdee89e018d7ef": {
+      "id": "life_on_line",
+      "tag": "v1.0.1",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 11,
+        "pythonFiles": 8,
+        "findings": [],
+        "summary": {
+          "block": 0,
+          "review": 0
+        }
+      }
+    },
+    "c0063598a635ade68cb8babe66322e98e7812549f89205a0257b01813d0adf81": {
+      "id": "life_on_line",
+      "tag": "v1.0.2",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 12,
+        "pythonFiles": 8,
+        "findings": [],
+        "summary": {
+          "block": 0,
+          "review": 0
+        }
+      }
+    },
+    "ac90e49b3dd5eb289542083d043fa5dcf27bc5e45433d28828890eccb5168425": {
+      "id": "music_game_26",
+      "tag": "v1.1.0",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 13,
+        "pythonFiles": 11,
+        "findings": [],
+        "summary": {
+          "block": 0,
+          "review": 0
+        }
+      }
+    },
+    "668a926d18746eb2ad6860489fd0473c95fc4c8cc3c76bd48eaae7de3ff9af6c": {
+      "id": "mys_checkin",
+      "tag": "v0.1.1",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 13,
+        "pythonFiles": 7,
+        "findings": [
+          {
+            "code": "SHELL_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "mys_checkin/mys_checkin_app.py",
+            "line": 94,
+            "detail": "subprocess 启动子进程"
+          },
+          {
+            "code": "BUNDLED_DEPENDENCY_DIR",
+            "severity": "block",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/LICENSE",
+            "line": 0,
+            "detail": "包内不允许捆绑依赖目录"
+          },
+          {
+            "code": "BUNDLED_DEPENDENCY_DIR",
+            "severity": "block",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/README.md",
+            "line": 0,
+            "detail": "包内不允许捆绑依赖目录"
+          },
+          {
+            "code": "BUNDLED_DEPENDENCY_DIR",
+            "severity": "block",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 0,
+            "detail": "包内不允许捆绑依赖目录"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 28,
+            "detail": "使用网络模块 socket，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 36,
+            "detail": "使用网络模块 requests，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 1193,
+            "detail": "引用第三方包 playwright，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 1327,
+            "detail": "引用第三方包 onepush，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 1338,
+            "detail": "引用第三方包 onepush，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 1379,
+            "detail": "引用第三方包 onepush，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 599,
+            "detail": "引用第三方包 qrcode，需确认主程序已内置"
+          }
+        ],
+        "summary": {
+          "block": 3,
+          "review": 8
+        }
+      }
+    },
+    "8fab7d49e73d872334e1e186df97f61e825fd641ef56055695846c2a23cf3742": {
+      "id": "mys_checkin",
+      "tag": "v0.1.5",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 13,
+        "pythonFiles": 8,
+        "findings": [
+          {
+            "code": "SHELL_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "mys_checkin/mys_checkin_app.py",
+            "line": 99,
+            "detail": "subprocess 启动子进程"
+          },
+          {
+            "code": "BUNDLED_DEPENDENCY_DIR",
+            "severity": "block",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/LICENSE",
+            "line": 0,
+            "detail": "包内不允许捆绑依赖目录"
+          },
+          {
+            "code": "BUNDLED_DEPENDENCY_DIR",
+            "severity": "block",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/README.md",
+            "line": 0,
+            "detail": "包内不允许捆绑依赖目录"
+          },
+          {
+            "code": "BUNDLED_DEPENDENCY_DIR",
+            "severity": "block",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 0,
+            "detail": "包内不允许捆绑依赖目录"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 28,
+            "detail": "使用网络模块 socket，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 36,
+            "detail": "使用网络模块 requests，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 1193,
+            "detail": "引用第三方包 playwright，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 1327,
+            "detail": "引用第三方包 onepush，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 1338,
+            "detail": "引用第三方包 onepush，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 1379,
+            "detail": "引用第三方包 onepush，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 599,
+            "detail": "引用第三方包 qrcode，需确认主程序已内置"
+          }
+        ],
+        "summary": {
+          "block": 3,
+          "review": 8
+        }
+      }
+    },
+    "08684b65babf20efb8edfabf2578160aea4814f426314fb6c4b896fffc5b7a9c": {
+      "id": "mys_checkin",
+      "tag": "v0.2.0",
+      "scannedAt": "2026-11-13T09:43:32.305Z",
+      "status": "scanned",
+      "report": {
+        "scannedFiles": 17,
+        "pythonFiles": 11,
+        "findings": [
+          {
+            "code": "SHELL_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "mys_checkin/mys_checkin_app.py",
+            "line": 99,
+            "detail": "subprocess 启动子进程"
+          },
+          {
+            "code": "BUNDLED_DEPENDENCY_DIR",
+            "severity": "block",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/LICENSE",
+            "line": 0,
+            "detail": "包内不允许捆绑依赖目录"
+          },
+          {
+            "code": "BUNDLED_DEPENDENCY_DIR",
+            "severity": "block",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/README.md",
+            "line": 0,
+            "detail": "包内不允许捆绑依赖目录"
+          },
+          {
+            "code": "BUNDLED_DEPENDENCY_DIR",
+            "severity": "block",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 0,
+            "detail": "包内不允许捆绑依赖目录"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 28,
+            "detail": "使用网络模块 socket，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "NETWORK_MODULE",
+            "severity": "review",
+            "category": "static",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 36,
+            "detail": "使用网络模块 requests，需确认与申报的风险标签一致"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 1193,
+            "detail": "引用第三方包 playwright，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 1327,
+            "detail": "引用第三方包 onepush，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 1338,
+            "detail": "引用第三方包 onepush，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 1379,
+            "detail": "引用第三方包 onepush，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "mys_checkin/vendor/checkin.py",
+            "line": 599,
+            "detail": "引用第三方包 qrcode，需确认主程序已内置"
+          }
+        ],
+        "summary": {
+          "block": 3,
+          "review": 8
+        }
+      }
     }
   }
 }
