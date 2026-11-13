@@ -1085,7 +1085,20 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 449
+    "cnbDownloads": 449,
+    "securityIssue": 43,
+    "securityNotified": [
+      "c465deb194888392f4a01aa8ab4a9cf1013428c6a2ae7d2c6a4e85dad00e7199",
+      "f0a04b0e77e198df421a6760e7e272eacf7d33c0c6c44a62cf7eade040de9d0b",
+      "4995d322381a258d78277e1bcb7bd0dbe7239905e218fe67b500fe187134f35e",
+      "9119c7e0ec6eb2bbefc1dde2de1993d42183e652c613cdca025ec5059c88ee99",
+      "52f3b79b2099f2193e9e153d6f5213af9d680fa1c4fc92f58ec57fe816e74128",
+      "b5539488ecd00eb7532f68d3982449f0c2a7c5eae6a16bfee88a5d738120de9c",
+      "c3021b91d10bb47ab93365393e7ac69a5e865fead1bab9cfce7a6966ed7957ba",
+      "6131bf0e87dbcd03f84f9c366a261c53959707919a58645af207ccdc864518d0",
+      "5a86210b30435b7bf25b52e2f398d4a2d659b2341ef8111865a4d15a810a10db",
+      "f9439d91fb3905b4f64125183be2ca9276bb13e4603e864b985109740108863a"
+    ]
   },
   "bagel": {
     "repoId": 1440859224,
@@ -2529,7 +2542,12 @@
         }
       }
     },
-    "rejected": {}
+    "rejected": {},
+    "securityIssue": 42,
+    "securityNotified": [
+      "8f912ae46e54936dd8bd26a62debe5494239d8d170469e04a4f0836e328c2cf2",
+      "a824ca028bcddcf38c40508248f9a93272f0e7cb55dd3bc740241590c5660aec"
+    ]
   },
   "zzz_saved_account": {
     "repoId": 1453598609,
