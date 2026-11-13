@@ -2498,5 +2498,80 @@
       }
     },
     "rejected": {}
+  },
+  "zzz_saved_account": {
+    "repoId": 1453598609,
+    "repo": "xiaoguangOMO/zzzod-plugin-saved-account",
+    "maxVersionCode": 4,
+    "releases": {
+      "v1.2.0": {
+        "version": "1.2.0",
+        "versionCode": 3,
+        "commit": "e4ced6907d8cc29b7d53a6ed7368fc3ec69db7d6",
+        "assetId": 734392460,
+        "assetName": "zzz_saved_account.zip",
+        "size": 20326,
+        "sha256": "17634356ca38977f4fd867882d69ac0bfa7d343fc09ea51463373f38d3d4df3f",
+        "verifiedAt": "2026-11-13T05:59:38.796Z",
+        "hasAppSetting": true,
+        "cover": "",
+        "manifest": {
+          "id": "zzz_saved_account",
+          "name": "已保存账号免密切换",
+          "summary": "多账号玩家切换账号时，直接点选游戏里已保存的登录记录，不再走「退出 → 输入账号密码」。插件给进入游戏流程打补丁：标题界面点切换账号 → 退出登录确认框选「退出并保留登录记录」→ 展开账号下拉 → 按掩码手机号选中当前实例配置的账号 → 点进入游戏。",
+          "version": "1.2.0",
+          "versionCode": 3,
+          "author": {
+            "name": "xiaoguangOMO",
+            "url": "https://github.com/xiaoguangOMO"
+          },
+          "homepage": "https://github.com/xiaoguangOMO/zzzod-plugin-saved-account",
+          "risk": [
+            "ocr",
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "2.4.4",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          }
+        }
+      },
+      "v1.3.0": {
+        "version": "1.3.0",
+        "versionCode": 4,
+        "commit": "e8c57afd501bbeff3655fb6079726ab80197c9c1",
+        "assetId": 742261453,
+        "assetName": "zzz_saved_account.zip",
+        "size": 23139,
+        "sha256": "208a0e0e1c5792a33722a53c3fd8146ef2485a8904009fe0855a933d48fd783e",
+        "verifiedAt": "2026-11-13T05:59:38.796Z",
+        "hasAppSetting": true,
+        "cover": "",
+        "manifest": {
+          "id": "zzz_saved_account",
+          "name": "已保存账号免密切换",
+          "summary": "注意：这是会改一条龙登录流程的补丁——插件加载即生效，不需要点开本应用。标题界面点切换账号、退出登录时选「退出并保留登录记录」，再按每个实例配置的掩码点选已保存的登录记录进入游戏。目标账号存在 plugin_data/zzz_saved_account/targets.json。",
+          "version": "1.3.0",
+          "versionCode": 4,
+          "author": {
+            "name": "xiaoguangOMO",
+            "url": "https://github.com/xiaoguangOMO"
+          },
+          "homepage": "https://github.com/xiaoguangOMO/zzzod-plugin-saved-account",
+          "risk": [
+            "ocr",
+            "filesystem",
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "2.4.4",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          }
+        }
+      }
+    },
+    "rejected": {}
   }
 }
