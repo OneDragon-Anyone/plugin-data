@@ -1,0 +1,4749 @@
+{
+  "version": 1,
+  "results": {
+    "6fb16ead7782727304975cba3801ad12e79370ec65559e787fac7fbea12e666a": {
+      "id": "bagel",
+      "tag": "v0.1.0",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 117,
+        "pythonFiles": 48,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/bagel_run_record.py",
+            "line": 6,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 15,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 16,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 11,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 24,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 26,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 13,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_thread.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_test_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_test_thread.py",
+            "line": 27,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 20,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 21,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 23,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 24,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 26,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 17,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 30,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "DYNAMIC_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 457,
+            "detail": "exec() 动态执行代码"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 13,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 21,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 38,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 9,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 10,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 11,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 20,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_clean.py",
+            "line": 5,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_investment.py",
+            "line": 5,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_investment.py",
+            "line": 6,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_investment.py",
+            "line": 10,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_operation.py",
+            "line": 14,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_store.py",
+            "line": 44,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_store_carried.py",
+            "line": 22,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_transfer.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_transfer.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_transfer.py",
+            "line": 14,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_unlock_safe.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_unlock_safe.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_input_worker.py",
+            "line": 24,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_recorder.py",
+            "line": 23,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_recorder.py",
+            "line": 26,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_recorder.py",
+            "line": 47,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_store.py",
+            "line": 24,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_walker.py",
+            "line": 27,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_walker.py",
+            "line": 79,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/bagel_item_vision.py",
+            "line": 9,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/bagel_item_vision.py",
+            "line": 10,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/bagel_item_vision.py",
+            "line": 18,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "SCAN_TRUNCATED",
+            "severity": "review",
+            "category": "scanner",
+            "file": "",
+            "line": 0,
+            "detail": "命中项超过 60 条，已截断"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 61
+        }
+      }
+    },
+    "b7c8f6a6281580cd2331281ca0fe231b323ca3a416cdd8d2692533b6701c648b": {
+      "id": "bagel",
+      "tag": "v0.2.0",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 118,
+        "pythonFiles": 49,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/bagel_run_record.py",
+            "line": 6,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/bagel_screenshot.py",
+            "line": 8,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/bagel_screenshot.py",
+            "line": 9,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 15,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 16,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 11,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 24,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 26,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 13,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_thread.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_test_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_test_thread.py",
+            "line": 27,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 20,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 21,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 23,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 24,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 26,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 17,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 30,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "DYNAMIC_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 457,
+            "detail": "exec() 动态执行代码"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 13,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 21,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 38,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 9,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 10,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 11,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 20,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_clean.py",
+            "line": 5,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_investment.py",
+            "line": 5,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_investment.py",
+            "line": 6,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_investment.py",
+            "line": 10,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_operation.py",
+            "line": 14,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_store.py",
+            "line": 44,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_store_carried.py",
+            "line": 22,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_transfer.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_transfer.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_transfer.py",
+            "line": 14,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_unlock_safe.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_unlock_safe.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_input_worker.py",
+            "line": 24,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_recorder.py",
+            "line": 23,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_recorder.py",
+            "line": 26,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_recorder.py",
+            "line": 47,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_store.py",
+            "line": 24,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_walker.py",
+            "line": 27,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_walker.py",
+            "line": 79,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/bagel_item_vision.py",
+            "line": 9,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "SCAN_TRUNCATED",
+            "severity": "review",
+            "category": "scanner",
+            "file": "",
+            "line": 0,
+            "detail": "命中项超过 60 条，已截断"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 61
+        }
+      }
+    },
+    "13127d0d94fd95ff19b45ecb482324f4af8f522e623523b4ef7eeab1e5111afe": {
+      "id": "bagel",
+      "tag": "v0.2.1",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 118,
+        "pythonFiles": 49,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/bagel_run_record.py",
+            "line": 6,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/bagel_screenshot.py",
+            "line": 8,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/bagel_screenshot.py",
+            "line": 9,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 15,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 16,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 11,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 24,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 26,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 13,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_thread.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_test_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_test_thread.py",
+            "line": 27,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 20,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 21,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 23,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 24,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 26,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 17,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 30,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "DYNAMIC_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 457,
+            "detail": "exec() 动态执行代码"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 13,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 21,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 38,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 9,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 10,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 11,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 20,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_clean.py",
+            "line": 5,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_operation.py",
+            "line": 14,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_store.py",
+            "line": 44,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_store_carried.py",
+            "line": 22,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_transfer.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_transfer.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_transfer.py",
+            "line": 14,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_unlock_safe.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_unlock_safe.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_input_worker.py",
+            "line": 24,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_recorder.py",
+            "line": 23,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_recorder.py",
+            "line": 26,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_recorder.py",
+            "line": 47,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_store.py",
+            "line": 24,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_walker.py",
+            "line": 27,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_walker.py",
+            "line": 79,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/bagel_item_vision.py",
+            "line": 9,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/bagel_item_vision.py",
+            "line": 10,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/bagel_item_vision.py",
+            "line": 18,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/bagel_screen.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "SCAN_TRUNCATED",
+            "severity": "review",
+            "category": "scanner",
+            "file": "",
+            "line": 0,
+            "detail": "命中项超过 60 条，已截断"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 61
+        }
+      }
+    },
+    "f78e0fa710bed73fc37d542f4a71db96d8b60e8cd14dc89efc296f4ac6313fd9": {
+      "id": "bagel",
+      "tag": "v0.3.0",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 118,
+        "pythonFiles": 49,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/bagel_run_record.py",
+            "line": 6,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/bagel_screenshot.py",
+            "line": 8,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/bagel_screenshot.py",
+            "line": 9,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 15,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 16,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_light_theme.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 11,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 24,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_locate_thread.py",
+            "line": 26,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 13,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_overlay.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_thread.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_record_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_test_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_test_thread.py",
+            "line": 27,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 20,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 21,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 23,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 24,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_route_web_editor.py",
+            "line": 26,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 17,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_run_overlay.py",
+            "line": 30,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "DYNAMIC_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 457,
+            "detail": "exec() 动态执行代码"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 13,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 21,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_interface.py",
+            "line": 38,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 9,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 10,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 11,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/bagel_setting_widgets.py",
+            "line": 20,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_clean.py",
+            "line": 5,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_operation.py",
+            "line": 14,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_store.py",
+            "line": 44,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_store_carried.py",
+            "line": 22,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_transfer.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_transfer.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_transfer.py",
+            "line": 14,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_unlock_safe.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/bagel_unlock_safe.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_input_worker.py",
+            "line": 24,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_recorder.py",
+            "line": 23,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_recorder.py",
+            "line": 26,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_recorder.py",
+            "line": 47,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_store.py",
+            "line": 24,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_walker.py",
+            "line": 27,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/bagel_route_walker.py",
+            "line": 79,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/bagel_item_vision.py",
+            "line": 9,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/bagel_item_vision.py",
+            "line": 10,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/bagel_item_vision.py",
+            "line": 18,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/bagel_screen.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "SCAN_TRUNCATED",
+            "severity": "review",
+            "category": "scanner",
+            "file": "",
+            "line": 0,
+            "detail": "命中项超过 60 条，已截断"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 61
+        }
+      }
+    },
+    "7e1f0392bd8f62264258ab0666a7a4e56fff16f9d0767e615ffb13927f38decc": {
+      "id": "bagel",
+      "tag": "v0.3.1",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 118,
+        "pythonFiles": 49,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 15,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 16,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 11,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 24,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 26,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 13,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_thread.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_test_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_test_thread.py",
+            "line": 27,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 20,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 21,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 23,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 24,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 26,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 17,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 30,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "DYNAMIC_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 457,
+            "detail": "exec() 动态执行代码"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 13,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 21,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 38,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 9,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 10,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 11,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 20,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/clean.py",
+            "line": 5,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/operation.py",
+            "line": 14,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/store.py",
+            "line": 44,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/store_carried.py",
+            "line": 22,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/transfer.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/transfer.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/transfer.py",
+            "line": 14,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/unlock_safe.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/unlock_safe.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/input_worker.py",
+            "line": 24,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_recorder.py",
+            "line": 23,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_recorder.py",
+            "line": 26,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_recorder.py",
+            "line": 47,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_store.py",
+            "line": 24,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_walker.py",
+            "line": 27,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_walker.py",
+            "line": 79,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/run_record.py",
+            "line": 6,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/screenshot.py",
+            "line": 8,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/screenshot.py",
+            "line": 9,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/item_vision.py",
+            "line": 9,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/item_vision.py",
+            "line": 10,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/item_vision.py",
+            "line": 18,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/map_locator.py",
+            "line": 15,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "SCAN_TRUNCATED",
+            "severity": "review",
+            "category": "scanner",
+            "file": "",
+            "line": 0,
+            "detail": "命中项超过 60 条，已截断"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 61
+        }
+      }
+    },
+    "ec7c09059ecf6b5b036040b72f9f592035565b2379e6376ab0e4805c35b76ed6": {
+      "id": "bagel",
+      "tag": "v0.3.2",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 118,
+        "pythonFiles": 49,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 15,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 16,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 11,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 24,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 26,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 13,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_thread.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_test_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_test_thread.py",
+            "line": 27,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 20,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 21,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 23,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 24,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 26,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 17,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 30,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "DYNAMIC_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 457,
+            "detail": "exec() 动态执行代码"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 13,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 21,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 38,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 9,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 10,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 11,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 20,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/clean.py",
+            "line": 5,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/operation.py",
+            "line": 14,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/store.py",
+            "line": 44,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/store_carried.py",
+            "line": 22,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/transfer.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/transfer.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/transfer.py",
+            "line": 14,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/unlock_safe.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/unlock_safe.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/input_worker.py",
+            "line": 24,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_recorder.py",
+            "line": 23,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_recorder.py",
+            "line": 26,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_recorder.py",
+            "line": 47,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_store.py",
+            "line": 24,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_walker.py",
+            "line": 27,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_walker.py",
+            "line": 79,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/run_record.py",
+            "line": 6,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/screenshot.py",
+            "line": 8,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/screenshot.py",
+            "line": 9,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/item_vision.py",
+            "line": 9,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/item_vision.py",
+            "line": 10,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/item_vision.py",
+            "line": 18,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/map_locator.py",
+            "line": 15,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "SCAN_TRUNCATED",
+            "severity": "review",
+            "category": "scanner",
+            "file": "",
+            "line": 0,
+            "detail": "命中项超过 60 条，已截断"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 61
+        }
+      }
+    },
+    "20827b979b38d41de94d9c27fe42ea5e7d08ddb69f4bcc44af5ccd555a756758": {
+      "id": "bagel",
+      "tag": "v0.3.3",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 119,
+        "pythonFiles": 48,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 15,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 16,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 11,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 24,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 26,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 13,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_thread.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_test_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_test_thread.py",
+            "line": 27,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 20,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 21,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 23,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 24,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 26,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 17,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 30,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "DYNAMIC_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 530,
+            "detail": "exec() 动态执行代码"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 15,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 16,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 17,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 25,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 42,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 7,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 8,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 9,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 10,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 18,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/clean.py",
+            "line": 5,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/operation.py",
+            "line": 14,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/store.py",
+            "line": 44,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/store_carried.py",
+            "line": 22,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/transfer.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/transfer.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/transfer.py",
+            "line": 14,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/unlock_safe.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/unlock_safe.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/input_worker.py",
+            "line": 24,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_recorder.py",
+            "line": 23,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_recorder.py",
+            "line": 26,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_recorder.py",
+            "line": 47,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_store.py",
+            "line": 24,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_walker.py",
+            "line": 27,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_walker.py",
+            "line": 79,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/run_record.py",
+            "line": 6,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/screenshot.py",
+            "line": 9,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/screenshot.py",
+            "line": 10,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/item_vision.py",
+            "line": 9,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/item_vision.py",
+            "line": 10,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/item_vision.py",
+            "line": 18,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "SCAN_TRUNCATED",
+            "severity": "review",
+            "category": "scanner",
+            "file": "",
+            "line": 0,
+            "detail": "命中项超过 60 条，已截断"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 61
+        }
+      }
+    },
+    "8ef11a40b85192753d297e21acfd1000d32354754ae2b6f1042a9ddb6b5e20de": {
+      "id": "bagel",
+      "tag": "v0.3.4",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 119,
+        "pythonFiles": 48,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 15,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 16,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/light_theme.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 11,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 24,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/locate_thread.py",
+            "line": 26,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 13,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 14,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_overlay.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_thread.py",
+            "line": 12,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/record_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_test_thread.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_test_thread.py",
+            "line": 27,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 20,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 21,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 23,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 24,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 25,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/route_web_editor.py",
+            "line": 26,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 17,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 18,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 19,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/run_overlay.py",
+            "line": 30,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "DYNAMIC_EXEC",
+            "severity": "review",
+            "category": "static",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 530,
+            "detail": "exec() 动态执行代码"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 15,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 16,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 17,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 25,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_interface.py",
+            "line": 42,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 7,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 8,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 9,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 10,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/gui/setting_widgets.py",
+            "line": 18,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/clean.py",
+            "line": 5,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/operation.py",
+            "line": 14,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/store.py",
+            "line": 44,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/store_carried.py",
+            "line": 22,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/transfer.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/transfer.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/transfer.py",
+            "line": 14,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/unlock_safe.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/operation/unlock_safe.py",
+            "line": 7,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/input_worker.py",
+            "line": 24,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_recorder.py",
+            "line": 23,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_recorder.py",
+            "line": 26,
+            "detail": "引用第三方包 pynput，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_recorder.py",
+            "line": 47,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_store.py",
+            "line": 24,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_walker.py",
+            "line": 27,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/route/route_walker.py",
+            "line": 79,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/run_record.py",
+            "line": 6,
+            "detail": "引用第三方包 yaml，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/screenshot.py",
+            "line": 9,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/screenshot.py",
+            "line": 10,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/item_vision.py",
+            "line": 9,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/item_vision.py",
+            "line": 10,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bagel/vision/item_vision.py",
+            "line": 18,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "SCAN_TRUNCATED",
+            "severity": "review",
+            "category": "scanner",
+            "file": "",
+            "line": 0,
+            "detail": "命中项超过 60 条，已截断"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 61
+        }
+      }
+    },
+    "2b92bf2ed8220a4cce2103827d7832c987bd2c8dee5f1e0fc2eb29ba05c4ca26": {
+      "id": "bangboo_companion",
+      "tag": "v0.1.0",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 12,
+        "pythonFiles": 9,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bangboo_companion/bangboo_companion_setting_interface.py",
+            "line": 6,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bangboo_companion/bangboo_companion_setting_interface.py",
+            "line": 7,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bangboo_companion/bangboo_companion_setting_interface.py",
+            "line": 8,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bangboo_companion/dancer_window.py",
+            "line": 10,
+            "detail": "引用第三方包 PIL，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bangboo_companion/dancer_window.py",
+            "line": 11,
+            "detail": "引用第三方包 PIL，需确认主程序已内置"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 5
+        }
+      }
+    },
+    "fe70cab749fabfe254dcb1ec1ecc39c7b5a456b57f864db066bd5ee3ea87c816": {
+      "id": "bangboo_companion",
+      "tag": "v0.1.1",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 12,
+        "pythonFiles": 9,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bangboo_companion/bangboo_companion_setting_interface.py",
+            "line": 6,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bangboo_companion/bangboo_companion_setting_interface.py",
+            "line": 7,
+            "detail": "引用第三方包 PySide6，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bangboo_companion/bangboo_companion_setting_interface.py",
+            "line": 8,
+            "detail": "引用第三方包 qfluentwidgets，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bangboo_companion/dancer_window.py",
+            "line": 10,
+            "detail": "引用第三方包 PIL，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "bangboo_companion/dancer_window.py",
+            "line": 11,
+            "detail": "引用第三方包 PIL，需确认主程序已内置"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 5
+        }
+      }
+    },
+    "e8068c8814bf73a47651ee0db48b5f37794666c0a96a3a0e76e8a4ceb56884f9": {
+      "id": "battery_exchange",
+      "tag": "v1.0.0",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 6,
+        "pythonFiles": 5,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "battery_exchange/battery_exchange_app.py",
+            "line": 110,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 1
+        }
+      }
+    },
+    "40935bd0577fdac67a096b07ab57624d1729863a03340dfdca7cae87beecf5d5": {
+      "id": "battery_exchange",
+      "tag": "v1.0.1",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 6,
+        "pythonFiles": 5,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "battery_exchange/battery_exchange_app.py",
+            "line": 113,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 1
+        }
+      }
+    },
+    "16d1313274d32bec4e00646c8a58bfcbf14d662d38eb72fbeb8490aad960257f": {
+      "id": "battery_exchange",
+      "tag": "v1.0.2",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 7,
+        "pythonFiles": 6,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "battery_exchange/battery_exchange_app.py",
+            "line": 111,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 1
+        }
+      }
+    },
+    "fa72e3efdd736d5401eb0c3631d2ffc66ea89608566112018f341724f8621bd9": {
+      "id": "battery_exchange",
+      "tag": "v1.0.3",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 8,
+        "pythonFiles": 6,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "battery_exchange/battery_exchange_app.py",
+            "line": 111,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 1
+        }
+      }
+    },
+    "3f84a344cc531dea8d84a1a2389015bb08435c2fe484e9216b99be019f6799d9": {
+      "id": "battery_exchange",
+      "tag": "v1.0.4",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 8,
+        "pythonFiles": 6,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "battery_exchange/battery_exchange_app.py",
+            "line": 111,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 1
+        }
+      }
+    },
+    "9993b8e456500b6a340a6f7a1c00bcf328bed785afdd7ce5cda0b2f86eb93797": {
+      "id": "disc_cleanup",
+      "tag": "v1.0.0",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 10,
+        "pythonFiles": 7,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 23,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 38,
+            "detail": "引用第三方包 inventory_scan，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 425,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 441,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 458,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 80,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/grid_ops.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/grid_ops.py",
+            "line": 45,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/grid_ops.py",
+            "line": 46,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 9
+        }
+      }
+    },
+    "85cdbf206c5357dab2a26bf5d15a50eafe5e69ff674b6bf5495c22985b8e8885": {
+      "id": "disc_cleanup",
+      "tag": "v1.0.1",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 10,
+        "pythonFiles": 7,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 24,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 39,
+            "detail": "引用第三方包 inventory_scan，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 428,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 444,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 461,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 83,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/grid_ops.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/grid_ops.py",
+            "line": 45,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/grid_ops.py",
+            "line": 46,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 9
+        }
+      }
+    },
+    "d3cc8885ff40d43911161a6257f0547846c66af246a76bd0ea072174c2f3bd17": {
+      "id": "disc_cleanup",
+      "tag": "v1.0.2",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 11,
+        "pythonFiles": 8,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 23,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 38,
+            "detail": "引用第三方包 inventory_scan，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 426,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 442,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 459,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 81,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/grid_ops.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/grid_ops.py",
+            "line": 45,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/grid_ops.py",
+            "line": 46,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 9
+        }
+      }
+    },
+    "f2638b4fa87b5caec498330529149b093dbdcc897ecb1bc9bd8264e9057ed7a9": {
+      "id": "disc_cleanup",
+      "tag": "v1.0.4",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 12,
+        "pythonFiles": 8,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 23,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 38,
+            "detail": "引用第三方包 inventory_scan，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 426,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 442,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 459,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 81,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/grid_ops.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/grid_ops.py",
+            "line": 45,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/grid_ops.py",
+            "line": 46,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 9
+        }
+      }
+    },
+    "8dea5661af8850b966d888284c7d8d6ba34f0769697e2abd90afae6221db0353": {
+      "id": "disc_cleanup",
+      "tag": "v1.0.5",
+      "scannedAt": "2026-11-13T07:29:52.720Z",
+      "ruleVersion": 1,
+      "status": "scanned",
+      "report": {
+        "ruleVersion": 1,
+        "scannedFiles": 12,
+        "pythonFiles": 8,
+        "findings": [
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 23,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 38,
+            "detail": "引用第三方包 inventory_scan，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 426,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 442,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 459,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/disc_cleanup_app.py",
+            "line": 81,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/grid_ops.py",
+            "line": 6,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/grid_ops.py",
+            "line": 45,
+            "detail": "引用第三方包 cv2，需确认主程序已内置"
+          },
+          {
+            "code": "THIRD_PARTY_IMPORT",
+            "severity": "review",
+            "category": "dependency",
+            "file": "disc_cleanup/grid_ops.py",
+            "line": 46,
+            "detail": "引用第三方包 numpy，需确认主程序已内置"
+          }
+        ],
+        "summary": {
+          "block": 0,
+          "review": 9
+        }
+      }
+    }
+  }
+}

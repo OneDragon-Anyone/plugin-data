@@ -1397,7 +1397,18 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 2298
+    "cnbDownloads": 2298,
+    "securityIssue": 37,
+    "securityNotified": [
+      "1:6fb16ead7782727304975cba3801ad12e79370ec65559e787fac7fbea12e666a",
+      "1:b7c8f6a6281580cd2331281ca0fe231b323ca3a416cdd8d2692533b6701c648b",
+      "1:13127d0d94fd95ff19b45ecb482324f4af8f522e623523b4ef7eeab1e5111afe",
+      "1:f78e0fa710bed73fc37d542f4a71db96d8b60e8cd14dc89efc296f4ac6313fd9",
+      "1:7e1f0392bd8f62264258ab0666a7a4e56fff16f9d0767e615ffb13927f38decc",
+      "1:ec7c09059ecf6b5b036040b72f9f592035565b2379e6376ab0e4805c35b76ed6",
+      "1:20827b979b38d41de94d9c27fe42ea5e7d08ddb69f4bcc44af5ccd555a756758",
+      "1:8ef11a40b85192753d297e21acfd1000d32354754ae2b6f1042a9ddb6b5e20de"
+    ]
   },
   "battery_exchange": {
     "repoId": 1440879046,
@@ -1588,7 +1599,15 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 165
+    "cnbDownloads": 165,
+    "securityIssue": 39,
+    "securityNotified": [
+      "1:e8068c8814bf73a47651ee0db48b5f37794666c0a96a3a0e76e8a4ceb56884f9",
+      "1:40935bd0577fdac67a096b07ab57624d1729863a03340dfdca7cae87beecf5d5",
+      "1:16d1313274d32bec4e00646c8a58bfcbf14d662d38eb72fbeb8490aad960257f",
+      "1:fa72e3efdd736d5401eb0c3631d2ffc66ea89608566112018f341724f8621bd9",
+      "1:3f84a344cc531dea8d84a1a2389015bb08435c2fe484e9216b99be019f6799d9"
+    ]
   },
   "graphics_restore": {
     "repoId": 1442127559,
@@ -2098,7 +2117,15 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 125
+    "cnbDownloads": 125,
+    "securityIssue": 40,
+    "securityNotified": [
+      "1:9993b8e456500b6a340a6f7a1c00bcf328bed785afdd7ce5cda0b2f86eb93797",
+      "1:85cdbf206c5357dab2a26bf5d15a50eafe5e69ff674b6bf5495c22985b8e8885",
+      "1:d3cc8885ff40d43911161a6257f0547846c66af246a76bd0ea072174c2f3bd17",
+      "1:f2638b4fa87b5caec498330529149b093dbdcc897ecb1bc9bd8264e9057ed7a9",
+      "1:8dea5661af8850b966d888284c7d8d6ba34f0769697e2abd90afae6221db0353"
+    ]
   },
   "bangboo_companion": {
     "repoId": 1444204673,
@@ -2181,7 +2208,12 @@
       }
     },
     "rejected": {},
-    "cnbDownloads": 19
+    "cnbDownloads": 19,
+    "securityIssue": 38,
+    "securityNotified": [
+      "1:2b92bf2ed8220a4cce2103827d7832c987bd2c8dee5f1e0fc2eb29ba05c4ca26",
+      "1:fe70cab749fabfe254dcb1ec1ecc39c7b5a456b57f864db066bd5ee3ea87c816"
+    ]
   },
   "mys_checkin": {
     "repoId": 1446451406,
