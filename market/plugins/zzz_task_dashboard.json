@@ -1,0 +1,17 @@
+{
+  "id": "zzz_task_dashboard",
+  "repo": "xiaoguangOMO/zzzod-plugin-task-dashboard",
+  "repoId": 1456549350,
+  "tags": [
+    "dashboard",
+    "task",
+    "tools"
+  ],
+  "extraRisk": [],
+  "status": "listed",
+  "pinned": false,
+  "review": {
+    "issue": 45,
+    "submittedBy": "xiaoguangOMO"
+  }
+}
