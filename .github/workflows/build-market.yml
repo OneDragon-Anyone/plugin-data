@@ -19,9 +19,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # 默认两边都取最新，不用改
+  #
+  # 固定市场版本 —— 二选一，@ 后面只能写死，不能写变量：
+  #   uses: OneDragon-Anyone/plugin-market/.github/workflows/reusable-build.yml@v1  # 用 v1 tag 的代码，不再变，其他版本以此类推
+  #   uses: OneDragon-Anyone/plugin-market/.github/workflows/reusable-build.yml@master  # 用 master 分支最新代码
+  #
+  # 固定模板版本 —— 二选一：
+  #   template_ref: v1  # 用 v1 tag 的代码，不再变，其他版本以此类推
+  #   template_ref: ${{ vars.TEMPLATE_REF }}  # 读仓库变量，留空就用最新 tag
   build:
-    uses: OneDragon-Anyone/plugin-market/.github/workflows/reusable-build.yml@v1
+    uses: OneDragon-Anyone/plugin-market/.github/workflows/reusable-build.yml@master  # 用 master 分支最新代码
     with:
       template_repository: ${{ vars.TEMPLATE_REPOSITORY || 'OneDragon-Anyone/plugin-template' }}
-      template_ref: ${{ vars.TEMPLATE_REF || 'v1' }}
+      template_ref: ${{ vars.TEMPLATE_REF }}  # 读仓库变量，留空就用最新 tag
     secrets: inherit
