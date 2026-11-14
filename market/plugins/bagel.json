@@ -6,7 +6,8 @@
     "automation",
     "route",
     "farming",
-    "route-editor"
+    "route-editor",
+    "_pai_write_probe"
   ],
   "extraRisk": [],
   "status": "listed",
