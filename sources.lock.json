@@ -1676,7 +1676,7 @@
   "graphics_restore": {
     "repoId": 1442127559,
     "repo": "kinggod899/graphics_restore",
-    "maxVersionCode": 4,
+    "maxVersionCode": 5,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -1829,6 +1829,43 @@
           },
           "apps": []
         }
+      },
+      "v1.4.0": {
+        "version": "1.4.0",
+        "versionCode": 5,
+        "commit": "d40e6bf198a8ddbf1fb5778d6c682f4ed478a0bf",
+        "assetId": 747761825,
+        "assetName": "graphics_restore.zip",
+        "size": 47984,
+        "sha256": "57e5a2dd08bd0dcea963438fea887bce9521707c4a55e0a226f4d7cbc1cbba1b",
+        "verifiedAt": "2026-11-14T17:03:37.160Z",
+        "hasAppSetting": true,
+        "cover": "graphics_restore-5.png",
+        "manifest": {
+          "id": "graphics_restore",
+          "name": "恢复游戏画质",
+          "summary": "把帧率、渲染精度、抗锯齿和字体选项恢复成「降低游戏画质」记录的原始档位，没有记录时用兜底档位，也可以改成只用兜底档位。",
+          "version": "1.4.0",
+          "versionCode": 5,
+          "defaultGroup": true,
+          "needNotify": false,
+          "author": {
+            "name": "kinggod899,PoorKid1112",
+            "url": "https://github.com/kinggod899"
+          },
+          "homepage": "https://github.com/kinggod899/graphics_restore",
+          "cover": "cover.png",
+          "risk": [
+            "automation",
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "2.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
       }
     },
     "rejected": {},
@@ -1837,7 +1874,7 @@
   "graphics_low": {
     "repoId": 1442127504,
     "repo": "kinggod899/graphics_low",
-    "maxVersionCode": 3,
+    "maxVersionCode": 4,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -1937,6 +1974,43 @@
           "needNotify": false,
           "author": {
             "name": "kinggod899",
+            "url": "https://github.com/kinggod899"
+          },
+          "homepage": "https://github.com/kinggod899/graphics_low",
+          "cover": "cover.png",
+          "risk": [
+            "automation",
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "2.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "apps": []
+        }
+      },
+      "v1.3.0": {
+        "version": "1.3.0",
+        "versionCode": 4,
+        "commit": "016f94405a3edcbd21ed61caeeb0afca6c9a1e7a",
+        "assetId": 747761188,
+        "assetName": "graphics_low.zip",
+        "size": 44840,
+        "sha256": "c34b42a6ef4a05b0b6ee08def2b8ad981f904ebcb65c263c8aff11f8e6372a08",
+        "verifiedAt": "2026-11-14T17:03:37.160Z",
+        "hasAppSetting": true,
+        "cover": "graphics_low-4.png",
+        "manifest": {
+          "id": "graphics_low",
+          "name": "降低游戏画质",
+          "summary": "进游戏后把帧率、渲染精度、抗锯齿和字体选项（全局细体）调到低档，并记录修改前的原始档位，供「恢复游戏画质」使用。",
+          "version": "1.3.0",
+          "versionCode": 4,
+          "defaultGroup": true,
+          "needNotify": false,
+          "author": {
+            "name": "kinggod899,PoorKid1112",
             "url": "https://github.com/kinggod899"
           },
           "homepage": "https://github.com/kinggod899/graphics_low",
