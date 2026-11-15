@@ -10,7 +10,7 @@
   ],
   "extraRisk": [],
   "status": "listed",
-  "pinned": false,
+  "pinned": true,
   "review": {
     "issue": 17,
     "pr": 18,
