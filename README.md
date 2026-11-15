@@ -4,9 +4,9 @@
 
 - 在线插件市场：<https://onedragon-anyone.github.io/plugin-data/>
 - 客户端：<https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon>
+- 市场仓：<https://github.com/OneDragon-Anyone/plugin-market>（插件服务）
 - 模板仓：<https://github.com/OneDragon-Anyone/plugin-template>（插件参考）
 - **数据仓**：<https://github.com/OneDragon-Anyone/plugin-data>（插件提交）
-- 市场仓：<https://github.com/OneDragon-Anyone/plugin-market>（插件服务）
 
 如果你只是想维护本仓库，请看 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
@@ -22,8 +22,8 @@
 
 ## 插件收录与更新流程
 
-1. **作者提交**：插件开发者按模板仓说明发布带 `<id>.zip` 的 Release，在本仓库发起 `[submission]` Issue 申请收录，推荐走[提交插件页](https://onedragon-anyone.github.io/plugin-data/submission/)。
-2. **自动校验**：审核机器人检查插件包规范，通过后自动创建收录 PR；不合规会在 Issue 里写明原因。
+1. **作者提交**：插件开发者按模板仓说明发布带 `<id>.zip` 的 Release，推荐走 [提交插件页](https://onedragon-anyone.github.io/plugin-data/submission/) 发起 `[submission]` Issue 申请收录，页面会在提交前预检仓库并帮忙填好 Issue 内容。
+2. **自动校验**：网页预检只是提交前的自检，用来提前发现问题，结果不会写进 Issue。真正的校验由审核机器人在 Issue 提交后执行，检查插件包规范，通过后自动创建收录 PR；不合规会在 Issue 里写明原因。
 3. **审核上线**：维护人员核对后合并 PR，下一次定时构建会抓取最新版本并同步到插件市场。
 4. **后续更新**：收录后作者发新 Release 会自动同步，无需重复提交。
 
