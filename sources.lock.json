@@ -3039,5 +3039,13 @@
       }
     },
     "rejected": {}
+  },
+  "deadly_assault_battle": {
+    "repoId": 1465619200,
+    "repo": "PoorKid1112/zzz-deadly-assault-battle",
+    "maxVersionCode": 0,
+    "releases": {},
+    "rejected": {},
+    "unreachableSince": "2026-11-21T07:20:06.188Z"
   }
 }
