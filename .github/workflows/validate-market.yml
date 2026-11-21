@@ -17,8 +17,8 @@ jobs:
   #   template_ref: v1  # 用 v1 tag 的代码，不再变，其他版本以此类推
   #   template_ref: ${{ vars.TEMPLATE_REF }}  # 读仓库变量，留空就用最新 tag
   validate:
-    # 与机器人写入的 commit status 同名，供数据仓 ruleset 配置必需检查
-    name: market/validate
+    # 运行页标题是「这一段 / 被调 job 名」，这一段写仓库简称，被调方写工作流
+    name: market
     uses: OneDragon-Anyone/plugin-market/.github/workflows/reusable-validate-market.yml@master  # 用 master 分支最新代码
     with:
       template_repository: ${{ vars.TEMPLATE_REPOSITORY || 'OneDragon-Anyone/plugin-template' }}
