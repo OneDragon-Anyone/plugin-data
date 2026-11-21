@@ -56,7 +56,7 @@
 
 ### 手动触发更新
 
-在 GitHub 仓库页面进入 **Actions** → **Build Market** → 点击 **Run workflow**。
+在 GitHub 仓库页面进入 **Actions** → **build-market** → 点击 **Run workflow**。
 
 ## 常见情况排查
 

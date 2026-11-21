@@ -1,4 +1,4 @@
-name: Submission Bot
+name: submission-bot
 
 on:
   issues:
