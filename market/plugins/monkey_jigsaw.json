@@ -5,7 +5,7 @@
   "tags": [],
   "extraRisk": [],
   "status": "listed",
-  "pinned": false,
+  "pinned": true,
   "review": {
     "issue": 69,
     "pr": 70,
