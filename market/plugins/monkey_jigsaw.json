@@ -1,0 +1,14 @@
+{
+  "id": "monkey_jigsaw",
+  "repo": "kinggod899/monkey-jigsaw-plugin",
+  "repoId": 1466818968,
+  "tags": [],
+  "extraRisk": [],
+  "status": "listed",
+  "pinned": false,
+  "review": {
+    "issue": 69,
+    "pr": 70,
+    "submittedBy": "kinggod899"
+  }
+}
