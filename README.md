@@ -3,10 +3,7 @@
 存放所有已收录插件的配置、审核决策与在线索引。插件包本身不在这里，由作者仓库的 GitHub Release 提供。
 
 - 在线插件市场：<https://onedragon-anyone.github.io/plugin-data/>
-- 客户端：<https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon>
-- 市场仓：<https://github.com/OneDragon-Anyone/plugin-market>（插件服务）
 - 模板仓：<https://github.com/OneDragon-Anyone/plugin-template>（插件参考）
-- **数据仓**：<https://github.com/OneDragon-Anyone/plugin-data>（插件提交）
 
 如果你只是想维护本仓库，请看 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
