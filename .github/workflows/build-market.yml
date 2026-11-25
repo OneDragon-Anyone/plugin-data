@@ -25,12 +25,12 @@ jobs:
   #   uses: OneDragon-Anyone/plugin-market/.github/workflows/reusable-build-market.yml@v1  # 用 v1 tag 的代码，不再变，其他版本以此类推
   #   uses: OneDragon-Anyone/plugin-market/.github/workflows/reusable-build-market.yml@master  # 用 master 分支最新代码
   #
-  # 固定模板版本 —— 二选一：
-  #   template_ref: v1  # 用 v1 tag 的代码，不再变，其他版本以此类推
-  #   template_ref: ${{ vars.TEMPLATE_REF }}  # 读仓库变量，留空就用最新 tag
+  # 固定工具版本 —— 二选一：
+  #   tools_ref: v1  # 用 v1 tag 的代码，不再变，其他版本以此类推
+  #   tools_ref: ${{ vars.TOOLS_REF }}  # 读仓库变量，留空就用最新 tag
   build:
     uses: OneDragon-Anyone/plugin-market/.github/workflows/reusable-build-market.yml@master  # 用 master 分支最新代码
     with:
-      template_repository: ${{ vars.TEMPLATE_REPOSITORY || 'OneDragon-Anyone/plugin-template' }}
-      template_ref: ${{ vars.TEMPLATE_REF }}  # 读仓库变量，留空就用最新 tag
+      tools_repository: ${{ vars.TOOLS_REPOSITORY || 'OneDragon-Anyone/plugin-tools' }}
+      tools_ref: ${{ vars.TOOLS_REF }}  # 读仓库变量，留空就用最新 tag
     secrets: inherit
