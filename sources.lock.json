@@ -2488,7 +2488,7 @@
   "bangboo_companion": {
     "repoId": 1444204673,
     "repo": "idk500/zzzod-plugin-bangboo-companion",
-    "maxVersionCode": 4,
+    "maxVersionCode": 5,
     "releases": {
       "v0.1.0": {
         "version": "0.1.0",
@@ -2615,6 +2615,39 @@
           "cover": "assets/ui/cover.png",
           "version": "0.3.0",
           "versionCode": 4,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-bangboo-companion",
+          "risk": [
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          }
+        }
+      },
+      "v0.4.0": {
+        "version": "0.4.0",
+        "versionCode": 5,
+        "commit": "894eea50bd00c15c0b44b012a4ec43d436c7ad28",
+        "assetId": 792316149,
+        "assetName": "bangboo_companion.zip",
+        "size": 84341,
+        "sha256": "5a380f5d6fc19aa855c67383fd68e761e2b2fa6164ca89d585c9ca6ba1df7d24",
+        "verifiedAt": "2026-11-25T19:55:33.386Z",
+        "hasAppSetting": false,
+        "cover": "bangboo_companion-5.png",
+        "manifest": {
+          "id": "bangboo_companion",
+          "name": "运行指示器",
+          "summary": "桌面小信号灯：默认是一个悬浮小机器人，用眼睛和光晕表示状态（绿=运行中、黄=注意、红=异常闪烁+蜂鸣、灰=待机）；也能切成三色灯柱。面板大小可调（滚轮或设置页 60%~200%）。覆盖一条龙与单个应用；红灯亮起后左键点一下表示「我知道了」。纯桌面显示，不操作游戏、不影响运行流程。",
+          "cover": "assets/ui/cover.png",
+          "version": "0.4.0",
+          "versionCode": 5,
           "author": {
             "name": "idk500",
             "url": "https://github.com/idk500"
