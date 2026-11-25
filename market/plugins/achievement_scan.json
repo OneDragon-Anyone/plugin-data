@@ -1,0 +1,17 @@
+{
+  "id": "achievement_scan",
+  "repo": "idk500/zzzod-plugin-achievement-scan",
+  "repoId": 1448384603,
+  "tags": [
+    "utility",
+    "ocr",
+    "achievement"
+  ],
+  "extraRisk": [],
+  "status": "listed",
+  "pinned": false,
+  "review": {
+    "issue": 76,
+    "submittedBy": "idk500"
+  }
+}
