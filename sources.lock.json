@@ -2453,7 +2453,7 @@
   "bangboo_companion": {
     "repoId": 1444204673,
     "repo": "idk500/zzzod-plugin-bangboo-companion",
-    "maxVersionCode": 2,
+    "maxVersionCode": 3,
     "releases": {
       "v0.1.0": {
         "version": "0.1.0",
@@ -2527,6 +2527,39 @@
             "python": ">=3.11"
           },
           "apps": []
+        }
+      },
+      "v0.2.0": {
+        "version": "0.2.0",
+        "versionCode": 3,
+        "commit": "aa0b1564dbcbbb684276d1533d838a1ba526e026",
+        "assetId": 792059831,
+        "assetName": "bangboo_companion.zip",
+        "size": 84529,
+        "sha256": "06246d0167f6d27974cf5e98172a073670663f40ea3481a17893cfb1212eb047",
+        "verifiedAt": "2026-11-25T16:08:29.652Z",
+        "hasAppSetting": false,
+        "cover": "bangboo_companion-3.png",
+        "manifest": {
+          "id": "bangboo_companion",
+          "name": "邦布安灯",
+          "summary": "桌面安灯（Andon）信号灯：绿=运行中、黄=卡死前兆/超时、红=运行失败或监控击杀（闪烁+蜂鸣）、灰=待机；左键点击应答告警、拖动调整位置。状态变化写入 plugin_data/bangboo_companion/andon_events.jsonl。纯桌面显示，不操作游戏、不影响一条龙流程。",
+          "cover": "assets/ui/cover.png",
+          "version": "0.2.0",
+          "versionCode": 3,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-bangboo-companion",
+          "risk": [
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          }
         }
       }
     },
@@ -3301,7 +3334,7 @@
   "deadly_assault_prepare": {
     "repoId": 1465618990,
     "repo": "PoorKid1112/zzz-deadly-assault-prepare",
-    "maxVersionCode": 2,
+    "maxVersionCode": 3,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -3372,6 +3405,41 @@
             "python": ">=3.11"
           }
         }
+      },
+      "v1.0.2": {
+        "version": "1.0.2",
+        "versionCode": 3,
+        "commit": "2308a3b550fa31dcd5b3114c5f982dce218a7ab7",
+        "assetId": 791397710,
+        "assetName": "deadly_assault_prepare.zip",
+        "size": 61364,
+        "sha256": "49c005fdc300a0967b516e09b5705c523c9aa9445ede25b3f3adae7cdcae7a2f",
+        "verifiedAt": "2026-11-25T16:08:29.652Z",
+        "hasAppSetting": false,
+        "cover": "deadly_assault_prepare-3.webp",
+        "manifest": {
+          "id": "deadly_assault_prepare",
+          "name": "危局强袭战-预处理",
+          "summary": "一条龙前置预处理：触发危局强袭战智能推荐「生成更多」（不等待）后返回大世界，配合「危局强袭战」跳过等待直接挑战。",
+          "version": "1.0.2",
+          "versionCode": 3,
+          "author": {
+            "name": "PoorKid1112",
+            "url": "https://github.com/PoorKid1112"
+          },
+          "homepage": "https://github.com/PoorKid1112/zzz-deadly-assault-prepare",
+          "cover": "assets/cover.webp",
+          "risk": [
+            "automation",
+            "ocr",
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "2.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          }
+        }
       }
     },
     "rejected": {}
@@ -3379,7 +3447,7 @@
   "deadly_assault": {
     "repoId": 1464362860,
     "repo": "PoorKid1112/zzz-deadly-assault",
-    "maxVersionCode": 4,
+    "maxVersionCode": 5,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -3501,6 +3569,41 @@
           "summary": "自动进入危局强袭战（试炼模式），检测到「全部应用」自动跳过生成等待，挑战三首领并领奖；支持双周交替周期判断与分天运行模式。",
           "version": "1.2.0",
           "versionCode": 4,
+          "author": {
+            "name": "PoorKid1112",
+            "url": "https://github.com/PoorKid1112"
+          },
+          "homepage": "https://github.com/PoorKid1112/zzz-deadly-assault",
+          "cover": "assets/cover.webp",
+          "risk": [
+            "automation",
+            "ocr",
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "2.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          }
+        }
+      },
+      "v1.2.1": {
+        "version": "1.2.1",
+        "versionCode": 5,
+        "commit": "8c86a97ef29905b1b275d46e9da002ae4a85ba42",
+        "assetId": 791372749,
+        "assetName": "deadly_assault.zip",
+        "size": 77059,
+        "sha256": "d9f894d4319c7f554914cac69cca6028a2e84b3f6366ab34969e373be9dbc5de",
+        "verifiedAt": "2026-11-25T16:08:29.652Z",
+        "hasAppSetting": true,
+        "cover": "deadly_assault-5.webp",
+        "manifest": {
+          "id": "deadly_assault",
+          "name": "危局强袭战",
+          "summary": "自动进入危局强袭战（试炼模式），检测到「全部应用」自动跳过生成等待，挑战三首领并领奖；支持双周交替周期判断与分天运行模式。",
+          "version": "1.2.1",
+          "versionCode": 5,
           "author": {
             "name": "PoorKid1112",
             "url": "https://github.com/PoorKid1112"
@@ -3666,5 +3769,52 @@
       }
     },
     "rejected": {}
+  },
+  "achievement_scan": {
+    "repoId": 1448384603,
+    "repo": "idk500/zzzod-plugin-achievement-scan",
+    "maxVersionCode": 2,
+    "releases": {
+      "v1.0.1": {
+        "version": "1.0.1",
+        "versionCode": 2,
+        "commit": "c70de02f350e70d269f25388ea40963963ac507e",
+        "assetId": 791314167,
+        "assetName": "achievement_scan.zip",
+        "size": 151049,
+        "sha256": "91b77c20b9e86ac8fb6175ff9bb80841e6286a8ca71a06220e22584e0a392f2e",
+        "verifiedAt": "2026-11-25T16:08:29.652Z",
+        "hasAppSetting": false,
+        "cover": "achievement_scan-2.png",
+        "manifest": {
+          "id": "achievement_scan",
+          "name": "成就扫描器",
+          "summary": "自动打开成就页逐分类滚动扫描，OCR 匹配成就库（815 条，跟随黎愔站点数据），输出黎愔成就 (zzz.liyin.space) 可直接导入的 JSON 与系列进度报告，存于 .debug/achievement_exports。",
+          "version": "1.0.1",
+          "versionCode": 2,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-achievement-scan",
+          "cover": "assets/ui/cover.png",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          }
+        }
+      }
+    },
+    "rejected": {
+      "v1.0.0": {
+        "assetId": 717490283,
+        "code": "id_mismatch",
+        "message": "FACTORY_MISSING achievement_scan/factory.py; CONST_MISSING achievement_scan/const.py; INVALID_APP_ID '' (const APP_ID must be a string literal); ID_MISMATCH APP_ID '' != expected 'achievement_scan'"
+      }
+    }
   }
 }
