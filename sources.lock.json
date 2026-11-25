@@ -3081,7 +3081,7 @@
   "knock_knock": {
     "repoId": 1466147398,
     "repo": "kinggod899/knock_knock",
-    "maxVersionCode": 5,
+    "maxVersionCode": 6,
     "releases": {
       "v0.1.0": {
         "version": "0.1.0",
@@ -3236,6 +3236,40 @@
           "summary": "自动在录像店打开 knock knock，逐个代你向代理人发送约会邀请，走完对话二选一与时段选择，每天按配置完成邀约次数；开始前先清掉昨天遗留的过期邀约。",
           "version": "0.1.4",
           "versionCode": 5,
+          "author": {
+            "name": "kinggod899",
+            "url": "https://github.com/kinggod899"
+          },
+          "homepage": "https://github.com/kinggod899/knock_knock",
+          "risk": [
+            "automation",
+            "ocr",
+            "process"
+          ],
+          "compatibility": {
+            "minAppVersion": "2.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          }
+        }
+      },
+      "v0.1.5": {
+        "version": "0.1.5",
+        "versionCode": 6,
+        "commit": "979f5b22f98a6d2f074ba7eea8aded5256a65b08",
+        "assetId": 788046211,
+        "assetName": "knock_knock.zip",
+        "size": 28609,
+        "sha256": "0c001a6727ede4e12e16afbd338e5dc930f319c8099edbac9fa5082f1ec7ed97",
+        "verifiedAt": "2026-11-25T00:40:41.021Z",
+        "hasAppSetting": true,
+        "cover": "",
+        "manifest": {
+          "id": "knock_knock",
+          "name": "knock knock 邀约",
+          "summary": "自动在录像店打开 knock knock，逐个代你向代理人发送约会邀请，走完对话二选一与时段选择，每天按配置完成邀约次数；开始前先清掉昨天遗留的过期邀约。",
+          "version": "0.1.5",
+          "versionCode": 6,
           "author": {
             "name": "kinggod899",
             "url": "https://github.com/kinggod899"
@@ -3491,7 +3525,7 @@
   "monkey_jigsaw": {
     "repoId": 1466818968,
     "repo": "kinggod899/monkey-jigsaw-plugin",
-    "maxVersionCode": 1,
+    "maxVersionCode": 2,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -3510,6 +3544,38 @@
           "summary": "自动完成绝区零拼图小游戏：识别面板格数与可拖动碎块，按穷举把碎块逐个试到正确位置。支持 3×3 到 6×6 面板，适配 2K 屏幕。",
           "version": "1.0.0",
           "versionCode": 1,
+          "author": {
+            "name": "kinggod899",
+            "url": "https://github.com/kinggod899"
+          },
+          "homepage": "https://github.com/kinggod899/monkey-jigsaw-plugin",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          }
+        }
+      },
+      "v1.0.1": {
+        "version": "1.0.1",
+        "versionCode": 2,
+        "commit": "85fec4f913f72525bb4d58a950b95993f68b626f",
+        "assetId": 788049815,
+        "assetName": "monkey_jigsaw.zip",
+        "size": 14090,
+        "sha256": "f118654ccb3fd0b6e54dca9bd5cd1a71d9ee05698849738bfd85a88879df37ee",
+        "verifiedAt": "2026-11-25T00:40:41.021Z",
+        "hasAppSetting": true,
+        "cover": "",
+        "manifest": {
+          "id": "monkey_jigsaw",
+          "name": "猴王通用拼图（穷举）",
+          "summary": "自动完成绝区零拼图小游戏：识别面板格数与可拖动碎块，按穷举把碎块逐个试到正确位置。支持 3×3 到 6×6 面板，适配 2K 屏幕。",
+          "version": "1.0.1",
+          "versionCode": 2,
           "author": {
             "name": "kinggod899",
             "url": "https://github.com/kinggod899"
