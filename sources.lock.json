@@ -1117,7 +1117,7 @@
   "bagel": {
     "repoId": 1440859224,
     "repo": "Cora093/zzz-bagel-plugin",
-    "maxVersionCode": 14,
+    "maxVersionCode": 15,
     "releases": {
       "v0.1.0": {
         "version": "0.1.0",
@@ -1626,6 +1626,41 @@
           "versionCode": 14,
           "defaultGroup": true,
           "needNotify": true,
+          "author": {
+            "name": "Cora、kawayiYokami、ShadowLemoon、PoorKid1112、RRRR623、wusaqi、Ada、A-nony-mous、kinggod899",
+            "url": "https://github.com/kawayiYokami"
+          },
+          "homepage": "https://github.com/Cora093/zzz-bagel-plugin",
+          "risk": [
+            "automation",
+            "ocr",
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "cover": "assets/cover.webp"
+        }
+      },
+      "v0.6.4": {
+        "version": "0.6.4",
+        "versionCode": 15,
+        "commit": "696a2028c8bd9e7ab4d0d10ddfaaa4c1d563137d",
+        "assetId": 792259390,
+        "assetName": "bagel.zip",
+        "size": 1089421,
+        "sha256": "737a0627e33276b3bd005d81ecdd9638cdcc003a7ad2d1a75d29b7fba4ebaf9f",
+        "verifiedAt": "2026-11-25T16:30:37.042Z",
+        "hasAppSetting": true,
+        "cover": "bagel-15.webp",
+        "manifest": {
+          "id": "bagel",
+          "name": "贝果计划",
+          "summary": "贝果计划自动跑刀：按自录路线跑图、收集物品、清理仓库并结算的完整自动化流程。",
+          "version": "0.6.4",
+          "versionCode": 15,
           "author": {
             "name": "Cora、kawayiYokami、ShadowLemoon、PoorKid1112、RRRR623、wusaqi、Ada、A-nony-mous、kinggod899",
             "url": "https://github.com/kawayiYokami"
@@ -2453,7 +2488,7 @@
   "bangboo_companion": {
     "repoId": 1444204673,
     "repo": "idk500/zzzod-plugin-bangboo-companion",
-    "maxVersionCode": 3,
+    "maxVersionCode": 4,
     "releases": {
       "v0.1.0": {
         "version": "0.1.0",
@@ -2547,6 +2582,39 @@
           "cover": "assets/ui/cover.png",
           "version": "0.2.0",
           "versionCode": 3,
+          "author": {
+            "name": "idk500",
+            "url": "https://github.com/idk500"
+          },
+          "homepage": "https://github.com/idk500/zzzod-plugin-bangboo-companion",
+          "risk": [
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          }
+        }
+      },
+      "v0.3.0": {
+        "version": "0.3.0",
+        "versionCode": 4,
+        "commit": "5068c22baf3dab1e2f920fb0f7da5a1760d7eba1",
+        "assetId": 792234381,
+        "assetName": "bangboo_companion.zip",
+        "size": 87170,
+        "sha256": "86ff25d2c46ee81f2cb940fa68f3bd67072a91fcb6c25e261ad666cfbf26ca5d",
+        "verifiedAt": "2026-11-25T16:30:37.042Z",
+        "hasAppSetting": false,
+        "cover": "bangboo_companion-4.png",
+        "manifest": {
+          "id": "bangboo_companion",
+          "name": "运行指示器",
+          "summary": "桌面小信号灯：绿=正在运行、黄=注意（暂停/卡死前兆/超时）、红=异常（闪烁+蜂鸣）、灰=待机。覆盖一条龙与单个应用；红灯亮起后左键点一下灯牌就表示「我知道了」，拖动能挪位置。纯桌面显示，不操作游戏、不影响运行流程。",
+          "cover": "assets/ui/cover.png",
+          "version": "0.3.0",
+          "versionCode": 4,
           "author": {
             "name": "idk500",
             "url": "https://github.com/idk500"
