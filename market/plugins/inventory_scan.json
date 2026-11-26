@@ -2,11 +2,7 @@
   "id": "inventory_scan",
   "repo": "idk500/zzzod-plugin-inventory-scan",
   "repoId": 1432190207,
-  "tags": [
-    "utility",
-    "ocr",
-    "inventory"
-  ],
+  "tags": ["扫描", "仓库"],
   "extraRisk": [],
   "status": "listed",
   "pinned": false,

@@ -2,11 +2,7 @@
   "id": "zzz_saved_account",
   "repo": "xiaoguangOMO/zzzod-plugin-saved-account",
   "repoId": 1453598609,
-  "tags": [
-    "account",
-    "switch",
-    "automation"
-  ],
+  "tags": ["补丁", "登录"],
   "extraRisk": [],
   "status": "listed",
   "pinned": false,
