@@ -3,7 +3,7 @@
   "repo": "moonlight0XD/zzzod-discord-push",
   "repoId": 1452247385,
   "tags": ["通知"],
-  "extraRisk": [],
+  "extraRisk": ["account"],
   "status": "listed",
   "pinned": false,
   "review": {
