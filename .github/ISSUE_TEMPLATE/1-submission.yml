@@ -20,8 +20,8 @@ body:
     id: tags
     attributes:
       label: 标签
-      description: 0~3 个，可以留空，用逗号或顿号分隔。约定见[打标签](https://github.com/OneDragon-Anyone/plugin-data/blob/master/CONTRIBUTING.md#打标签)，拿不准就留空，由维护者补。
-      placeholder: 日常、战斗、刷取
+      description: 0~3 个，可以留空，用逗号或顿号分隔。拿不准的参照已收录插件的写法。
+      placeholder: 日常、活动、丁尼
   - type: textarea
     id: notes
     attributes:
