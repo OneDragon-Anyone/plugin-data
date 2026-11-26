@@ -21,6 +21,10 @@
 2. 如需微调标签或风险说明，直接在 PR 的 `market/plugins/{id}.json` 中修改。
 3. 确认无误后点击 Merge。合并后定时构建会自动提取该插件的 Release。
 
+### 手动触发更新
+
+在 GitHub 仓库页面进入 **Actions** → **build-market** → 点击 **Run workflow**。
+
 ### 打标签
 
 标签是给找插件的人筛功能用的中文分类，说明插件做什么；风险标签说明插件会碰什么，两者不要混用。
@@ -50,7 +54,7 @@
   "id": "music_game_26",
   "repo": "OneDragon-Anyone/rhythm_game_v2.6_zzzod_plugin",
   "repoId": 1244891200,
-  "tags": ["游戏"],
+  "tags": ["活动"],
   "extraRisk": [],
   "status": "listed",
   "pinned": false,
@@ -61,10 +65,6 @@
 - `repoId` 是仓库的 GitHub 数字 ID，用 `gh api repos/<owner>/<repo> --jq .id` 查询。
 - 作者自建镜像写 `mirror`，写法见 [README.md](README.md#插件包镜像)；没有就省略。
 - 提交并合并至 master。
-
-### 手动触发更新
-
-在 GitHub 仓库页面进入 **Actions** → **build-market** → 点击 **Run workflow**。
 
 ## 常见情况排查
 
