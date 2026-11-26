@@ -2,12 +2,7 @@
   "id": "bagel",
   "repo": "Cora093/zzz-bagel-plugin",
   "repoId": 1440859224,
-  "tags": [
-    "automation",
-    "route",
-    "farming",
-    "route-editor"
-  ],
+  "tags": ["刷取", "路线"],
   "extraRisk": [],
   "status": "listed",
   "pinned": true,
