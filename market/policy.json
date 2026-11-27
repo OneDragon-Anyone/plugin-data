@@ -1,4 +1,12 @@
 {
+  "site": {
+    "name": "ZZZ OneDragon Plugin Market",
+    "logo": "OD",
+    "short": "ZZZOD",
+    "subtitle": "Plugins",
+    "description": "发现、安装与提交 ZZZ OneDragon 插件。"
+  },
+  "templateRepository": "OneDragon-Anyone/plugin-template",
   "reservedIds": [
     "one_dragon",
     "one_dragon_qt",
@@ -25,5 +33,13 @@
       "repo": "OneDragon-Anyone/plugin-mirror",
       "branch": "main"
     }
+  },
+  "client": {
+    "lockUrl": "https://raw.githubusercontent.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/main/uv.lock",
+    "moduleRoots": [
+      "one_dragon",
+      "one_dragon_qt",
+      "zzz_od"
+    ]
   }
 }
