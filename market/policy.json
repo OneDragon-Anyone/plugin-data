@@ -6,6 +6,7 @@
     "subtitle": "Plugins",
     "description": "发现、安装与提交 ZZZ OneDragon 插件。"
   },
+  "templateRepository": "OneDragon-Anyone/plugin-template",
   "reservedIds": [
     "one_dragon",
     "one_dragon_qt",
