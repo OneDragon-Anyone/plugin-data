@@ -1117,7 +1117,7 @@
   "bagel": {
     "repoId": 1440859224,
     "repo": "Cora093/zzz-bagel-plugin",
-    "maxVersionCode": 15,
+    "maxVersionCode": 16,
     "releases": {
       "v0.1.0": {
         "version": "0.1.0",
@@ -1661,6 +1661,41 @@
           "summary": "贝果计划自动跑刀：按自录路线跑图、收集物品、清理仓库并结算的完整自动化流程。",
           "version": "0.6.4",
           "versionCode": 15,
+          "author": {
+            "name": "Cora、kawayiYokami、ShadowLemoon、PoorKid1112、RRRR623、wusaqi、Ada、A-nony-mous、kinggod899",
+            "url": "https://github.com/kawayiYokami"
+          },
+          "homepage": "https://github.com/Cora093/zzz-bagel-plugin",
+          "risk": [
+            "automation",
+            "ocr",
+            "filesystem"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "cover": "assets/cover.webp"
+        }
+      },
+      "v0.6.5": {
+        "version": "0.6.5",
+        "versionCode": 16,
+        "commit": "9f5a1b7713720277147b811dfd1825930930d930",
+        "assetId": 800285796,
+        "assetName": "bagel.zip",
+        "size": 1092626,
+        "sha256": "7fb90efc4c493749a482718b0920c914296624f350d46740bd992af97103d3b7",
+        "verifiedAt": "2026-11-27T15:00:18.445Z",
+        "hasAppSetting": true,
+        "cover": "bagel-16.webp",
+        "manifest": {
+          "id": "bagel",
+          "name": "贝果计划",
+          "summary": "贝果计划自动跑刀：按自录路线跑图、收集物品、清理仓库并结算的完整自动化流程。",
+          "version": "0.6.5",
+          "versionCode": 16,
           "author": {
             "name": "Cora、kawayiYokami、ShadowLemoon、PoorKid1112、RRRR623、wusaqi、Ada、A-nony-mous、kinggod899",
             "url": "https://github.com/kawayiYokami"
@@ -3801,7 +3836,7 @@
   "hollow_login_guard": {
     "repoId": 1470613011,
     "repo": "kinggod899/zzzod-plugin-hollow-login-guard",
-    "maxVersionCode": 2,
+    "maxVersionCode": 3,
     "releases": {
       "v1.0.0": {
         "version": "1.0.0",
@@ -3852,6 +3887,39 @@
           "summary": "登录后若角色还在贝果等空洞玩法局内，自动退出玩法回到大世界，避免一条龙卡在登录阶段直到超时。插件会接管主程序的登录节点（运行时打补丁，不改动任何文件）。",
           "version": "1.0.1",
           "versionCode": 2,
+          "author": {
+            "name": "kinggod899",
+            "url": "https://github.com/kinggod899"
+          },
+          "homepage": "https://github.com/kinggod899/zzzod-plugin-hollow-login-guard",
+          "risk": [
+            "automation"
+          ],
+          "compatibility": {
+            "minAppVersion": "0.0.0",
+            "minCoreApiVersion": 1,
+            "python": ">=3.11"
+          },
+          "cover": "assets/cover.webp"
+        }
+      },
+      "v1.0.2": {
+        "version": "1.0.2",
+        "versionCode": 3,
+        "commit": "bb474cf19d00b28e48b9757e5ca4ad9dadd67856",
+        "assetId": 799139163,
+        "assetName": "hollow_login_guard.zip",
+        "size": 85439,
+        "sha256": "7b6e25c450a1a92d7e9d2fa8aa7726ddf4f149eeb9156dc5e55279e2d707c6ee",
+        "verifiedAt": "2026-11-27T15:00:18.445Z",
+        "hasAppSetting": false,
+        "cover": "hollow_login_guard-3.webp",
+        "manifest": {
+          "id": "hollow_login_guard",
+          "name": "防登录卡死贝果小助手",
+          "summary": "登录后若角色还在贝果等空洞玩法局内，自动退出玩法回到大世界，避免一条龙卡在登录阶段直到超时。插件会接管主程序的登录节点（运行时打补丁，不改动任何文件）。",
+          "version": "1.0.2",
+          "versionCode": 3,
           "author": {
             "name": "kinggod899",
             "url": "https://github.com/kinggod899"
