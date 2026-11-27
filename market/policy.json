@@ -1,4 +1,11 @@
 {
+  "site": {
+    "name": "ZZZ OneDragon Plugin Market",
+    "logo": "OD",
+    "short": "ZZZOD",
+    "subtitle": "Plugins",
+    "description": "发现、安装与提交 ZZZ OneDragon 插件。"
+  },
   "reservedIds": [
     "one_dragon",
     "one_dragon_qt",
