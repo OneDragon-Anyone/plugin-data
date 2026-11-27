@@ -33,5 +33,13 @@
       "repo": "OneDragon-Anyone/plugin-mirror",
       "branch": "main"
     }
+  },
+  "client": {
+    "lockUrl": "https://raw.githubusercontent.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/main/uv.lock",
+    "moduleRoots": [
+      "one_dragon",
+      "one_dragon_qt",
+      "zzz_od"
+    ]
   }
 }
