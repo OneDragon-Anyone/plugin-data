@@ -41,4 +41,4 @@ jobs:
       tools_repository: ${{ vars.TOOLS_REPOSITORY || 'OneDragon-Anyone/plugin-tools' }}
       tools_ref: ${{ vars.TOOLS_REF }}  # 读仓库变量，留空就用最新 tag
       site_url: ${{ vars.SITE_URL }}  # 用自定义域名时配
-      site_base_path: ${{ vars.SITE_BASE_PATH || '/plugin-data' }}  # 仓库改名后要跟着改
+      site_base_path: ${{ vars.SITE_BASE_PATH }}  # 站点在域名下的子路径
