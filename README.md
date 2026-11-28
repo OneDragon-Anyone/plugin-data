@@ -19,16 +19,16 @@
 
 ## 插件收录与更新流程
 
-1. **作者提交**：插件开发者按模板仓说明发布带 `<id>.zip` 的 Release，推荐走 [提交插件页](https://onedragon-anyone.github.io/plugin-data/submission/) 发起 `[submission]` Issue 申请收录，页面会在提交前预检仓库并帮忙填好 Issue 内容。
+1. **作者提交**：插件开发者按模板仓说明发布带 `<id>.zip` 的 Release，推荐走[提交插件页](https://onedragon-anyone.github.io/plugin-data/submission/)发起 `[submission]` Issue 申请收录，页面会在提交前预检仓库并帮忙填好 Issue 内容。
 2. **自动校验**：网页预检只是提交前的自检，用来提前发现问题，结果不会写进 Issue。真正的校验由审核机器人在 Issue 提交后执行，检查插件包规范，通过后自动创建收录 PR；不合规会在 Issue 里写明原因。
 3. **审核上线**：维护人员核对后合并 PR，下一次定时构建会抓取最新版本并同步到插件市场。
 4. **后续更新**：收录后作者发新 Release 会自动同步，无需重复提交。
 
 ## 自动化流水线
 
-三份流水线（定时构建、提交审核、规则校验）只是壳，实现放在[市场仓](https://github.com/OneDragon-Anyone/plugin-market)。引用默认跟 `@master`，要固定就把 `@` 后面换成 `@v1` 这样的 tag，只能写死、不能写变量。
-
-工具仓的坐标与版本由仓库变量 `TOOLS_REPOSITORY` / `TOOLS_REF` 决定，不配时用 `OneDragon-Anyone/plugin-tools` 最新版本的 tag。站点地址与 base 由 `SITE_URL` / `SITE_BASE_PATH` 决定，不配按 GitHub Pages 的地址和 `/plugin-data` 走。
+- 三份流水线（定时构建、提交审核、规则校验）只是壳，实现放在[市场仓](https://github.com/OneDragon-Anyone/plugin-market)。引用默认跟 `@master`，要固定就把 `@` 后面换成 `@v1` 这样的 tag，只能写死、不能写变量。
+- 校验脚本在[工具仓](https://github.com/OneDragon-Anyone/plugin-tools)，构建时会拉下来跑；默认取最新版本的 tag，用仓库变量 `TOOLS_REPOSITORY` / `TOOLS_REF` 可以换仓或指定 tag、分支。
+- 站点地址：`SITE_URL` 是站点域名，`SITE_BASE_PATH` 是站点在该域名下的部署路径。
 
 ## 插件包镜像
 

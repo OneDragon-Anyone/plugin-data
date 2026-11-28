@@ -23,7 +23,7 @@
 
 ### 手动触发更新
 
-在 GitHub 仓库页面进入 **Actions** → **build-market** → 点击 **Run workflow**。
+重抓所有已收录插件的最新 Release，生成新的索引和网页。平时由定时任务跑，合并 PR 后也跑；想马上生效或上次失败重试，可手动触发：**Actions** → [build-market](https://github.com/OneDragon-Anyone/plugin-data/actions/workflows/build-market.yml) → **Run workflow**。
 
 ### 修改或下架插件
 
