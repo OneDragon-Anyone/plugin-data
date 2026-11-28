@@ -29,6 +29,8 @@ jobs:
   # 固定工具版本 —— 二选一：
   #   tools_ref: v1  # 用 v1 tag 的代码，不再变，其他版本以此类推
   #   tools_ref: ${{ vars.TOOLS_REF }}  # 读仓库变量，留空就用最新 tag
+  #
+  # 工具仓坐标、站点地址、站点 base 的默认值都写在这里，与 build-market 保持一致
   bot:
     if: >-
       github.event_name != 'issue_comment' ||
@@ -38,3 +40,5 @@ jobs:
     with:
       tools_repository: ${{ vars.TOOLS_REPOSITORY || 'OneDragon-Anyone/plugin-tools' }}
       tools_ref: ${{ vars.TOOLS_REF }}  # 读仓库变量，留空就用最新 tag
+      site_url: ${{ vars.SITE_URL }}  # 用自定义域名时配
+      site_base_path: ${{ vars.SITE_BASE_PATH || '/plugin-data' }}  # 仓库改名后要跟着改
